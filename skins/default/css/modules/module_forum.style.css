@@ -1,0 +1,265 @@
+/****************************************************
+*                                                   *
+*         FEUILLE DE STYLE DU MODULE FORUM          *
+*                                                   *
+****************************************************/
+
+.forum
+{
+  margin: 0px auto 10px auto;
+  border: 2px solid rgb(161,231,173);
+}
+
+.forum .module_border
+{
+  border: 1px solid rgb(70,139,82);
+  background-color: white;
+}
+
+.forum .title
+{
+  border-bottom: 1px solid rgb(70,139,82);
+  background: url(../../images/modules/titles/entete_png_verte.png) repeat-x center;
+}
+
+* html #index .forum .title
+{
+  background: url(../../images/modules/titles/entete_png_verte.png) repeat-x top;
+}
+
+*+html #index .forum .title
+{
+  background: url(../../images/modules/titles/entete_png_verte.png) repeat-x top;
+}
+
+
+.forum .title .extraDiv1 span
+{
+  margin-top: 1px;
+  background-image: url(../../images/modules/logos/comments.png);
+}
+
+* html .forum .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+		element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/comments.png', sizingMethod='scale')";
+		return 'none';
+		})(this));
+}
+
+
+.forum .content .date_publication
+{
+	font-size: 11px;
+	margin-right: 10px;
+	font-weight: normal;
+}
+
+.forum .content .liste_topics
+{
+	width: 490px;
+	margin: 2px 0px 2px 0px;
+	padding-left: 10px;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.forum .content .liste_topics a:hover
+{
+	color: rgb(100,141,82);
+}
+
+.forum .content div div.liste_topics .auteur
+{
+	color: rgb(110,149,55);
+	font-style: italic;
+	margin-right: 10px;
+	width: 100px;
+}
+
+.forum .content .forum_suivi_nbmessage
+{
+	width: 340px;
+	color: black;
+	font-size: 1.05em;
+	font-weight: 1.2em;
+	font-weight: bold;
+	border-bottom: 2px solid rgb(220,237,212);
+}
+
+.forum .premier_titre
+{
+	margin: 5px 0px 12px 0px;
+}
+
+.forum .content .deuxieme_titre
+{
+	margin: 20px 0px 12px 0px;
+}
+
+.forum .content .forum_suivi_nbmessage span.L
+{
+	color: rgb(140,192,111);
+	font-weight: 700;
+	font-size: 1.1em;
+}
+
+.forum .content .forum_suivi_nbmessage .suivi_nb2
+{
+	font-weight: bold;
+	font-size: 1.1em;
+  color: rgb(243, 100, 100);
+}
+
+.forum .content div .l1
+{
+	background: rgb(220,237,212);
+}
+
+.forum .content div .l2
+{
+	background: rgb(180,219,164);
+}
+
+.forum .trash
+{
+	height: 16px;
+	width: 16px;
+	display: block;
+	background: url('../../images/common/cross.png') no-repeat;
+	margin: 0px 0px 0px 15px;
+	padding: 0px 0px 0px 0px;
+	float: right;
+}
+
+.forum .suivi_titre
+{
+	padding: 0px 0px 0px 10px;
+	margin: 0px 0px 0px 0px;
+	height: 16px;
+	float: left;
+}
+
+.forum .suivi_nb
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	height: 16px;
+  float: right;
+}
+
+.forum .liste_topics.suivi_ligne
+{
+	padding: 2px 0px 0px 0px;
+	height: 18px;
+}
+	
+
+/* Style de l'infobulle */
+
+.tooltips .details_tt
+{
+	padding-left: 4px;
+	list-style-type: none;
+	float: left;
+}
+
+.tooltips .details_tt li
+{
+	display: block;
+	margin: -5px 0;
+}
+
+.tooltips .pseudo_auteur
+{
+	margin: 10px 0px 0px 0px;
+	font-size: 0.98em;
+	font-weight: bold;	
+}
+
+.tooltips .sujet_message
+{
+	height: 19px;
+	font-size: 1.1em;
+	font-weight: bold
+	margin: 8px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+  color: rgb(72,112,164);
+	border-bottom: 2px solid rgb(190,204,231);
+	overflow: hidden;
+}
+
+.tooltips .sujet_message span
+{
+	font-size: 1.2em;
+  color: rgb(170,183,225);
+}
+
+
+.tooltips .avatar_auteur
+{
+	margin: 0px 0px 0px 0px;
+	height: 75px;
+	float: left;
+}
+
+.tooltips .le_texte
+{
+	text-indent: 10px;
+	padding: 2px 2px 2px 2px;
+	font-size: 0.9em;
+	text-align: justify;
+}
+
+.tooltips .clear
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.tooltips .date_publication
+{
+	height: 0.8em;
+	font-size: 0.8em;
+	margin: 0px 0px 10px 5px
+}
+
+/* Style du bouton de création d'un nouveau topic + formulaire */
+
+.forum .link_button
+{
+	margin: 10px 43px 0px 0px;
+}
+
+.forum #create_new_thread
+{
+	width: 447px;
+	margin: 10px 0px 0px 0px;
+	padding: 0px 0px 0px 12px;
+	border: 1px solid rgb(220,237,212);
+	background: rgb(240,247,236);
+}
+
+.forum .titre_menu
+{
+	width: 310px;
+	margin-bottom: 5px;
+	font-size: 0.9em;
+	font-weight: bold;
+	border-bottom: 2px solid rgb(210,210,210);
+}
+
+.forum #followed_threads
+{
+	zoom: 1;
+}
+
+.forum .admin_link
+{
+	margin: 7px 0px 0px 10px;
+}
+
+.forum #create_new_thread select
+{
+	margin: 5px 0px 0px 0px;
+}

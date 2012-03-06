@@ -1,0 +1,784 @@
+/****************************************************
+*                                                   *
+*    FEUILLE DE STYLE DU MODULE METEO 01/01/2007    *
+*                                                   *
+*****************************************************/
+
+
+/***  STYLE DU MODULE  ***/
+
+.meteo .title .extraDiv1 span
+{
+  background-image: url(../../images/modules/logos/weather_cloudy.png);
+}
+* html .meteo .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+      element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/weather_cloudy..png', sizingMethod='scale')";
+      return 'none';
+      })(this));
+}
+
+
+
+/***  STYLE DU CONTENU  ***/
+
+.meteo .day_block
+{
+	float: left;
+	width: 190px;
+	height: 94px;
+	padding: 0px 0px 0px 0px;
+	margin: 20px 0px 0px 10px;
+	background: url(../../images/modules/module_meteo/day_block.png) top center no-repeat;
+}
+
+.meteo .picture
+{
+	float: left;
+	width: 48px;
+	height: 48px;
+	padding: 0px 0px 0px 0px;
+	margin: 20px 5px 0px 10px;
+}
+
+* html .meteo .picture
+{
+	margin: 20px 5px 0px 5px;
+}
+
+.meteo .next_days .picture
+{
+	float: left;
+	width: 48px;
+	height: 48px;
+	padding: 0px 0px 0px 0px;
+	margin: 10px 5px 0px 20px;
+}
+
+* html .meteo .next_days .picture
+{
+	margin: 10px 5px 0px 10px;
+}
+
+.meteo .details
+{
+	float: left;
+	width: 85px;
+	padding: 0px 0px 0px 0px;
+	margin: 20px 0px 0px 0px;
+}
+
+.meteo .temperature
+{
+	width: 112px;
+	padding: 0px 0px 0px 5px;
+	text-align: left;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.meteo .weather
+{
+	width: 112px;
+	padding: 0px 0px 0px 5px;
+	text-align: left;
+	color: white;
+	font-size: 0.9em;
+}
+
+.meteo .next_days .weather
+{
+	float: left;
+	color: black;
+}
+
+.meteo .next_days
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.meteo dl
+{
+	float: left;
+	margin: 0px 0px 0px 5px;
+	padding: 0px 0px 0px 0px;
+}
+
+.meteo dt
+{
+	padding: 0px 0px 0px 0px;
+	margin: 2px 0px 0px 0px;
+	font-weight: bold;
+	color: rgb(32,55,133);
+}
+
+.meteo dd
+{
+	display: block;
+	font-size: 0.9em;
+	margin: 2px 0px 0px 0px;
+	padding: 0px 0px 0px 8px;
+}
+
+.meteo .prev_today,
+.meteo .prev_tomorrow
+{
+	height: 65px;
+	margin: 4px 0px 4px 2px;
+	padding: 0px 0px 0px 0px;
+}
+
+.meteo .prev_temp
+{
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	list-style-type: none;
+}
+
+
+
+/***  STYLE DES ICONES DE TEMPS  ***/
+
+
+.meteo .picture.i_0
+{
+	background: url(../../images/modules/module_meteo/23.png);
+}
+
+.meteo .picture.i_1
+{
+	background: url(../../images/modules/module_meteo/23.png);
+}
+
+.meteo .picture.i_2
+{
+	background: url(../../images/modules/module_meteo/23.png);
+}
+
+.meteo .picture.i_3
+{
+	background: url(../../images/modules/module_meteo/4.png);
+}
+
+.meteo .picture.i_4
+{
+	background: url(../../images/modules/module_meteo/4.png);
+}
+
+.meteo .picture.i_5
+{
+	background: url(../../images/modules/module_meteo/5.png);
+}
+
+.meteo .picture.i_6
+{
+	background: url(../../images/modules/module_meteo/10.png);
+}
+
+.meteo .picture.i_7
+{
+	background: url(../../images/modules/module_meteo/7.png);
+}
+
+.meteo .picture.i_8
+{
+	background: url(../../images/modules/module_meteo/8.png);
+}
+
+.meteo .picture.i_9
+{
+	background: url(../../images/modules/module_meteo/9.png);
+}
+
+.meteo .picture.i_10
+{
+	background: url(../../images/modules/module_meteo/10.png);
+}
+
+.meteo .picture.i_11
+{
+	background: url(../../images/modules/module_meteo/11.png);
+}
+
+.meteo .picture.i_12
+{
+	background: url(../../images/modules/module_meteo/11.png);
+}
+
+.meteo .picture.i_13
+{
+	background: url(../../images/modules/module_meteo/43.png);
+}
+
+.meteo .picture.i_14
+{
+	background: url(../../images/modules/module_meteo/13.png);
+}
+
+.meteo .picture.i_15
+{
+	background: url(../../images/modules/module_meteo/43.png);
+}
+
+.meteo .picture.i_16
+{
+	background: url(../../images/modules/module_meteo/15.png);
+}
+
+.meteo .picture.i_17
+{
+	background: url(../../images/modules/module_meteo/16.png);
+}
+
+.meteo .picture.i_18
+{
+	background: url(../../images/modules/module_meteo/25.png);
+}
+
+.meteo .picture.i_19
+{
+	background: url(../../images/modules/module_meteo/19.png);
+}
+
+.meteo .picture.i_20
+{
+	background: url(../../images/modules/module_meteo/20.png);
+}
+
+.meteo .picture.i_21
+{
+	background: url(../../images/modules/module_meteo/21.png);
+}
+
+.meteo .picture.i_22
+{
+	background: url(../../images/modules/module_meteo/22.png);
+}
+
+.meteo .picture.i_23
+{
+	background: url(../../images/modules/module_meteo/38.png);
+}
+
+.meteo .picture.i_24
+{
+	background: url(../../images/modules/module_meteo/24.png);
+}
+
+.meteo .picture.i_25
+{
+	background: url(../../images/modules/module_meteo/25.png);
+}
+
+.meteo .picture.i_26
+{
+	background: url(../../images/modules/module_meteo/26.png);
+}
+
+.meteo .picture.i_27
+{
+	background: url(../../images/modules/module_meteo/27.png);
+}
+
+.meteo .picture.i_28
+{
+	background: url(../../images/modules/module_meteo/28.png);
+}
+
+.meteo .picture.i_29
+{
+	background: url(../../images/modules/module_meteo/29.png);
+}
+
+.meteo .picture.i_30
+{
+	background: url(../../images/modules/module_meteo/30.png);
+}
+
+.meteo .picture.i_31
+{
+	background: url(../../images/modules/module_meteo/31.png);
+}
+
+.meteo .picture.i_32
+{
+	background: url(../../images/modules/module_meteo/32.png);
+}
+
+.meteo .picture.i_33
+{
+	background: url(../../images/modules/module_meteo/33.png);
+}
+
+.meteo .picture.i_34
+{
+	background: url(../../images/modules/module_meteo/34.png);
+}
+
+.meteo .picture.i_35
+{
+	background: url(../../images/modules/module_meteo/5.png);
+}
+
+.meteo .picture.i_36
+{
+	background: url(../../images/modules/module_meteo/36.png);
+}
+
+.meteo .picture.i_37
+{
+	background: url(../../images/modules/module_meteo/37.png);
+}
+
+.meteo .picture.i_38
+{
+	background: url(../../images/modules/module_meteo/38.png);
+}
+
+.meteo .picture.i_39
+{
+	background: url(../../images/modules/module_meteo/38.png);
+}
+
+.meteo .picture.i_40
+{
+	background: url(../../images/modules/module_meteo/40.png);
+}
+
+.meteo .picture.i_41
+{
+	background: url(../../images/modules/module_meteo/41.png);
+}
+
+.meteo .picture.i_42
+{
+	background: url(../../images/modules/module_meteo/42.png);
+}
+
+.meteo .picture.i_43
+{
+	background: url(../../images/modules/module_meteo/43.png);
+}
+
+.meteo .picture.i_44
+{
+	background: url(../../images/modules/module_meteo/44.png);
+}
+
+.meteo .picture.i_45
+{
+	background: url(../../images/modules/module_meteo/35.png);
+}
+
+.meteo .picture.i_46
+{
+	background: url(../../images/modules/module_meteo/16.png);
+}
+
+.meteo .picture.i_47
+{
+	background: url(../../images/modules/module_meteo/38.png);
+}
+
+.meteo .picture.i_2300
+{
+	background: url(../../images/modules/module_meteo/2300.png);
+}
+
+/***  DEBUG IE : PNG 24BITS  ***/
+
+* html .meteo .picture.i_0
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/23.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_1
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/23.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_2
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/23.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_3
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/4.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_4
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/4.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_5
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/5.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_6
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/10.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_7
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/7.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_8
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/8.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_9
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/9.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_10
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/10.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_11
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/11.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_12
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/43.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_13
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/43.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_14
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/13.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_15
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/43.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_16
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/15.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_17
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/16.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_18
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/25.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_19
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/19.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_20
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/20.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_21
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/21.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_22
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/22.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_23
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/38.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_24
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/24.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_25
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/25.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_26
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/26.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_27
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/27.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_28
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/28.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_29
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/29.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_30
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/30.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_31
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/31.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_32
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/32.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_33
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/33.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_34
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/34.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_35
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/5.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_36
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/36.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_37
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/37.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_38
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/38.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_39
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/38.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_40
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/40.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_41
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/41.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_42
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/42.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_43
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/43.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_44
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/44.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_45
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/35.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_46
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/16.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_47
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/38.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+
+* html .meteo .picture.i_2300
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/module_meteo/2300.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}

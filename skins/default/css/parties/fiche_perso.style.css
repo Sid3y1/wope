@@ -1,0 +1,79 @@
+/***************************************
+*                                      *
+*  FEUILLE DE STYLE DE LA FICHE PERSO  *
+*                                      *
+****************************************/
+
+.avatar_trombi
+{
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	width: 75px;
+	height: 75px;
+	left: 40%;
+	right: 60%;
+}
+
+.nom_fiche
+{
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.tabsContent
+{
+	background: rgb(222,220,241);
+}
+
+.tabsContent dl dt
+{
+	padding-left: 10px;
+	font-weight: bold;
+	color: rgb(78,25,143);
+	background:rgb(241,240,248);
+	border: 1px solid rgb(230,229,243);
+}
+
+.tabsContent dl dd
+{
+	padding-left: 10px;
+	padding-top: 2px;
+	margin-bottom: 15px;
+}
+
+.tabsContent dl dd a
+{
+	font-style: italic;
+	font-weight: bold;
+	color: rgb(80,80,157);
+}
+
+.tabs
+{
+	background: none;
+	border: none;
+}
+
+.tabs .selectedTab
+{
+	background: rgb(156,155,187);
+}
+
+.tabs .selectedTab a
+{
+	color: white;
+	font-weight: bolder;
+}
+
+.tabs li a
+{
+	color: rgb(78,25,143);
+	font-weight: bold;
+}
+
+.tabs a:hover
+{
+	background: rgb(120,120,168);
+}

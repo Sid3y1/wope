@@ -1,0 +1,150 @@
+/**********************************************************************
+*                                                                     *
+*     REFONTE DE LA CSS DES EVENEMENTS ~ AJOUT SYLV DU 26/10/2006     *
+*                                                                     *
+***********************************************************************/
+
+#agenda .col0,
+#agenda .col1
+{
+	width: 380px;
+}
+
+#agenda .col0 .module .title,
+#agenda .col1 .module .title
+{
+  background-color: rgb(214, 219, 255);
+	border-bottom: 1px solid rgb(173, 183, 255);
+}
+
+* html #agenda .col0 .module .title,
+* html #agenda .col1 .module .title
+{
+	background: url(../../images/modules/titles/module-title_214-219-255.png) repeat-x top;
+  background-color: rgb(214, 219, 255);
+	border-bottom: 1px solid rgb(173, 183, 255);
+}
+
+#agenda .col0 .module .title h2,
+#agenda .col1 .module .title h2
+{
+  float: left;
+  margin: -0.7em 5px -0.7em 10px;
+  color: rgb(66, 63, 148);
+  text-transform: capitalize;
+	font-weight: 900;
+}													
+
+#agenda .col0 .module .title .extraDiv1 span,
+#agenda .col1 .module .title .extraDiv1 span
+{
+	height: auto;
+  width: auto;
+  background: none;
+}
+
+#agenda .panel
+{
+	margin: 5px 0px 15px 0px;
+	border-left: 2px solid rgb(132,129,184);
+}
+
+#agenda .panel .link_menu a
+{
+	color: rgb(78,73,153);
+}
+
+#agenda .panel .link_menu a:hover
+{
+	color: black;
+}
+
+#agenda .module .content .row
+{
+	padding: 10px 5px 5px 5px;
+	margin-bottom: 15px;
+}
+
+#agenda .module .content .row1
+{
+	border: 1px solid rgb(150,170,190);
+	background: rgb(240,243,247);
+}
+
+#agenda .module .content .row2
+{
+	border: 1px solid rgb(247,177,108);
+	background: rgb(255,245,235);
+}
+
+#agenda .module .content span.titre_menu
+{
+	font-size: 1.3em;
+	font-weight: normal;
+	padding-right: 15px;
+}
+
+#agenda .module .content div.titre_news
+{
+	margin: 0px 0px 2px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#agenda .module .content span.titre1
+{
+	color: rgb(72,112,164);
+	border-bottom: 2px solid rgb(190,204,231);
+}
+
+#agenda .module .content span.titre2
+{
+	color: rgb(233,106,29);
+	border-bottom: 2px solid rgb(245,180,77);
+}
+
+#agenda .module .content span.titre1 span
+{
+	font-size: 1.4em;
+	color: rgb(190,204,231);
+}
+
+#agenda .module .content span.titre2 span
+{
+	font-size: 1.4em;
+	color: rgb(245,180,77);
+}
+
+#agenda .module .content .infos_creation_news
+{
+	color: rgb(69,140,235);
+	margin: 0px 0px 15px 10px;
+	font-style: italic;
+}
+
+#agenda .module .content span.infos_complementaires
+{
+	color: black;
+	margin: 0px 0px 1px 25px;
+	font-size: 0.8em;
+}
+
+#agenda .module .content .text_block
+{
+  padding: 5px 5px 5px 5px;
+  text-align: justify;
+}
+
+
+/*** STYLE DU BLOC DE LA PHOTO ***/
+
+#agenda .module .content .item_picture
+{
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  background: no-repeat;
+  text-align: center;
+  margin: 0px 5px 5px 0px;
+  float: left;
+}
+									

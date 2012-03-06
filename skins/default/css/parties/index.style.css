@@ -1,0 +1,45 @@
+#index .column0
+{
+  width: 246px;
+  float: left;
+}
+
+#index .column0 .module
+{
+  margin: 0px auto 10px auto;
+  border: 2px solid rgb(190,190,190);
+}
+
+#index .column0 .module_border
+{
+  margin: 0px 0px 0px 0px;
+  border: 1px solid rgb(70,70,70);
+  background-color: white;
+}
+
+#index .column0 .module .content
+{
+  background-color: white;
+}
+
+#index .column0 .module .title
+{
+  background-color: black;
+  background: url('../../images/modules/titles/entete_png_noire.png') repeat-x center;
+  border-bottom: 1px solid rgb(70,70,70)
+}
+* html #index .column0 .module .title
+{
+  background: url('../../images/modules/titles/entete_png_noire.png') repeat-x top;
+}
+
+*+html #index .column0 .module .title
+{
+  background: url('../../images/modules/titles/entete_png_noire.png') repeat-x top;
+}
+
+#index .column1
+{
+  width: 522px;
+  float: right;
+}

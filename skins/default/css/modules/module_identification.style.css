@@ -1,0 +1,277 @@
+/* Annuler le style appliqué sur tous les modules la column0 (seulement pour le module identification) */
+
+
+#index.page .identification .content
+{
+	padding: 0px 5px 5px 5px;
+}
+
+#index.page .identification form
+{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+* html #index.page .identification form
+{
+  width: 228px;
+  overflow: hidden;
+}
+
+
+#index.page .column0 .module.identification div.title
+{
+	border-bottom: 1px solid black;
+	overflow: hidden;
+	margin: 0px 0px 0px 0px;
+}
+
+#index.page .column0 .identification .title .extraDiv1 span
+{
+  margin-top: 1px;
+  background: url(../../images/modules/logos/house.png);
+}
+
+* html #index.page .column0 .identification .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+    element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/house.png', sizingMethod='scale')";
+    return 'none';
+    })(this));
+}
+
+/* Titre du module */
+#index.page .column0 .identification .title h2
+{
+/*  
+	float: left;
+	font-size: 1em;
+	font-weight: 500;
+	color: white;
+	text-transform: uppercase;
+	margin: -0.7em 0 -0.7em 55px;
+	padding: 12px 0; */
+	display: none;
+}
+/*
+* html #index.page .column0 .identification .title h2
+{
+	margin: -0.7em 0 -0.7em 25px;
+}
+*/
+.identification .form-ligne
+{
+  padding: 1px;
+	margin: 5px 0px 0px 0px;
+}
+.identification .form-ligne label
+{
+	float: left;
+  width: 90px;
+	padding: 0;
+	margin: 0;
+	margin-left: 5px;
+}
+
+.identification .form-ligne input
+{
+	float: right;
+	padding: 1px 0px 1px 0px;
+	width: 120px;
+}
+
+.identification .form-submit input
+{
+  margin: 0px 0px 0px 100px;
+	padding: 0;
+}
+
+.identification .welcome
+{
+  width: 200px;
+	margin: 5px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.identification .social_status
+{
+	float: left;
+	width: 200px;
+	margin: 1px 0px 10px 0px;
+	color: rgb(150,150,150);
+	zoom: 1;
+}
+
+.identification .picture_block
+{
+	float: left;
+}
+
+.identification .avatar
+{
+	width: 90px;
+	height: 90px;
+	margin: 0px 0px 0px 5px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.identification .avatar * 
+{
+	vertical-align: middle;
+}
+/*\*//*/
+.identification .avatar 
+{
+	display: block;
+}
+.identification .avatar span 
+{
+	display: inline-block;
+	height: 100%;
+	width: 1px;
+}
+/**/
+
+* html .identification .avatar span
+{
+	display: inline-block;
+	height: 100%;
+}
+
+*+html .identification .avatar span
+{
+	display: inline-block;
+	height: 100%;
+}
+
+.avatar img
+{
+	margin: 2px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border: 2px solid rgb(135,137,178);
+}
+
+* html .avatar img
+{
+	margin: 4px 0px 0px 0px;
+}
+
+.identification .formulaire_identification
+{
+	overflow: hidden;
+	padding: 1px 1px 1px 1px;
+}
+
+#index.page .identification .content .formulaire_identification .alternative_button
+{
+	margin: 8px 0px 0px 0px;
+	float: right;
+	font-family: "Trebuchet MS";
+}
+
+.identification .right_block
+{
+	float: left;
+}
+
+.identification .menu_block
+{
+  width: 130px;
+	height: 90px;
+  margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+/*\*/
+.identification .menu_block
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+/*/
+.identification .user-menu 
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+/**/
+
+.identification ul
+{
+  list-style: none;
+}
+
+.identification .content .admin_link
+{
+	margin: 15px 0px 0px 0px;
+	float: left;
+}
+
+.identification .content .panel
+{
+	margin: 0px 0px 0px 3px;
+	border-left: 2px solid rgb(105,172,223);
+}
+
+.identification .content .panel li
+{
+	margin: 0px 0px 0px 3px;
+}
+
+.identification .content .panel .link_menu:hover
+{
+	color: rgb(78,127,164);
+}
+
+.identification .content .new_mails_nb
+{
+	position: relative;
+}
+
+.identification .content .new_mails_nb
+{
+	position: relative;
+	font-style: italic;
+	padding-left: 32px;
+	height: 20px;
+	width: 165px;
+	margin: 8px 0px 1px 0px;
+	background: url(../../images/common/minimail.png) left center no-repeat;
+}
+
+* html .identification .content .new_mails_nb
+{
+	background: url(../../images/common/minimail_8bits.png) left center no-repeat;
+}
+
+.identification .invite_block
+{
+	border-left: 1px solid rgb(132,129,184);
+	padding: 0px 0px 0px 3px;
+	margin: 5px 0px 0px 0px;
+}
+
+* html .identification .invite_block
+{
+	position: relative;
+}
+
+*+html .identification .invite_block
+{
+	position: relative;
+}
+
+.identification .invite
+{
+	font-size: 0.9em;
+	font-weight: bold;
+	color: rgb(50,50,50);
+}
+
+.identification .invite:hover
+{
+	font-size: 0.9em;
+	font-weight: bold;
+	color: rgb(68,64,127);
+}

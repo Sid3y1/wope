@@ -1,0 +1,314 @@
+/******************************************************************************************
+*                                                                                         *
+*       FEUILLE DE STYLE DE LA PARTIE INSCRIPTION MODULABLE ~ AJOUT SYLV 30/11/2006       *
+*                                                                                         *
+*******************************************************************************************/
+
+
+/*** STYLE DU BLOC RAFRAîCHI EN AJAX ***/
+
+#signup #custom_form
+{
+	margin: 5px auto 5px auto;
+	padding: 1px 5px 10px 5px;
+	width: 720px;
+	/*
+	background: #F4F5FF;
+	border: 1px solid #F4E4FF;
+	*/
+}
+
+
+
+/*** STYLE DU CONTENU DES FORMULAIRES ***/
+
+		/*** STYLE DES BLOCS CONTENEURS DES BALISES LABEL ET INPUT ***/
+
+#signup .div_input
+{
+	padding: 2px 0px 2px 0px;
+	margin: 5px 0px 5px 10px;
+}
+
+#signup .div_label,
+#signup .terms_of_service_label,
+#signup .summary_avatar span
+{
+	padding: 0px 0px 0px 5px;
+	margin: 3px 15px 2px 0px;
+	width: 160px;
+	font-weight: bold;
+	font-size: 0.9em;
+	color: #203785;
+}
+
+#signup .terms_of_service_label
+{
+	width: 300px;
+}
+
+
+
+		/*** STYLE DES CHAMPS INPUT ***/
+
+#signup #custom_form input
+{
+	width: 200px;
+}
+
+#signup #custom_form input.checkbox_input
+{
+	margin: 6px 0px 0px 0px;
+	width: 12px;
+}
+
+
+
+		/*** STYLE DES TEXTAREA ***/
+
+
+/* HOBBIES */
+#signup #custom_form textarea
+{
+	width: 400px;
+	height: 200px;
+}
+
+/* TERMS OF SERVICE */
+#signup textarea#terms_of_service
+{
+	display: block;
+	width: 600px;
+	height: 300px;
+	margin: 10px auto 10px auto;
+	font-style: italic;
+}
+
+
+		/*** STYLE DES PARAGRAPHES DE DESCRIPTION ***/
+
+#signup .input_description
+{
+	margin: 10px 0px 1px 10px;
+	padding: 0px 0px 0px 5px;
+	font-size: 0.9em;
+	font-style: italic;
+}
+#signup .input_description span
+{
+	color: #203785;
+	font-weight: bold;
+}
+
+#signup .input_description span.special_chars
+{
+	padding: 1px 2px 1px 2px;
+	color: #203785;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+
+
+		/*** STYLE DU BLOC D'AVATAR ***/
+		
+#signup .avatar_label_preview
+{
+	margin-top: 35px;
+}
+
+#signup .avatar_preview_block img
+{
+	display: block;
+	padding: 3px 3px 3px 3px;
+}
+
+#signup .avatar_preview_block
+{
+	overflow: hidden;
+	margin: 4px 0px 30px 10px;
+}
+
+#signup .avatar_preview
+{
+	display: block;
+	margin: 3px 0px 3px 0px;
+	border: 1px solid #F4E4FF;
+}
+
+#signup .default_avatar
+{
+	display: block;
+	width: 75px;
+	height: 75px;
+	background: #F4F5FF url(../../images/common/default.png) no-repeat;
+	position: relative;
+}
+
+#signup .link_button
+{
+	margin: 10px 0px 0px 14px;
+	padding: 1px 4px 1px 4px;
+	float: none;
+}
+
+
+
+		/*** STYLE DES TITRES ET SOUS-TITRES D'ETAPES ***/
+
+
+/* Cas d'erreur dans le formulaire lors d'une étape obligatoire */
+#signup .message_error
+{
+	color: red;
+	font-size: 0.9em;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#signup .step_title,
+#signup .sub_category_title
+{
+	margin: 0px 0px 40px 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+#signup .sub_category_title
+{
+	font-size: 1.1em;
+	margin: 25px 0px 10px 0px;
+}
+
+#signup .step_title span.first_letter,
+#signup .sub_category_title span.first-letter
+{
+	padding: 0px 0px 0px 0px;
+	font-size: 1.3em;
+	color: rgb(73,73,146);
+	border-bottom: none;
+}
+
+#signup .sub_category_title span.first-letter
+{
+	font-size: 1.2em;
+}
+
+#signup .step_title span,
+#signup .sub_category_title span
+{
+	padding: 0px 2px 0px 2px;
+	border-bottom: 2px solid rgb(73,73,146);
+}
+
+
+
+		/*** STYLE DE LA BARRE DE CHANGEMENT D'ETAPE ***/
+
+#signup .nav_block
+{
+	margin: 30px 0px 0px 0px;
+	padding: 5px 5px 5px 0px;
+}
+
+#signup .nav_block a
+{
+	margin: 0px 10px 0px 10px;
+}
+
+
+
+		/*** STYLE DES IMAGES DE VALIDATION DE CHAMP ***/
+
+/* PROPRIETES GENERALES */
+#signup .check_input,
+#signup .check_input_false
+{
+	margin: 3px 3px 0px 5px;
+	display: block;
+	width: 21px;
+	height: 15px;
+	background: url(../../images/common/icon-check_21x15.png) no-repeat;
+}
+
+* html #signup .check_input
+{
+	width: 21px;
+	height: 15px;
+background-image: expression((function(element){
+        element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/common/icon-check_21x15.png', sizingMethod='scale')";
+				        return 'none';
+								        })(this));
+}
+
+/* ERREUR DANS LE CHAMP : TEXTE */
+#signup .error_message,
+#signup #check_3,
+#signup #check_3_alt
+{
+	padding-top: 2px;
+	font-size: 0.9em;
+	color: red;
+}
+
+#signup .confirmation_message
+{
+	padding-top: 2px;
+	font-size: 0.9em;
+	color: green;
+}
+
+/* ERREUR DANS LE CHAMP : IMAGE */
+#signup .check_input_false
+{
+	background: url(../../images/common/icon-checkfalse_21x15.png) no-repeat;
+}
+
+* html #signup .check_input_false
+{
+	width: 21px;
+	height: 15px;
+background-image: expression((function(element){
+        element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/common/icon-checkfalse_21x15.png', sizingMethod='scale')";
+
+		/*** STYLE DE LA PAGE DE RESUME ***/
+
+#signup .summary_text
+{
+	background: rgb(244,245,255);
+	border: 1px solid rgb(244,228,255);
+	padding: 5px 5px 18px 5px;
+	margin: 1px 0px 1px 0px;
+	width: 480px;
+	font-size: 0.9em;
+}
+
+#signup .summary_text span
+{
+	font-weight: bold;
+	color: #203785;
+}
+
+#signup .summary_avatar
+{
+	background: rgb(244,245,255);
+	border: 1px solid rgb(244,228,255);
+	padding: 5px 5px 25px 5px;
+	margin: 120px 45px 1px 0px;
+	text-align: center;
+	width: 120px;
+}
+
+#signup .summary_avatar p
+{
+	margin-bottom: 10px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+}
+
+#signup .summary_avatar p span
+{
+	padding: 0px 0px 0px 15px;
+}
+

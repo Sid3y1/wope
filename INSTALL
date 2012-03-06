@@ -1,0 +1,31 @@
+                        ############
+                        #   WOPE   #
+                        ############
+
+## Requirements ##
+
+Wope uses PHP5 and mySQL 5.
+Here is a list of all the required PHP modules :
+	* GD 
+	* XML
+
+
+## Installation process ##
+
+Download the archive, and uncompress it where you want to install the site.
+Fire up your favorite web browser and go on this URL : http://your_domain_name.com/wope/installer
+Follow the instructions of the installer and if nothing goes wrong you should 
+have a working copy of Wope installed.
+
+If the installation process fails, you can bypass the installer and edit the 
+configuration file yourself.
+In your Wope directory, go in the include directory and edit the config_secure.inc file.
+Read the comments on the file, to understand what you have to fill in.
+After that, you will have to run the SQL dump file named wope-dump.sql, located in your wope directory.
+You can't run the dump with phpMyadmin because phpMyadmin does not understand dumps
+with delimiter changes. The only solution you have is to run the dump with mysqldump 
+commande. On a Linux server :
+mysqldump -u your_user -pyour_password your_database_name < dump-wope.sql
+
+
+## Troubleshooting ##

@@ -1,0 +1,660 @@
+/***********************************************
+*                                              *
+*     FEUILLE DE STYLE DE LA PARTIE THREAD     *
+*                                              *
+************************************************/
+
+
+/***   STYLE DES TITRES DE BARRES DE MODULES   ***/
+
+#thread .module.threads .title
+{
+	background: rgb(93,88,162) url(../../images/modules/titles/module-title.png) center repeat-x;
+}
+
+* html #thread .module.threads .title
+{
+	background: url(../../images/modules/titles/module-title_93-88-162.png) top repeat-x;
+}
+
+#thread .module.threads .title h2
+{
+	float: left;
+	margin-left: 15px;
+}
+
+#thread .module.threads.threads .title .mark_as_read
+{
+	color: white;
+	float: right;
+	margin: 3px 5px 0 0;
+	font-size: 0.9em;
+}
+
+#thread .module.threads.threads .title .mark_as_read a:hover
+{
+	color: rgb(180,180,180);
+}
+
+#thread .module.threads .title h2 .goto_next,
+#thread .module.threads .title h2 .goto_prev
+{
+	float: left;
+	display: block;
+	width: 17px;
+	height: 17px;
+	overflow: hidden;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+
+#thread .module.threads .title h2 .goto_next
+{
+	margin-left: 20px;
+	background: url(../../images/parties/forum/forum/goto_next.png) no-repeat;
+}
+
+#thread .module.threads .title h2 .goto_prev
+{
+	margin-right: 20px;
+	background: url(../../images/parties/forum/forum/goto_prev.png) no-repeat;
+}
+
+* html #thread .module.threads .title h2 .goto_next
+{
+  background-image: expression((function(element){
+	  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/forum/forum/goto_next.png', sizingMethod='scale')";
+		  return 'none';
+			  })(this));
+}
+
+* html #thread .module.threads .title h2 .goto_prev
+{
+  background-image: expression((function(element){
+	  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/forum/forum/goto_prev.png', sizingMethod='scale')";
+		  return 'none';
+			  })(this));
+}
+				
+
+
+/***   STYLE DES BOUTONS D'ADMINISTRATION   ***/
+
+#thread .module.threads .content .row1 .thread_admin
+{
+	float: right;
+	font-size: 0.95em;
+  color: rgb(72,112,164);
+	padding: 1px 2px 1px 2px;
+	margin: 1px 2px 0px 0px;
+	font-weight: bold;
+	background: rgb(232,238,245);
+	border: 1px solid rgb(150,170,190);
+}
+
+#thread .module.threads .content .row1 .thread_admin:hover
+{
+	font-weight: bolder;
+	background: rgb(72,112,164);
+	border: 1px solid rgb(150,170,190);
+	color: white;
+}
+				
+/**********************************************************
+*                                                         *
+*        AJOUT BOUTON DE NOUVEAU SUJET (09/10/2006)       *
+*                                                         *
+***********************************************************/
+
+#thread .new_thread
+{
+	float: right;
+	margin: 0px 0px 10px 4px;
+}
+
+#thread .stepBack
+{
+	float: left;
+	margin: 0px 0px 10px 0px;
+}
+
+
+/* Style des tooltips de l'affichage des topics d'un thread (cf. thread.php) *
+ *
+ * @author: Sylv
+ * @date: 20/10/2006 */
+
+
+.tooltips .pseudo_auteur
+{
+	margin: 0px 0px 0px 0px;
+	font-size: 0.98em;
+	font-weight: bold;
+}
+
+.tooltips b
+{
+	font-size: 0.9em;
+	line-height: 0.9em;
+}
+
+.tooltips .avatar_lmessage
+{
+	margin: 5px 0px 0px 0px;
+	height: 75px;
+	width: 75px;
+	display: block;
+	float: left;
+}
+
+.tooltips .date_publication
+{
+	height: 0.8em;
+	font-size: 0.8em;
+	margin: 0px 0px 10px 3px;
+}
+
+.tooltips .details
+{
+	margin: 25px 0px 0px 4px;
+	padding: 1px 1px 1px 1px;
+	float: left;
+}
+
+
+/************************************************************************/
+
+
+/*** STYLE D'UN BLOC SALON ***/
+
+#thread .module.threads .content .thread
+{
+	height: 40px;
+	padding: 2px 2px 2px 4px;
+	margin: 2px 0px 2px 0px;
+}
+
+#thread .module.threads .content .thread.color1
+{
+	background: rgb(238,243,248);
+	border: 1px solid rgb(165,214,255);
+}
+
+#thread .module.threads .content .thread.color2
+{
+	background: rgb(255,246,237);
+	border: 1px solid rgb(255,210,169);
+}
+
+/*** STYLE DES BLOCS DE TITRE ***/
+
+#thread .module.threads .content .thread .thread_title_block
+{
+	width: 500px;
+	margin: 3px 0px 0px 2px;
+}
+
+#thread .module.threads .content .thread  div.thread_title_block a.thread_title
+{
+	font-size: 1.2em;
+}
+
+#thread .module.threads .content .thread .goto
+{
+	margin: 0px 0px 0px 2px;
+	padding: 0px 0px 0px 0px;
+	font-size: 0.9em;
+}
+
+* html #thread .module.threads .content .thread .goto
+{
+	margin: -6px 0px 0px 0px;
+}
+
+/*** STYLE DE LA DESCRIPTION & DES LIENS ***/
+
+#thread .module.threads .content .thread p.thread_description
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 0.95em;
+	font-weight: 400;
+}
+#thread .module.threads .content .thread div.thread_title_block a.thread_title
+{
+	margin: 0px 5px 0px 0px;
+}
+
+#thread .module.threads .content .thread.color1 div.thread_title_block a,
+#thread .module.threads .content .thread.color1 .thread_author
+{
+	color: rgb(88,108,172);
+}
+
+#thread .module.threads .content .thread.color1 p.thread_description
+{
+	color: rgb(107,166,210);
+}
+
+#thread .module.threads .content .thread.color2 div.thread_title_block a,
+#thread .module.threads .content .thread.color2 .thread_author
+{
+	color: rgb(252,133,103);
+}
+
+#thread .module.threads .content .thread.color2 p.thread_description
+{
+	color: rgb(252,179,52);
+}
+
+#thread .module.threads .content .thread .thread_infos
+{
+	margin: 5px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 0.9em;
+	line-height: 1.3em;
+}
+
+#thread .module.threads .content .thread .thread_infos .thread_author
+{
+	font-style: italic;
+	text-decoration: underline;
+}
+
+#thread .module.threads .content .thread.color1 .goto,
+#thread .module.threads .content .thread.color1 .thread_infos span
+{
+	color: rgb(107,166,210);
+}
+
+#thread .module.threads .content .thread.color2 .goto,
+#thread .module.threads .content .thread.color2 .thread_infos span
+{
+	color: rgb(252,179,52);
+}
+
+#thread .module.threads .content .thread .goto a
+{
+	margin: 0px 1px 0px 1px;
+}
+
+html body #thread div.module.threads div.content div.thread div.goto .pages_list a
+{
+	margin: 0px 2px 0px 2px;
+	padding: 0px 0px 0px 0px;
+	background: none;
+	border: none;
+}
+
+html body #thread div.module.threads div.content div.thread div.goto .pages_list
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+html body #thread div.module.threads div.content div.thread div.goto .pages_list a:hover
+{
+	color: black;
+	background: none;
+}
+/*
+#thread .pages_list a
+{
+	color: rgb(88,136,172);
+	background: rgb(239,247,255);
+	border: 1px solid rgb(165,214,255);
+}
+
+#thread .pages_list span.selected_page
+{
+	color: rgb(180,180,180);
+}
+*/
+
+/*** STYLE DU BLOC DE MENU D'ACTIONS DE GAUCHE ***/
+
+#thread .module .content .thread .actions_menu
+{
+	margin: 0px 0px 0px 0px;
+	padding: 1px 4px 1px 1px;
+	width: 21px;
+	height: 38px;
+	overflow: hidden;
+}
+
+#thread .module .content .thread .actions_menu.right
+{
+	margin: 0px 3px 0px 0px;
+	border-right: 1px solid black;
+}
+
+#thread .module .content .thread .actions_menu.right ul
+{
+	padding: 7px 0px 7px 0px;
+	overflow: visible;
+}
+
+#thread .module .content .thread .actions_menu ul
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#thread .module .content .thread .actions_menu ul li
+{
+	list-style-type: none;
+	padding: 0px 0px 0px 0px;
+	margin: 4px 0px 3px 0px;
+}
+
+#thread .module .content .thread .actions_menu.right ul li a.admin_topic
+{
+	cursor: pointer;
+	height: 19px;
+	width: 22px;
+	background: url(../../images/parties/forum/forum/icon-admin.png) no-repeat;
+}
+
+* html #thread .module .content .thread .actions_menu.right ul li a.admin_topic
+{
+background-image: expression((function(element){
+    element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/forum/forum/icon-admin.png', sizingMethod='scale')";
+		return 'none';
+		})(this));
+}						
+
+* html #thread .module .content .thread .actions_menu.right ul li
+{
+	padding: 8px 0px 8px 0px;
+}
+
+#thread .actions_menu ul li a
+{
+	height: 16px;
+	width: 16px;
+	display: block;
+	cursor: default;
+	background: url(../../images/temp/icon.png) no-repeat;
+}
+
+#thread .module .content .thread .actions_menu ul li .nonew_msg,
+#thread .module .content .thread .actions_menu ul li .noview_msg,
+#thread .module .content .thread .actions_menu ul li .new_msg
+{
+	height: 19px;
+	width: 22px;
+}
+
+html body div#thread ul.legend li a.noview_msg,
+html body div#thread ul.legend li a.new_msg,
+html body div#thread ul.legend li a.nonew_msg
+{
+	height: 19px;
+	width: 22px;
+	display: block;
+	margin: 0px 3px 0px 0px;
+}
+
+
+/*** AFFICHAGE DES ICONES DE THREADS SANS STATUT PARTICULIER ***/
+#thread .module .content .thread .actions_menu ul li .nonew_msg,
+.legend li a.nonew_msg
+{
+	background: url(../../images/parties/forum/thread_status/icon-no_new_messages.png) no-repeat;
+}
+
+* html #thread .module .content .thread .actions_menu ul li .nonew_msg,
+* html .legend li a.nonew_msg 
+{
+background-image: expression((function(element){
+    element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/forum/thread_status/icon-no_new_messages.png', sizingMethod='scale')";
+		      return 'none';
+					        })(this));
+									
+}
+
+#thread .module .content .thread .actions_menu ul li .noview_msg,
+.legend li a.noview_msg
+{
+ 	background: url(../../images/parties/forum/thread_status/icon-never_visited.png) no-repeat;
+}
+
+* html #thread .module .content .thread .actions_menu ul li .noview_msg,
+* html .legend li a.noview_msg
+{
+background-image: expression((function(element){
+    element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/forum/thread_status/icon-never_visited.png', sizingMethod='scale')";
+		      return 'none';
+					        })(this));
+									
+}
+
+#thread .module .content .thread .actions_menu ul li .new_msg,
+.legend li a.new_msg
+{
+  background: url(../../images/parties/forum/thread_status/icon-new_messages.png) no-repeat;
+}
+
+* html #thread .module .content .thread .actions_menu ul li .new_msg,
+* html .legend li a.new_msg
+{
+background-image: expression((function(element){
+    element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/forum/thread_status/icon-new_messages.png', sizingMethod='scale')";
+		      return 'none';
+					        })(this));
+									
+}
+
+
+/*** AFFICHAGE DES ICONES DE STATUTS PARTICULIERS ***/
+
+#thread .module .content .thread.hidden .actions_menu.left ul li a
+{
+	width: 21px;
+	height: 15px;
+	background: url('../../images/parties/forum/forum/icon-hidden.png');
+}
+
+#thread .module .content .thread.locked .actions_menu.left ul li a
+{
+	width: 16px;
+	height: 22px;
+	background: url('../../images/parties/forum/forum/icon-locked.png');
+}
+
+#thread .module .content .thread.sticky.locked .actions_menu.left ul li a.nonew_msg,
+#thread .module .content .thread.sticky.locked .actions_menu.left ul li a.new_msg,
+#thread .module .content .thread.sticky.locked .actions_menu.left ul li a.noview_msg
+{
+	width: 24px;
+	height: 27px;
+	background: url('../../images/parties/forum/forum/icon-sticky_locked.png');
+}
+
+#thread .module .content .thread.sticky .actions_menu.left ul li a.nonew_msg
+{
+	width: 24px;
+	height: 27px;
+	background: url('../../images/parties/forum/forum/icon-sticky_nonew.png');
+}
+
+#thread .module .content .thread.sticky .actions_menu.left ul li a.new_msg
+{
+	width: 24px;
+	height: 27px;
+	background: url('../../images/parties/forum/forum/icon-sticky_new.png');
+}
+
+#thread .module .content .thread.sticky .actions_menu.left ul li a.noview_msg
+{
+	width: 24px;
+	height: 27px;
+	background: url('../../images/parties/forum/forum/icon-sticky_never_visited.png');
+}
+
+/*** IE ***/
+
+* html body #thread .module .content .thread.hidden .actions_menu.left ul li a.nonew_msg,
+* html body #thread .module .content .thread.hidden .actions_menu.left ul li a.new_msg,
+* html body #thread .module .content .thread.hidden .actions_menu.left ul li a.noview_msg
+{
+  width: 21px;
+	height: 15px;
+	background-image: expression((function(element){
+  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/forum/forum/icon-hidden.png', sizingMethod='scale')";
+	return 'none';
+	})(this));															
+}
+
+* html body #thread .module .content .thread.locked .actions_menu.left ul li a.nonew_msg,
+* html body #thread .module .content .thread.locked .actions_menu.left ul li a.new_msg,
+* html body #thread .module .content .thread.locked .actions_menu.left ul li a.noview_msg
+{
+	width: 16px;
+  height: 22px;
+	background-image: expression((function(element){
+  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/forum/forum/icon-locked.png', sizingMethod='scale')";
+	return 'none';
+	})(this));															
+}
+
+* html body #thread .module .content .thread.sticky .actions_menu.left ul li a.nonew_msg
+{
+  width: 24px;
+	height: 27px;
+	background-image: expression((function(element){
+  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/forum/forum/icon-sticky_nonew.png', sizingMethod='scale')";
+	return 'none';
+	})(this));															
+}
+
+* html body #thread .module .content .thread.sticky .actions_menu.left ul li a.new_msg
+{
+	width: 24px;
+	height: 27px;
+	background-image: expression((function(element){
+  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/forum/forum/icon-sticky_new.png', sizingMethod='scale')";
+	return 'none';
+	})(this));										
+}
+
+* html body #thread .module .content .thread.sticky .actions_menu.left ul li a.noview_msg
+{
+  width: 24px;
+	height: 27px;
+	background-image: expression((function(element){
+  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/forum/forum/icon-sticky_never_visited.png', sizingMethod='scale')";
+	return 'none';
+	})(this));										
+}
+
+* html body #thread .module .content .thread.sticky .actions_menu.left ul li a.locked
+{
+  width: 24px;
+	height: 27px;
+	background-image: expression((function(element){
+  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/forum/forum/icon-sticky_locked.png', sizingMethod='scale')";
+	return 'none';
+	})(this));										
+}
+
+/*** ***/
+
+
+
+/*** STYLE DES BLOCS D'INFORMATION DE DROITE ***/
+
+#thread .module .content .thread .thread_msg_nb,
+#thread .module .content .thread .thread_last_msg
+{
+	margin: 1px 1px 1px 1px;
+	font-size: 12px;
+	line-height: 42px;
+	text-align: center;
+	height: 38px;
+	width: 60px;
+	overflow: hidden;
+	border: none;
+}
+
+#thread .module .content .thread .thread_last_msg
+{
+	height: 38px;
+	width: 110px;
+	font-size: 12px;
+	line-height: 21px;
+}
+
+#thread .module .content .thread .thread_last_msg p
+{
+	height: 21px;
+	overflow: hidden;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#thread .module .content .thread .thread_last_msg p span
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 4px 0px 4px;
+}
+
+#thread .module .content .thread .thread_last_msg p.last_msg_author_block
+{
+	margin: -2px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#thread .module .content .thread .last_msg_author
+{
+	text-decoration: underline;
+}
+				
+#thread .module .content .thread.color1 .thread_msg_nb,
+#thread .module .content .thread.color1 .thread_nb,
+#thread .module .content .thread.color1 .thread_last_msg
+{
+	color: rgb(88,108,172);
+  background: rgb(246,247,248);
+}
+
+#thread .module .content .thread.color2 .thread_msg_nb,
+#thread .module .content .thread.color2 .thread_nb,
+#thread .module .content .thread.color2 .thread_last_msg
+{
+  color: rgb(252,133,103);
+  background: rgb(255,249,242);
+}
+
+#thread .module .content .thread.color1 .last_msg_author
+{
+	color: rgb(95,170,230);
+}
+
+#thread .module .content .thread.color2 .last_msg_author
+{
+	color: rgb(253,163,140);
+}
+
+.legend
+{
+  margin: 0 0 10px 0;
+  padding: 0.4em;
+  font-size: 0.8em;
+  list-style-position: inside;
+  list-style-type: none;
+  background-color: rgb(245,245,245);
+  border: 1px solid rgb(155,152,195);
+  float: left;
+  width: 763px;
+}
+
+.legend li
+{
+	overflow: hidden;
+  display: inline;
+  margin: 1px 35px 1px 45px;
+  padding: 2px 0 2px 0px;
+  background: transparent none left center no-repeat;
+}

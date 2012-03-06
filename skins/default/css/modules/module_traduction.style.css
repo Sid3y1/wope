@@ -1,0 +1,14 @@
+.traduction .title .extraDiv1 span
+{
+  margin-top: 1px;
+  background-image: url(../../images/modules/logos/script_go.png);
+}
+
+* html .traduction .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/script_go.png', sizingMethod='scale')";
+   return 'none';
+   })(this));
+}
+											

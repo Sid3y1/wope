@@ -1,0 +1,63 @@
+/**********************************************
+*                                             *
+*    FEUILLE DE STYLE DU MODULE PENSE BETE    *
+*                                             *
+***********************************************/
+
+.pense_bete .title .extraDiv1 span
+{
+	background-image: url(../../images/modules/logos/module-pensebete.png);
+}
+
+* html .pense_bete .title .extraDiv1 span
+{
+	background-image: expression((function(element){
+		element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/module-pensebete.png', sizingMethod='scale')";
+		return 'none';
+		})(this));
+}
+
+.pense_bete .content .menu_gestion_taches
+{
+	float: right;
+	padding: 2px 4px 3px 4px;
+	margin: 0px 0px 0px 0px;
+	font-weight: bold;
+  color: rgb(98,98,132);
+	background: rgb(244,245,255);
+	border: 1px solid rgb(244,228,255);
+}
+
+.pense_bete .content .menu_gestion_taches:hover
+{
+	background: rgb(224,228,255);
+	border: 1px solid rgb(200,207,255);
+}
+
+.pense_bete .content ul
+{
+	border: 1px solid rgb(230,230,240);
+	background: rgb(245,245,250);
+	list-style-type: none;
+	margin: 5px 0 8px 0;
+	padding: 5px 5px 5px 5px;
+	position: relative;
+}
+
+.pense_bete .content ul li
+{
+	font-weight: bold;
+	font-style: normal;
+}
+
+.pense_bete .content ul li .urgence_tache
+{
+	font-weight: bold;
+	font-style: normal;
+}
+
+.pense_bete .content ul li .titre_tache
+{
+	font-weight: normal;
+	font-style: italic;
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TROMBI SYSTEM "trombi.dtd">
+<TROMBI>
+	<!-- Champs obligatoire pour le trombiCompilable :
+		Pseudo : nickname
+		Nom : lastname
+		Prénom : firstname
+		Poste : position
+		Email : email
+		Date de naissance : birthdate
+		Numéro de télephone : phone
+		Signal social : social_status
+		Adresse :
+			Adresse : address
+			Complement d'adresse : address2
+			Code postal : postal_code
+			Ville : city
+			Pays : country
+	 -->
+
+	<!-- Infos générales -->
+	<GROUPFIELD text="Informations générales">
+		<TEXT id="nickname" inFastSearch="true" text="Pseudonyme :">
+			<REGEXPTEST error="Ce champ doit être rempli !" test=".+"/>
+		</TEXT>
+		<TEXT id="lastname" inFastSearch="true" text="Nom :">
+			<REGEXPTEST error="Ce champ doit être rempli" test=".+"/>
+		</TEXT>
+		<TEXT id="firstname" inFastSearch="true" text="Prénom :">
+			<REGEXPTEST error="Ce champ doit être rempli" test=".+"/>
+		</TEXT>
+		<DATE id="birthdate" selectWith="selects" inFastSearch="true" text="Date de naissance :" extraText="jj/mm/aaaa"/>
+		<TEXT id="signal_social" maxSize="50" searchable="false" text="Signal social :"/>
+		<PHOTO id="photo" imageSize="75x75" text="Photo :"/>
+		<TEXT id="freespace" maxSize="400" nbLigne="9" searchable="false" text="Espace libre :"/>
+	</GROUPFIELD>
+
+	
+	<GROUPFIELD text="Coordonnées personnelles">
+		<TEXT id="address" maxSize="60" text="Rue :"/>
+		<TEXT id="address2" maxSize="60" text="Complément adresse (appartement, étage...) :" searchable="false"/>
+		<TEXT id="postal_code" maxSize="6" text="Code Postal :">
+			<REGEXPTEST error="Code Postal invalide" test="([0-9]+)?"/>
+		</TEXT>
+		<TEXT id="city" maxSize="60" text="Ville :"/>
+		<TEXT id="phone" inFastSearch="true" maxSize="15" text="Téléphone :">
+			<REGEXPTEST error="Telephone invalide" test="([\+0-9]+)?"/>
+		</TEXT>
+		<TEXT id="fax" inFastSearch="false" maxSize="15" text="Fax :">
+			<REGEXPTEST error="Telephone invalide" test="([\+0-9]+)?"/>
+		</TEXT>
+		<TEXT id="email" inFastSearch="true" maxSize="150" text="Courriel :">
+			<REGEXPTEST error="Email invalide" test="([a-zA-Z0-9_\-\.]+@([a-zA-Z0-9_\-]+\.)+[a-zA-Z]+)?"/>
+		</TEXT>
+		<TEXT id="email2" inFastSearch="true" maxSize="150" text="Courriel secondaire :">
+			<REGEXPTEST error="Email invalide" test="([a-zA-Z0-9_\-\.]+@([a-zA-Z0-9_\-]+\.)+[a-zA-Z]+)?"/>
+		</TEXT>
+		<TEXT id="site" inFastSearch="true" searchable="false" text="Site Web :"/>
+		</GROUPFIELD>
+
+	<!-- Fin des champs obligatoire -->
+	<GROUPFIELD text="Entreprise">
+		<TEXT id="company_name" inFastSearch="true" text="Nom :"/>
+		<PHOTO id="logo" imageSize="30x30" text="Logo :"/>
+		<TEXT id="sector" text="Secteur d'activité :"/>
+		<TEXT id="company_products" maxSize="255" nbLigne="5" text="Produits ou services :"/>
+		<TEXT id="position" maxSize="60" text="Mon poste :"/>
+		<TEXT id="company_address" maxSize="60" text="Adresse société :"/>
+		<TEXT id="company_address2" maxSize="60" text="Complément adresse (appartement, étage...) :" searchable="false"/>
+		<TEXT id="company_postal_code" maxSize="6" text="Code Postal :">
+			<REGEXPTEST error="Code Postal invalide" test="([0-9]+)?"/>
+		</TEXT>
+		<TEXT id="company_city" maxSize="60" text="Ville :"/>
+		<TEXT id="company_country" maxSize="30" text="Pays :"/>
+
+		<TEXT id="company_phone" maxSize="60" text="Téléphone professionnel :">
+			<REGEXPTEST error="Telephone invalide" test="([\+0-9]+)?"/>
+		</TEXT>
+		<TEXT id="company_email" maxSize="60" text="Courriel :">
+			<REGEXPTEST error="Email invalide" test="([a-zA-Z0-9_\-\.]+@([a-zA-Z0-9_\-]+\.)+[a-zA-Z]+)?"/>
+		</TEXT>
+		<TEXT id="company_website" maxSize="60" text="Site Web :"/>
+		<TEXT id="company_fax" maxSize="60" text="Fax :">
+			<REGEXPTEST error="Telephone invalide" test="([\+0-9]+)?"/>
+		</TEXT>
+		<TEXT id="company_freespace" maxSize="400" nbLigne="9" searchable="false" text="Espace libre :"/>
+	</GROUPFIELD>
+	<GROUPFIELD text="Mon parcours">
+		<TEXT id="studies" maxSize="400" nbLigne="9" searchable="false" text="Etudes :"/>
+		<TEXT id="professional_history" maxSize="600" nbLigne="12" searchable="false" text="Expériences professionnelles :"/>
+		<TEXT id="languages" maxSize="400" nbLigne="9" searchable="false" text="Langues et informatique :"/>
+		<TEXT id="hobbies" maxSize="400" nbLigne="9" searchable="false" text="Mes passions :"/>
+		<TEXT id="history_freespace" maxSize="400" nbLigne="9" searchable="false" text="Espace libre :"/>
+	</GROUPFIELD>
+<!--	<GROUPFIELD text="Autres Informations">
+		<TEXT id="msn" maxSize="60" text="Compte msn"/>
+		<TEXT id="jabber" maxSize="60" text="Compte jabber"/>
+		<TEXT id="site_web_perso" maxSize="60" text="Site Web Perso"/>
+		<TEXT id="passion" maxSize="550" nbLigne="9" text="Passion/Hobbies"/>
+	</GROUPFIELD>-->
+	
+	<!-- Les champs ci dessous ne sont là qu'a titre de test -->
+	<!--<GROUPFIELD text="Toto">
+		<CHOICE id="testChoice" multipleChoice="false" text="Test de choix">
+			<OPTION id="value1" value="Valeur 1"/>
+			<OPTION id="value2" value="Valeur 2"/>
+			<OPTION id="value3" value="Valeur 3"/>
+		</CHOICE>
+		 The multichoice is not working right now (pb d'ordre de requête)
+		<CHOICE id="testMultiChoice" multipleChoice="true" text="Test de choix multiple">
+			<OPTION id="value1" value="Valeur 1"/>
+			<OPTION id="value2" value="Valeur 2"/>
+			<OPTION id="value3" value="Valeur 3"/>
+		</CHOICE> 
+	</GROUPFIELD>-->
+</TROMBI>

@@ -1,0 +1,9 @@
+#mail_manager .mbox_purpose a.delete
+{
+  float: left;
+}
+#mail_manager .mbox_purpose p span
+{
+  display: block;
+  margin: 0 0 0 22px;
+}

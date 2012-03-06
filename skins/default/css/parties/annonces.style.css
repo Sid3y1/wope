@@ -1,0 +1,56 @@
+/******************
+AJOUT SYLV ANNONCES
+*******************/
+
+.page .newsTable_annonces tbody tr th table tbody tr td
+{
+	font-weight: bolder;
+	color: indigo; 
+	font-style: normal;
+}
+
+.page .newsTable_annonces
+{
+	border: 1px solid rgb(198,195,228);
+	background: rgb(222,220,240);
+	margin-top: 15px;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+.page .newsTable_annonces tbody tr th table tbody tr .titre_annonce
+{
+	font-size: 1.3em;
+}
+
+.page .newsTable_annonces tbody tr .contenu_annonce
+{
+	padding: 5px;
+}
+
+.page .newsTable_annonces tbody tr th table tbody tr td
+{
+	text-align: left;
+}
+
+.page .newsTable_annonces tbody tr th table tbody tr td li
+{
+	center: left;
+  text-align: left;
+	list-style-type: none;
+}
+
+.page .newsTable_annonces tbody tr .an_valide
+{
+	background: rgb(199,196,223);
+}
+
+.page .newsTable_annonces tbody tr .anpa_valide
+{
+	background: black;
+}
+
+.page .newsTable_annonces tbody tr .theme_annonce
+{
+	background: rgb(199,196,223);
+}

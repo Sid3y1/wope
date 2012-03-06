@@ -1,0 +1,16 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: auto;
+}
+
+div.chat_text {
+	position:absolute;
+	right:2px;
+	bottom:2px;
+	width:200px;
+}
+

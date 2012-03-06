@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+
+.stepContent{ 
+
+}
+
+.leftColumn{
+	float: left;
+	width: 150px;
+}
+
+.rightColumn{
+  margin: 0px 0px 0px 150px; 
+}
+
+.buttonBlock{
+
+}
+
+#nextButton{
+  float: right;
+}
+
+#prevButton{
+  float: left;
+}
+
+.green {
+	background-color: green;
+}
+
+.red {
+	background-color: red;
+}

@@ -1,0 +1,257 @@
+/***************************************************
+*                                                  *
+*         FEUILLE DE STYLE DU MODULE NEWS          * 
+*                                                  *
+****************************************************/
+
+.news
+{
+  margin: 0px auto 10px auto;
+  border: 2px solid rgb(161,231,173);
+}
+
+.news .module_border
+{
+  border: 1px solid rgb(70,139,82);
+  background-color: white;
+}
+
+.news .title
+{
+  border-bottom: 1px solid rgb(70,139,82);
+  background: url(../../images/modules/titles/entete_png_verte.png) repeat-x center;
+}
+
+* html #index .news .title
+{
+  background: url(../../images/modules/titles/entete_png_verte.png) repeat-x top;
+}
+
+*+html #index .news .title
+{
+  background: url(../../images/modules/titles/entete_png_verte.png) repeat-x top;
+}
+
+.news li {
+  list-style-type: none;
+}
+
+.news .title .extraDiv1 span
+{
+  background-image: url(../../images/modules/logos/newspaper.png);
+}
+
+* html .news .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+      element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/newspaper.png', sizingMethod='scale')";
+      return 'none';
+      })(this));
+}
+
+
+/********************************
+*                               *
+*     AJOUTS CSS 18/09/2006     *
+*                               *
+*********************************/
+
+.news .centrage, 
+.news .centrage .panel_h,
+.news .centrage .panel_h a
+{
+	position: static;
+	z-index: 1;
+}
+
+* html .news .centrage, 
+* html .news .centrage .panel_h,
+* html .news .centrage .panel_h a
+{
+	position: relative;
+	z-index: 1;
+}
+
+.news .centrage
+{
+	margin: 5px 0 15px 0px;
+}
+
+.news .panel_h
+{
+	color: rgb(128,171,103);
+	border-bottom: 2px solid rgb(128,171,103);
+}
+
+.news .panel_h a
+{
+	font-size: 0.9em;
+	color: black;
+	font-weight: bold;
+}
+
+.news .panel_h a:hover
+{
+	color: rgb(128,171,103);
+}
+
+.news .content .menu_module_news
+{
+	margin: 10px 0 0 25px;
+}
+
+.news .content .menu_module_news .new
+{
+	margin: 5px 0 5px 0;
+}
+
+.news .content .menu_module_news li a em
+{
+	color: rgb(110,149,55);
+	font-style: italic;
+}
+
+.news .content .admin_link
+{
+	float: left;
+	margin: 10px 0px 0px 0px;
+}
+
+
+
+
+/***********************************
+*                                  *
+*      AJOUT SYLV 19/10/2006       *
+*                                  *
+************************************/
+
+/* Uniformisation avec le module forum :: Blocs de base */
+
+.news .l1
+{
+	background: rgb(220,237,212);
+}
+
+.news .l2
+{
+	background: rgb(180,219,164);
+}
+
+.news .content .date_publication
+{
+	font-size: 0.95em;
+	margin-right: 10px;
+	font-weight: normal;
+}
+
+.news .content .liste_news
+{
+	width: 420px;
+	margin: 2px 0px 2px 35px;
+	padding: 1px 0px 1px 10px;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.news .content .liste_news a:hover
+{
+	color: rgb(100,141,82);
+}
+
+
+/* Style des toolTips de News */
+
+html .tooltips
+{
+	width: 300px;
+	padding: 0px 4px 4px 4px;
+}
+
+.tooltips .details_block
+{
+	float: right;
+	width: 240px;
+	padding: 0px 0px 0px 0px;
+	margin: -20px 0px 0px 0px;
+}
+
+* html .tooltips .details_block
+{
+	margin: -20px 0px 8px 0px;
+}
+
+.tooltips .details_block .sujet_block
+{
+	margin: -10px 0px 0px 0px;
+	padding: 0px 3px 0px 0px;
+}
+
+.tooltips .details_block .sujet_news
+{
+	line-height: 1.2em;
+	font-size: 1.1em;
+	font-weight: bold
+  color: rgb(72,112,164);
+	padding: 0px 3px 0px 0px;
+	border-bottom: 2px solid rgb(190,204,231);
+}
+
+* html .tooltips .details_block .sujet_news
+{
+	line-height: 1.4em;
+}
+
+.tooltips .details_block .sujet_news span
+{
+	font-size: 1.2em;
+  color: rgb(170,183,225);
+}
+
+.tooltips .details_block .source
+{
+	margin: -10px 0px 0px 0px;
+	line-height: 0.8em;
+	font-size: 0.8em;
+}
+
+* html .tooltips .details_block .source
+{
+	margin: -15px 0px 0px 0px;
+}
+
+.tooltips .details_block .source span
+{
+	font-weight: bold;
+}
+
+.tooltips .le_texte
+{
+	clear: both;
+	text-indent: 10px;
+	padding: 2px 2px 2px 2px;
+	margin: -40px 0px 0px 0px;
+	font-size: 0.9em;
+	text-align: justify;
+}
+
+.tooltips .details_block .date_publication
+{
+	margin: -15px 0px 0px 0px;
+}
+
+.tooltips div.img_block
+{
+	text-align: center;
+	overflow: hidden;
+	width: 52px;
+	height: 60px;
+	padding: 4px 1px 4px 1px;
+	margin: 0px 3px 0px 0px;
+	float: left;
+}
+
+.tooltips div.img_block img
+{
+  margin: -15px 0px 0px 0px;
+}	

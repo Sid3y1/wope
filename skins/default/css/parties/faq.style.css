@@ -1,0 +1,48 @@
+/******************************************************************
+*                                                                 *
+*      FEUILLE DE STYLE DE LA F.A.Q. ~ AJOUT SYLV 02/11/2006      *
+*                                                                 *
+*******************************************************************/
+
+
+#faq .faq_element .faq_question
+{
+	margin: 5px 0px 5px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#faq .faq_element .faq_question a
+{
+	font-weight: bold;
+	color: rgb(72,69,140);
+	border-bottom: 1px solid rgb(126,122,183);
+}
+
+#faq .faq_element .faq_question a span
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: rgb(152,149,199);
+}
+
+#faq .faq_element .faq_question a:hover
+{
+	color: rgb(126,122,183);
+}
+
+
+
+#faq .faq_element .faq_answer
+{
+	margin: 8px 0px 5px 10px;
+	padding: 1px 1px 1px 1px;
+	text-align: justify;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: normal;
+}
+
+#faq .faq_element .faq_answer div a
+{
+	margin: 5px 0px 0px 0px;
+}

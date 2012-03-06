@@ -1,0 +1,180 @@
+
+
+
+/* ----------------------------------------------------------------------
+
+  Déclaration des variables globales déclarables dans la feuilles javascript
+  
+---------------------------------------------------------------------- */
+
+/* Detection du type de navigateur base sur Ie ou les autres */
+var navigateur = (document.getElementById && !document.all) ? 'w3c' : 'ie_based';
+var img_transparence = (navigateur != 'ie_based') ? '.png' : '.gif';
+
+/* Variables de position */
+var menu_out = 1;
+var where = 0;
+
+/* Variables de taille d'image pour l'annimation du menu */
+var default_image_width = 60;
+var default_image_height = 60;
+var max_image_width = 120;
+var max_image_height = 120;
+var diff_max_def_width = max_image_width - default_image_width;
+var diff_max_def_height = max_image_height - default_image_height;
+
+/* Varibles de valeurs de marges */
+var default_margin_left_right = 5;
+var default_image_margin = diff_max_def_height + 'px 0 0 0';
+
+/* Tableau des position x & y du curseur sur le document XHTML */
+var cur_pos = new Array();
+cur_pos['x'] = 0;
+cur_pos['y'] = 0;
+
+/* Autres variables */
+var window_width;
+
+
+
+/* ----------------------------------------------------------------------
+
+  Déclaration des fonctions utilisee dans le DHTML
+
+---------------------------------------------------------------------- */
+
+/* Fonction appelée à chaque mouvement de souris */
+function at_mousemove(E)
+{
+  x = (navigateur == 'w3c') ? E.pageX : event.x+document.body.scrollLeft;
+  y = (navigateur == 'w3c') ? E.pageY : event.y+document.body.scrollTop;
+  cur_pos['x'] = x;
+  cur_pos['y'] = y;
+  anim_menu();
+}
+document.onmousemove = at_mousemove;
+
+/* Fonction appelee au chargement et à la modification de la taille de la fenetre pour en connaître la taille */
+function window_size()
+{
+  window_width = document.getElementsByTagName('html')[0].offsetWidth;
+}
+window.onload = window_size;
+window.onresize = window_size;
+
+/* Fonction qui appelle l'animation du menu dès que l'on est au dessus du menu */
+function anim_menu()
+{
+  if(where != 0)
+    zoom_image(where);
+}
+
+/* Fonction permetant de positionner le menu au centre de l'entete de la page */
+function centrage_menu()
+{
+  id_menu_liste.style.margin = - id_menu_liste.offsetHeight + 'px 0 0 ' + (id_menu_liste.parentNode.parentNode.offsetWidth /2 - id_menu_liste.offsetWidth /2)  + 'px';
+}
+
+/* Fonction */
+function start_zoom_image()
+{
+  
+}
+
+/* Fonction qui modifie la taille de chaque liens du menu de l'entête en focntion de la position du curseur */
+function zoom_image(menu_number)
+{
+  var image_width_addition = 0;
+  for(var j = 1; j < menu_number; j++)
+  {
+    image_width_addition += document.getElementById('menu' + j).width;
+  }
+  var axe_zero = (window_width - id_menu_liste.parentNode.parentNode.offsetWidth + id_menu_liste.parentNode.parentNode.offsetWidth - id_menu_liste.offsetWidth + max_image_width) /2 + (image_width_addition);
+  var cur_pos_image = (cur_pos['x'] - axe_zero) / (max_image_width /2);
+  for(var j = 1; j <= nb_li; j++)
+  {
+    document.getElementById('menu' + j).width = default_image_width;
+    document.getElementById('menu' + j).height = default_image_height;
+    document.getElementById('menu' + j).src = path + images_menus[j];
+  }
+    
+  var menu_number_before3 = menu_number - 3;
+  if(menu_number_before3 >= 1)
+  {
+    var elmt_before3 = document.getElementById('menu' + menu_number_before3);
+    elmt_before3.width = default_image_width + 0.07 * diff_max_def_width - 0.07 * diff_max_def_width * cur_pos_image;
+    elmt_before3.height = default_image_height + 0.07 * diff_max_def_height - 0.07 * diff_max_def_height * cur_pos_image;
+    elmt_before3.src = path + 'big_' + images_menus[menu_number_before3];
+  }
+  
+  var menu_number_before2 = menu_number - 2;
+  if(menu_number_before2 >= 1)
+  {
+    var elmt_before2 = document.getElementById('menu' + menu_number_before2);
+    elmt_before2.width = default_image_width + 0.28 * diff_max_def_width - 0.14 * diff_max_def_width * cur_pos_image;
+    elmt_before2.height = default_image_height + 0.28 * diff_max_def_height - 0.14 * diff_max_def_height * cur_pos_image;
+    elmt_before2.src = path + 'big_' + images_menus[menu_number_before2];
+  }
+  
+  
+  var menu_number_before1 = menu_number - 1;
+  if(menu_number_before1 >= 1)
+  {
+    var elmt_before1 = document.getElementById('menu' + menu_number_before1);
+    elmt_before1.width = default_image_width + 0.71 * diff_max_def_width - 0.29 * diff_max_def_width * cur_pos_image;
+    elmt_before1.height = default_image_height + 0.71 * diff_max_def_height - 0.29 * diff_max_def_height * cur_pos_image;
+    elmt_before1.src = path + 'big_' + images_menus[menu_number_before1];
+  }
+    
+  var elmt = document.getElementById('menu' + menu_number);
+  elmt.width = default_image_width + diff_max_def_width;
+  elmt.height = default_image_height + diff_max_def_height;
+  elmt.src = path + 'big_' + images_menus[menu_number];
+  
+  var menu_number_after1 = menu_number + 1;
+  if(menu_number_after1 <= nb_li)
+  {
+    var elmt_after1 = document.getElementById('menu' + menu_number_after1);
+    elmt_after1.width = default_image_width + 0.71 * diff_max_def_width + 0.29 * diff_max_def_width * cur_pos_image;
+    elmt_after1.height = default_image_height + 0.71 * diff_max_def_height + 0.29 * diff_max_def_height * cur_pos_image;
+    elmt_after1.src = path + 'big_' + images_menus[menu_number_after1];
+  }
+  
+  var menu_number_after2 = menu_number + 2;
+  if(menu_number_after2 <= nb_li)
+  {
+    var elmt_after2 = document.getElementById('menu' + menu_number_after2);
+    elmt_after2.width = default_image_width + 0.28 * diff_max_def_width + 0.14 * diff_max_def_width * cur_pos_image;
+    elmt_after2.height = default_image_height + 0.28 * diff_max_def_height + 0.14 * diff_max_def_height * cur_pos_image;
+    elmt_after2.src = path + 'big_' + images_menus[menu_number_after2];
+  }
+  
+  var menu_number_after3 = menu_number + 3;
+  if(menu_number_after3 <= nb_li)
+  {
+    var elmt_after3 = document.getElementById('menu' + menu_number_after3);
+    elmt_after3.width = default_image_width + 0.07 * diff_max_def_width + 0.07 * diff_max_def_width * cur_pos_image;
+    elmt_after3.height = default_image_height + 0.07 * diff_max_def_height + 0.07 * diff_max_def_height * cur_pos_image;
+    elmt_after3.src = path + 'big_' + images_menus[menu_number_after3];
+  }
+  for(var j = 1; j <= nb_li; j++)
+  {
+    document.getElementById('menu' + j).style.margin = elmt.height - document.getElementById('menu' + j).height + 'px 0 0 0';
+  }
+  centrage_menu();
+}
+
+/* Fonction pour remettre dans l'état non anime */
+function reset_menu()
+{
+  if(menu_out == 1){
+    for(var j = 1; j <= nb_li; j++)
+    {
+      document.getElementById('menu' + j).width = default_image_width;
+      document.getElementById('menu' + j).height = default_image_height;
+      document.getElementById('menu' + j).style.margin = default_image_margin;
+      document.getElementById('menu' + j).src = path + images_menus[j];
+    }
+  centrage_menu();
+  }
+}

@@ -1,0 +1,109 @@
+/***********************************************************************
+*                                                                      *
+*      FEUILLE DE STYLE DU MODULE SOMMAIRE ~ AJOUT SYL 26/01/2007      *
+*                                                                      *
+************************************************************************/
+
+
+
+/***   STYLE DU MODULE EN LUI-MÊME   ***/
+
+.sommaire .title .extraDiv1 span
+{
+  margin-top: 1px;	
+  background-image: url(../../images/modules/logos/application_view_list.png);
+}
+
+* html .sommaire .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/application_view_list.png', sizingMethod='scale')";
+  return 'none';
+  })(this));
+}
+/*
+html body #index .column0 .sommaire .title h2
+{
+	margin-left: 40px;
+}
+
+* html body #index .column0 .sommaire .title h2
+{
+	margin-left: 20px;
+}
+
+*+html body #index .column0 .sommaire .title h2
+{
+	margin-left: 5px;
+}
+*/
+.sommaire
+{
+  color: rgb(66, 63, 148);
+}
+
+
+
+/***   STYLE DU CONTENU DU MODULE   ***/
+
+
+.sommaire h3,
+.sommaire h4
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.sommaire h3 a,
+.sommaire h4
+{
+	color: rgb(78,73,153); 
+}
+
+.sommaire h3
+{
+	margin: 10px 0px 3px 0px;
+	line-height: 1.2em;
+	font-size: 1.2em;
+	font-weight: normal;
+	color: rgb(78,73,153);
+}
+
+.sommaire h4
+{
+	margin: 0px 0px 6px 15px;
+	line-height: 1em;
+	font-size: 1em;
+	font-weight: bold;
+	color: rgb(50,50,50);
+}
+
+.sommaire h4 a:hover,
+.sommaire .titleC a:hover
+{
+	color: rgb(78,73,153);
+}
+
+.sommaire h3 a:hover
+{
+	color: rgb(57,53,112);
+}
+
+.sommaire ul
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	list-style-type: none;
+}
+
+.sommaire .list_block
+{
+	margin: -8px 0px 20px 4px;	
+}
+
+.sommaire .titleC
+{
+	line-height: 1em;
+	font-size: 1em;
+	margin: 0px 0px 6px 24px;
+	color: rgb(100,100,100);
+}

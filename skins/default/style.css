@@ -1,0 +1,2386 @@
+/**
+  *   Copyright : (C) 2007 Wope
+  *   License : GNU GPL
+  *   Contact : http://www.wope-project.org
+  *
+  *   This program is free software; you can redistribute it and/or modify
+  *   it under the terms of the GNU General Public License as published by
+  *   the Free Software Foundation; either version 2 of the License, or
+  *   (at your option) any later version.
+  *
+  *   This program is distributed in the hope that it will be useful,
+  *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+  *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  *   GNU General Public License for more details.
+  *
+  *   You should have received a copy of the GNU General Public License
+  *   along with this program; if not, write to the Free Software
+  *   Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+  *   MA  02111-1307  USA
+  *
+  */
+
+/**
+ * I Page
+ */
+ 
+  /**
+   * I.I Balises BODY + HTML
+   */
+
+  html, body
+  {
+    margin: 0; /* annuler les marges et padding sur les éléments HTML et BODY */
+    padding: 0;
+  }
+
+  body /* Définition de la taille et de la police d'écriture du document */
+  {
+    font-size: 0.8em;
+    font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+    background: url('images/common/fond.png');
+    cursor: default;
+  }
+  
+  /**
+   * I.II Corps de la page
+   */
+  .page
+  {
+    width: 774px;
+    margin: 0 auto;
+  }
+  /* Fin I.II */
+  
+    /**
+     * I.II.I Entête + Menu principal
+     */
+    .page_header
+    {
+      margin: -2px 0px 0px 0px;
+      padding: 0px 0px 6px 0px;
+      background: url(./images/header.png) top center no-repeat;
+    }
+
+    * html .page_header
+    {
+      margin: 0px 0px 0px 0px;
+    }
+
+    *+html .page_header
+    {
+      margin: 0px 0px 0px 0px;
+    }
+
+    .page_header p,
+    .page_header h1
+    {
+      display: none;
+    }
+    /* Lien vers la page d'accueil dans l'entête de la page */
+    .page_header .home
+    {
+      height: 100px;
+      width: 230px;
+      margin: 0px 0px 0px 80px;
+      display: block;
+    }
+    .page_header .contact
+    {
+      display: block;
+      position: absolute;
+      margin: -22px 0 0 570px;
+      color: rgb(255, 255, 255);
+      font-variant: small-caps;
+      text-transform: lowercase;
+      font-weight: 900;
+    }
+    * html .page_header .contact
+    {
+      margin: -30px 0 0 0;
+      left: -110px;
+      position: relative;
+      float: right;
+    }
+    .page_header .contact:before
+    {
+      content: ">>";
+      margin-right: 0.5em;
+    }
+    
+    /* Fin I.II.I */
+    
+    /**
+     * I.II.II Fil d'ariane
+     */
+    
+    .ariane_wire
+    {
+      margin: 0px 0px 5px 0px;
+      padding: 3px 0px 3px 0px;
+    	list-style: none;
+			font-size: 0.9em;
+			font-weight: bold;
+			color: rgb(72,69,140);
+			height: 0.9em;
+			line-height: 0.9em;
+    	clear: both;
+    }
+    .ariane_wire li
+    {  
+      display: inline;  
+      padding: 0px 3px;
+    }
+    .ariane_wire a
+    {
+      margin: 0px 0px 0px 2px;
+			color: rgb(95,108,192);
+    }
+    .ariane_wire a:hover
+    {
+      margin: 0px 0px 0px 2px;
+			color: rgb(72,69,140);
+    }
+
+
+    /* Fin I.II.II */
+    
+    /**
+     * I.II.III Pied de page
+     */
+    #footer
+    {
+      clear: both;
+      height: 80px;
+      padding-top: 10px;
+      margin-top: 1px;
+      background: url(./images/footer.png) top no-repeat;
+    }
+
+    /* Liste de lien dans le pied de page */
+    #footer p
+    {
+	overflow: hidden;
+        text-align: center;
+	margin: 0px auto 0px auto;
+	padding: 0px 5px 0px 5px;
+	color: rgb(80, 80, 80);
+	font-size: 0.9em;
+    }
+    
+    #footer p span
+    {
+	color: rgb(62, 143, 204);
+	font-weight: bold;
+    }
+		#ad_space_2
+		{
+			float: both;
+			margin: 10px auto 0px auto;
+			line-height: 0;
+			width: 600px;
+			display: block;
+		}
+		
+    /* Fin I.II.III */
+  /* Fin I.II */
+  
+  /**
+   * I.III Elements courant (ou utilisé dans plusieurs module|partie)
+   */
+    /**
+     * I.III.I Avatar utilisé pour placer l'avatar de l'utilisateur (sur la page d'accueil)
+     * ou des utlisateurs (sur le forum ou le trombi)
+     */
+    .avatar
+    {
+      height: 75px;
+      width: 75px;
+			display: block;
+      background-repeat: no-repeat;
+      background-position: center;  
+    }
+    /* Avatar censuré (forum) */
+    .avatar.censured
+    {
+      border: 2px solid red;
+      background-color: red;
+    }
+    /* Fin I.III.I */
+    
+    /**
+     * I.III.II HUD (Head-Up Display) = ATH (Affichage Tête Haute)
+     */
+    #HUD
+    {
+      top: 10px;
+      left: 10px;
+    	background-color: red;
+      border: 1px solid rgb(101, 101, 101);
+      color: black;
+    	background-color: rgb(241, 241, 241);
+      padding: 5px;
+      position: fixed;
+    }
+    /* Pour IE puisque IE ne connais pas la valeur fixed */
+    * html #HUD
+		{
+    	position: absolute;
+    } 
+		*+html #HUD
+		{
+    	position: absolute;
+    } 
+    #HUD.loading
+    {
+      background: rgb(232, 40, 51) url(./images/common/icon-loading.gif) 5px .2em no-repeat;
+      color: white;
+    	font-weight: 900;
+      padding: 5px 5px 5px 30px;
+    }
+    #HUD.newmail
+    {
+      background: rgb(241, 145, 145) url(./images/parties/forum/forum/icon-mail.png) 5px 1.4em no-repeat;
+      padding: 5px 5px 5px 30px;
+      border: 1px solid rgb(201, 101, 101);
+    }
+
+    /* Pour IE puisque IE ne connais pas la valeur fixed */
+		* html #NEWMAIL
+		{
+			position: absolute;
+		}
+		*+html #NEWMAIL
+		{
+			position: absolute;
+		}
+
+		#NEWMAIL.new_mail
+		{
+			background: white url(./images/parties/forum/forum/icon-mail.png) 5px 1.4em no-repeat;
+			padding: 5px 5px 5px 5px;
+			border: 1px solid rgb(106,157,200);
+			font-size: 0.9em;
+		}
+		
+		#NEWMAIL.new_mail .new_msg_alert
+		{
+			padding-bottom: 10px;
+			padding-top: 10px;
+			padding-left: 42px;
+			background: url(./images/common/mail_big.png) left bottom no-repeat;
+		}
+
+		html body #NEWMAIL div.new_mail_first_div
+		{
+			margin-top: 10px;
+		}
+		
+		* html #NEWMAIL.new_mail .new_msg_alert
+		{
+			background: url(./images/common/mail_big_8bits.png) left bottom no-repeat; 
+		}
+		
+		#NEWMAIL.new_mail .new_msg_number
+		{
+			font-style: italic;
+		}
+		
+		#NEWMAIL.new_mail .new_msg_number span
+		{
+			font-weight: bold;
+		}
+																																																														
+    /* Fin I.III.II */
+    
+    /**
+     * I.III.III Tooltips est une infobulle mais créée en ECMAScript
+     */
+    
+    .tooltips
+    {
+    	background-color: rgb(248,253,255);
+      border: 1px solid rgb(230,248,255);
+      padding: 0.5em;
+      position: absolute;
+			z-index: 400;
+    }
+	
+    /* Fin I.III.III */
+    
+    /**
+     * I.III.IV Dialbox (a false popup) une fausse popup (ou popup interne)
+     */
+    /* masque de fond de la fausse popup (peut recouvir tout le site) */
+    .dialbox-mask
+    {
+    	background-color: white;
+      position: fixed;
+			filter: alpha(opacity=40);
+			-moz-opacity: 0.4;
+			opacity:.40;
+			-khtml-opacity: 0.4;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+			z-index: 400;
+    }
+    * html .dialbox-mask
+    {
+			float: left;
+    }
+		*+html .dialbox-mask
+    {
+			float: left;
+    }
+    .dialbox
+    {
+      background: white;
+      position: fixed;
+      border: 1px solid rgb(155, 154, 199);
+			z-index: 500;
+    }
+    * html .dialbox
+    {
+			width: 80%;
+      position: absolute;
+    }
+		*+html .dialbox
+    {
+			width: 80%;
+      position: absolute;
+    }
+    .dialbox h2
+    {
+      background: rgb(93, 88, 162) url(./images/modules/titles/module-title.png) top repeat-x;
+      border-bottom: 2px solid rgb(155, 154, 199);
+      color: white;
+  		font-size: 1em;
+  		font-weight: 500;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 4px 0 4px 10px;
+    }    
+    * html .dialbox h2
+    {
+			height: 21px;
+			padding: 3px 0px 0px 10px;
+      background: url(./images/modules/titles/module-title_93-88-162.png) center repeat-x;
+    }
+    .dialbox div
+    {
+      padding: 20px;
+    }
+    /* Fin I.III.IV */
+    
+    /**
+     * I.III.V Info bubble equivaux à une Tooltips (ou fausse infobulle) mais géré en CSS au survol d'une icone (.help)
+     */
+    .info_bubble
+    {
+      display: none;
+    }
+    .info_bubble-content
+    { 
+      background: url(./images/info_bubble/info_bubble-background.png) top no-repeat;
+      padding: 15px 20px 5px 34px;
+      display: block;
+      position: relative;
+    }
+    .info_bubble-bottom
+    {
+      height: 12px;
+      display: block;
+      background: url(./images/info_bubble/info_bubble-bottom.png) top no-repeat;
+      position: relative;
+    }
+		.help{
+			height: 20px;
+  		width: 20px;
+  		display: block;
+      background: url(./images/info_bubble/icon-help.png) center no-repeat;
+		}
+    .help:hover .info_bubble
+    {
+      display: block;
+      color: white;
+      font-weight: 900;
+    	font-size: .8em;
+      width: 204px;
+      position: absolute;
+      margin: -2px 0 0 -2px;
+    }
+    /* Fin I.III.V */
+    /**
+     * I.III.VI Numéros de pages
+     */
+    /* Num pages */
+    .navPages
+    {
+    	/*padding: 5px;*/
+      padding: 0;
+    }
+    .navPages dd
+    {
+      float: left;
+      padding: 0;
+      margin: 0;
+    }
+    .navPages dl
+    {
+      float: right;
+    	/*margin: -10px 0;*/
+      margin: 0 5px 0 0;
+      padding: 0;
+    }
+    /* La ou c'est écrit "pages :" */
+    .navPages dt
+    {
+      float: left;
+      padding: 0;
+      margin: 8px .5em 0 0;
+      width: auto;
+    }
+    .navPages ul
+    {
+    	list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navPages li
+    {
+      float: left;
+      padding: 0;
+      margin: 0;
+    }
+    .navPages a
+    {
+      float: left;
+      display: block;
+      margin: 9px 2px;
+    }
+    .navPages a.here
+    {
+      color: rgb(110, 110, 110);
+      cursor: default;
+    }
+    /* icones suivante | précédente */
+    .navPages a.previous,
+    .navPages a.next
+    {
+      height: 20px;
+      width: 20px;
+      margin: .6em 4px;
+      text-indent: 20px;
+      overflow: hidden;
+      background: url(images/next.png) center no-repeat;
+    }
+    .navPages a.previous
+    {
+      background: url(images/previous.png) center no-repeat;
+    }
+    .navPages a.next
+    {
+      background: url(images/next.png) center no-repeat;
+    }
+    /* Fin I.III.VI */
+    /* I.III.VI Tabs */
+    /* Tabs */
+
+
+    .tabs
+    {
+      padding: 3px 0;
+      background: rgb(93, 88, 162) url(./images/modules/titles/module-title.png) top repeat-x;
+      border: 1px solid rgb(155, 154, 199);
+    }
+
+    .tabs li
+    {
+      padding: 3px 0;
+      display: inline;
+    }
+		
+    .tabs a
+    {
+      padding: 3px 10px;
+      color: white;
+    }
+
+	  * html .tabs a
+    {
+      padding: 0px 10px;
+      color: white;
+    }
+		
+		*+html .tabs a
+	  {
+      padding: 0px 10px;
+      color: white;
+    }
+
+		*+html .tabs a:hover
+    {
+      padding: 3px 10px;
+    }
+		
+		*+html .tabs .selectedTab a:hover
+    {
+      padding: 0px 10px;
+    }
+
+
+		
+    /* Fin I.III.VIII */
+    /**
+
+/*** NOUVEAUX STYLES DES BOÎTES DE DIALOGUE ***/
+
+		/*** STYLE GENERAL ***/
+
+html body .block.warning .title h2,
+html body .block.alert .title h2,
+html body .block.error .title h2,
+html body .block.information .title h2
+{
+	font-style: italic;
+}
+
+html body .block.warning .content,
+html body .block.alert .content,
+html body .block.error .content,
+html body .block.information .content
+{
+	font-style: italic;
+}
+
+html body .block.information ul li,
+html body .block.alert ul li,
+html body .block.warning ul li,
+html body .block.error ul li
+{
+	margin: 4px 0px 4px 0px;
+	list-style-type: none;
+	text-indent: 15px;
+}
+
+html body .block.information dl dt,
+html body .block.alert dl dt,
+html body .block.warning dl dt,
+html body .block.error dl dt
+{
+	margin: 0px 5px;
+	font-weight: bold;
+	float: left;
+}
+
+
+		/*** INFORMATION ***/
+
+.html body div.block.information .block_border
+{
+  border: 1px solid rgb(75,104,141);
+}
+
+html body div.block.information
+{
+  border: 2px solid rgb(175,203,235);
+}
+
+html body .block.information .title
+{
+  background: url(./images/modules/titles/entete_png_infos.png) center repeat-x;
+  border-bottom: 1px solid rgb(75,104,141);
+}
+
+* html body div.block.information div.title
+{
+  background: url(./images/modules/titles/entete_png_infos.png) repeat-x top;
+}
+
+*+html .module .title 
+{
+  background: url(./images/modules/titles/entete_png_infos.png) repeat-x top;
+}
+
+html .block.information .title .extraDiv1 span
+{
+  margin-top: 1px;
+  background: url(images/modules/logos/information.png) no-repeat;
+}
+
+* html body div.block.information div.title div.extraDiv1 span
+{
+  background-image: expression((function(element){
+      element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/module-info.png', sizingMethod='scale')";
+      return 'none';
+      })(this));
+}
+
+
+
+
+		/*** ALERT & WARNING ***/
+		
+html body .block.alert,
+html body .block.warning
+{
+  border: 1px solid #ecd93a;
+}
+
+html body .block.alert .title,
+html body .block.warning .title
+{
+  background-color: #f9e53d;
+  border-bottom: 1px solid #ecd93a;
+}
+
+html body .block.alert .title h2,
+html body .block.warning .title h2
+{
+	color: #554e15;
+}
+* html body .block.alert .title,
+* html body div.block.warning div.title
+{
+  background: url(images/modules/titles/alert-title.png) repeat-x top;
+}
+
+html .block.alert .title .extraDiv1 span,
+html .block.warning .title .extraDiv1 span
+{
+  background: url(images/modules/logos/module-warning.png) no-repeat;
+}
+
+* html body div.block.alert div.title div.extraDiv1 span,
+* html body div.block.warning div.title div.extraDiv1 span
+{
+  background-image: expression((function(element){
+      element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/module-warning.png', sizingMethod='scale')";
+      return 'none';
+      })(this));
+}
+	
+	
+		/*** ERREUR ***/
+
+html body .block.error
+{
+  border: 1px solid #d13333;
+}
+
+html body .block.error .title
+{
+  background-color: #de3636;
+  border-bottom: 1px solid #d13333;
+}
+
+* html body div.block.error div.title
+{
+  background: url(images/modules/titles/error-title.png) repeat-x top;
+}
+
+html .block.error .title .extraDiv1 span
+{
+  background: url(images/modules/logos/module-error.png) no-repeat;
+}
+
+* html body div.block.error div.title div.extraDiv1 span
+{
+  background-image: expression((function(element){
+      element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/module-error.png', sizingMethod='scale')";
+      return 'none';
+      })(this));
+}
+
+
+
+
+
+/*** FIN DES NOUVEAUX STYLES DE BOÎTES DE DIALOGUE ***/
+
+/******************************************************************
+
+     * I.III.VIII Boites de dialogue
+     */
+      /**
+       * I.III.VIII.I Messages d'erreur
+       */
+      .error .content p
+      {
+        padding: 0;
+        margin: 0 15px;
+      }
+			.error .content
+			{
+				background: black;
+			}
+      /* Fin I.III.VIII.I */
+      
+      /**
+       * I.III.VIII.II Messages d'information
+       */
+      .information .content p
+      {
+        padding: 0;
+        margin: 0 15px;
+      }
+      /* Fin I.III.VIII.II */
+      
+      /**
+       * I.III.VIII.III Messages d'avertissement
+       */
+      .warning .content p
+      {
+        padding: 0;
+        margin: 0 15px;
+      }
+      /* Fin I.III.VIII.III */
+    /* Fin I.III.VIII */    
+  /* Fin I.III */
+  
+  /**
+   * I.IV Balises générales
+   */
+  img
+  {
+    border: none;
+  }
+  a
+  {
+    cursor: pointer;
+    color: rgb(50, 50, 50);
+  	text-decoration: none;
+  }
+  a:hover
+  {
+    color: rgb(101, 101, 101);
+  }
+  p
+  {
+  	margin-bottom: 2px;
+  }
+  /* Padding et margin des listes à 0
+  pour eviter les différences entre les navigateurs */
+  ul, ol, li
+  {
+		position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  ul
+  {
+		position: relative;
+    padding-left: 10px;
+    list-style: square;
+  }
+  dl, dt, dd
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+	html .input-hidden
+	{
+		padding: 0px 0px 0px 0px;
+		float: none;
+		line-height: 0px;
+		height: 0px;
+		font-size: 0;
+	}
+
+  .clear
+  {
+    clear: both;
+		line-height: 0px;
+		height: 0px;
+		font-size: 0px;
+		padding: 0px 0px 0px 0px;
+  }
+  h1
+  {
+  	font-size: 1.2em;
+  	margin-top: 4px;
+  }
+  h3 /* Utilisé dans les titres des modules */
+  {
+    font-size: 1.25em;
+    color: rgb(68,146,205);
+  }
+  h4
+  {
+  	font-size: 1em;
+  	/*border-bottom: 2px solid rgb(0, 102, 153);*/
+  }
+  code, samp, pre
+  {
+  	font-size: 0.8em;
+    display: block;
+  	font-family: monospace;
+  	background-color: rgb(235, 235, 235);
+    border: 1px dashed rgb(101, 101, 101);
+    padding: 1em;
+    margin: .5em 0;
+  }
+  address
+  {
+    display: block;
+  	font-style: italic;
+  }
+  blockquote
+  {
+    margin: 1em 40px;
+  }
+  /* Fin I.IV */
+/* Fin I */
+
+
+ 
+/**
+ * II Icones
+ */
+/* masquent le text contenu dans l'element */
+a.calendar_button
+{
+	float: left;
+	display: block;
+	overflow: hidden;
+	height: 22px;
+	width: 22px;
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
+  background: url('images/common/calendar.png') no-repeat;
+}
+
+a.close
+{
+	height: 13px;
+  width: 13px;
+	display: block;
+	overflow: hidden;
+	background: url('images/common/close.png') center no-repeat;				
+}
+
+* html a.close
+{
+  background: url('images/common/close.png') top no-repeat;
+}	
+
+/*a.calendar_button
+{
+  display: block;
+  height: 18px;
+  width: 21px;
+  margin: 1px 0px 1px 10px;
+  padding: 0px 0px 0px 0px;
+  overflow: hidden;
+  background: url('images/common/pdate.gif') center no-repeat;
+}*/
+						
+a.delete
+{
+  height: 20px;
+  width: 20px;
+  display: block;
+  text-indent: 20px;
+  overflow: hidden;
+  background: url('images/common/cross.png') center no-repeat;
+}
+
+* html a.delete
+{
+  background: url('images/common/cross.png') no-repeat;
+}
+
+*+html a.delete
+{
+  background: url('images/common/cross.png') no-repeat;
+}
+
+a.edit
+{
+  height: 20px;
+  width: 19px;
+  display: block;
+  text-indent: 20px;
+  overflow: hidden;
+  background: url('images/common/icon-edit.png') center no-repeat;
+}
+
+* html a.edit
+{
+  background-image: expression((function(element){
+		element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/common/icon-edit.png', sizingMethod='scale')";
+		return 'none';
+		})(this));								
+}
+	
+*+html a.edit
+{
+  background: url('images/common/icon-edit.png') no-repeat;
+}
+
+a.up,
+a.down
+{
+  height: 20px;
+  width: 20px;
+  display: block;
+  text-indent: 20px;
+  overflow: hidden;
+  background: center no-repeat;
+  margin: 0 auto;
+}
+a.up
+{
+  background-image: url(images/common/up.png);
+}
+a.down
+{
+  background-image: url(images/common/down.png);
+}
+/* Fin II */
+
+
+/**
+ * III Formulaires
+ */
+
+  /**
+   * III.I Balises
+   */
+  textarea, input[type="text"], input[type="password"], select, .RichTextEditable div
+  {
+  	font-size: 1em;
+  	font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+  	padding: 2px;
+		margin: 0;
+    border: 1px solid rgb(68, 65, 149);
+    background-color: rgb(225, 228, 255);
+  }
+  select
+  {
+    padding: 0;
+  }
+  input[type="text"]:focus, input[type="password"]:focus,
+  textarea:focus
+  {  
+    border: 1px solid rgb(101, 101, 101);
+  	background-color: rgb(236, 236, 236);
+  }
+  textarea
+  {
+    /*width: 100%;*/
+  }
+  /* Fin III.I */  
+  
+  /**
+   * III.II Styles de ligne de formulaire (P)
+   * -> label + input[type=text]
+   * -> label + textarea
+   */
+
+	 form
+	 {
+		 margin-top: 15px;
+		 margin-bottom: 15px;
+	 }
+	
+	.form-date,
+  .form-input,
+  .form-submit,
+  .form-textarea,
+	.form-editor
+  {
+    margin: 0 0 0 0;
+    padding: 2px 2px 2px 2px;
+    clear: both;
+  }
+	.form-date label,
+  .form-input label,
+  .form-textarea label,
+	.form-editor label
+  {
+		position: relative;
+    width: 35%;
+    float: left;
+    margin: 5px 0px 5px 0px;
+    padding: 3px;
+  }  
+  .form-input label.for-radio,
+  .form-input label.for-checkbox
+  {
+		position: relative;
+    float: none;
+    width: auto;
+  }
+	.form-date input,
+  .form-input input,
+	.form-textarea textarea,
+  .form-input select
+  {
+    margin: 5px 0px;
+    padding: 2px;
+  }
+	.form-date input
+  {
+    float: left;
+  }
+	* html .form-date input
+	{
+	  margin-left: 3px;
+	}
+	
+	.form-date .calendar_button
+	{
+		margin: 5px 0px 0px 5px;
+	}
+								
+  /*
+  .form-input input,
+  .form-input select,
+  .form-textarea textarea
+  {
+    width: 60%;
+  }
+  */
+  .form-input input[type="radio"]
+  {
+    margin: .5em 0;
+  }
+  /* magicForm */
+  form .error input,
+  form .error textarea
+  {
+  	background-color: rgb(255, 187, 187);
+  	border-color: rgb(255, 102, 102);
+  }
+  form .error input:focus,
+  form .error textarea:focus
+  {
+    background-color: rgb(255, 214, 214);
+  	border-color: rgb(255, 151, 151);
+  }
+  /* magicText */
+  .magicText
+  {
+		/*Ne pas mettre a 100 (elargit la zone parente)*/
+    width: 98%;
+  }
+  /* Fin III.II */
+/* Fin III */
+
+
+/**
+ * IV Modules
+ */
+
+.module_border,
+.block_border
+{
+  margin: 0px 0px 0px 0px;
+  border: 1px solid rgb(96,145,183);
+  background-color: white;
+}
+
+.module,
+.block
+{
+  margin: 0px auto 10px auto;
+  border: 2px solid rgb(196,218,235);
+
+}
+  /**
+   * IV.I Titre
+   */
+  .module .title,
+  .block .title
+  {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background: url(./images/modules/titles/entete_module.png) center repeat-x;
+    height: 17px;
+    border-bottom: 1px solid rgb(96, 145, 183);
+    overflow: hidden;
+  }
+  /* Only for Ie */
+  
+  * html .module .title
+  {
+    /* fait panter ie si on met des liens cliquables au dessus et qu'ils ont un fond
+    background-image: expression((function(element){
+      element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/module-title.png', sizingMethod='scale')";
+      return 'none';
+      })(this));
+    */
+    background: url(./images/modules/titles/entete_module.png) repeat-x top;
+  }
+ 	*+html .module .title 
+  {
+    background: url(./images/modules/titles/entete_module.png) repeat-x top;
+  }
+ 
+  /* border-right et border-left sont utilisé uniquement si le titre du module
+  à des angles particuliers (arrondis, cassé ...).
+  Dans le cas contraire soit retirer compètement ce qui suit, soit mettre aucune propriété */
+  .module .title .extraDiv1,
+  .module .title .extraDiv2,
+  .block .title .extraDiv1,
+  .block .title .extraDiv2
+  {
+    font-size: 0em;
+  }
+  .module .title .extraDiv1,
+  .block .title .extraDiv1
+  {
+    float: left;
+  }
+  .module .title .extraDiv1 span,
+  .block .title .extraDiv1 span
+  {
+    display: block;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    margin: 0px 0px 0px 5px;
+  }
+
+  *+html .module .title .extraDiv1 span
+  *+html .block .title .extraDiv1 span
+  {
+     position: relative;
+  }
+  
+  /* Titre du module */
+  .module .title h2,
+  .block .title h2
+  {
+    float: left;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: white;
+    text-transform: none;
+    margin: -1em 0px -1em 25px;
+    padding: 12px 0px;
+  }
+
+  * html .module .title h2,
+  * html .block .title h2
+  {
+    margin: -1.2em 5px -1.2em 10px;
+  }
+
+  *+html .module .title h2,
+  *+html .block .title h2
+  {
+    margin: -1.2em 5px -1.2em 10px;
+  }
+
+  /* Dans le cas ou le titre du module est un lien (forum) */
+  .module .title h2 a
+  {
+    color: white;
+  }
+  /* Liste de boutons pour modifier la position du module */
+  .module .title ul
+  {
+    float: right;
+    list-style-type: none;
+    padding: 0px 1px 0px 0px;
+    margin: 0;
+  }
+  .module .title li
+  {
+    float: left;
+    margin: 3px 1px;
+  }
+  * html .module .title li
+  {
+    margin-top: 1px;
+    width: 18px;
+  } 
+  *+html .module .title li
+  {
+    margin-top: 1px;
+    width: 18px;
+  }  
+  .module .title li a
+  {
+    height: 12px;
+    width: 18px;
+    text-indent: 20px;
+    overflow: hidden;
+    display: block;
+    background-image: url(images/menus/menu_modules/module-buttons_wope.png);
+    filter:alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+    -khtml-opacity: 0.6;
+    /*display: none;*/
+  }
+  
+  .module .title a
+  {
+    background-position: 0;
+  }
+
+  * html .module .title ul,
+  * html .module .title ul li,
+  * html .module .title ul li a
+  {
+		position: static;
+	}
+
+	*+html .module .title ul,
+	*+html .module .title ul li,
+	*+html .module .title ul li a
+  {
+		position: static;
+	}
+
+  .module .title a:hover
+  {
+    filter:alpha(opacity=90);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    -khtml-opacity: 0.9;
+  }
+  .module .title a.minimize
+  {
+    background-position: 18px 0;
+    margin-right: 3px;
+  }  
+  .module .title a.up
+  {
+    background-position: -18px 0;
+  }
+  .module .title a.down
+  {
+    background-position: 0px 0px;
+  }
+  .module .title a.close
+  {
+    background-position: -36px 0;
+  }
+  .module .title a.add
+  {
+    background-position: 54px 0;
+  }
+  .module .title a.abuse
+  {
+    background-position: 36px 0;
+  }
+  .module .title a.delete
+  {
+    background-position: -36px 0;
+  }
+  /* Fin IV.I */
+  
+  /**
+   * IV.II Contenu (juste la boite englobante)
+   */
+  .module .content
+  {
+    padding: 8px;
+    background-color: white;
+  }
+  .module .content .module
+  {
+    margin: 0 10px 10px 0;
+  }
+  .module .content .module .title .border-right div
+  {
+    background: transparent url(./images/corner_content.png) 0 0 no-repeat;
+  }
+  /* Fin IV.II */
+/* Fin IV */
+
+/* V Datadisplay */
+.dataDisplay
+{
+  border-spacing: 0;
+}
+.dataDisplay td
+{
+  background: rgb(207, 228, 249) url(./images/modules/titles/module-title.png) top repeat-x;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: rgb(153, 189, 218);
+  padding: 5px;
+}
+* html .dataDisplay td
+{
+  background-image: expression((function(element){
+    element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/titles/module-title.png', sizingMethod='scale')";
+    return 'none';
+    })(this));
+}
+.dataDisplay th
+{
+  background: rgb(252, 218, 174) url(./images/modules/titles/module-title.png) top repeat-x;
+  border-top: 1px solid rgb(248, 163, 48);
+  border-bottom: 1px solid rgb(153, 189, 218);
+  padding: 5px;
+  color: rgb(50, 50, 50);
+  /*text-align: left;
+  vertical-align: top;*/
+}
+* html .dataDisplay th
+{
+  background-image: expression((function(element){
+    element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/titles/module-title.png', sizingMethod='scale')";
+    return 'none';
+    })(this));
+}
+.dataDisplay th span
+{
+  /*display: block;*/
+}
+.dataDisplay td.navPages
+{
+  background: none;
+  border: none;
+}
+.selected
+{
+	background-color: rgb(255, 200, 200);
+  cursor: pointer;
+}
+.selectedline
+{
+	background-color: rgb(207, 255, 179);
+  cursor: pointer;
+}
+/* Fin V */
+
+
+/*************************
+*    STYLE BUG REPORT    *
+*************************/
+
+html body .page #footer .bug_submit
+{
+	position: relative;
+	left:43%;
+	right:57%;
+	font-weight: bolder;
+	font-size: 1.1em;
+	font-style: italic;
+	color: rgb(240,70,110);
+}
+
+/*********************************************************
+*                                                        *
+*     AJOUT STYLE DES BOUTONS DE SYLVAIN (16/10/2006)    *
+*                                                        *
+**********************************************************/
+
+/* Bouton de tons assez clairs, discret */
+
+.link_button
+{
+	padding: 1px 2px 1px 2px;
+	font-size: 0.9em;
+	margin: 0px 0px 0px 0px;
+	color: rgb(80,80,80);
+	font-style: normal;
+	font-weight: bold;
+	text-align: left;
+	background: rgb(245,245,245);
+	border: 1px solid rgb(230,230,230);
+}
+
+.link_button:hover
+{
+	color: white;
+	background: rgb(75,75,75);
+	border: 1px solid rgb(50,50,50);
+}
+
+/* Bouton plus foncé et plus sobre */
+
+.alternative_button,
+.admin_link
+{
+	color: rgb(92,151,196);
+	font-weight: bold;
+	font-size: 0.9em;
+	background: rgb(237,247,255);
+	border: 1px solid rgb(219,234,245);
+	padding: 1px 2px 1px 2px;
+	margin: 10px 0px 0px 0px;
+}
+
+.alternative_button:hover,
+.admin_link:hover
+{
+	color: rgb(245,245,245);
+	background: rgb(92,151,196);
+	border: 1px solid rgb(78,127,164);
+}
+
+/**************** FIN DES BOUTONS *********************/
+
+
+
+
+/*********************************************************
+*                                                        *
+*      AJOUT STYLE DES MENUS DE SYLVAIN (16/10/2006)     *
+*                                                        *
+**********************************************************/
+
+/* MENU VERTICAL :: Pour la customisation, changer les couleurs, tout le reste est prédéfini ici */
+/* Principes : cf. menu horizontal */
+
+ul.panel
+{
+	padding: 0px 0px 0px 5px;
+	margin: 0px 0px 0px 0px;
+	list-style-type: none;
+	border-left: 2px solid rgb(220,220,220);
+}
+
+ul.panel li
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px;
+	font-weight: bold;
+	font-size: 0.9em;
+	color: black;
+}
+
+ul.panel li a:hover
+{
+	color: rgb(66,63,148); 
+}
+
+/* MENU HORIZONTAL :: ne pas oublier les "|" pour la séparation entre chaque lien */
+/* Principe 1 : le texte est noir, la bordure et les séparations d'une autre -> au survol les liens prennent la couleur de la bordure */
+/* Principe 2 : le texte est noir, la bordure grise -> au survol les liens prennent une couleur qui rappelle celle du module (plus passe partout) */
+
+span.panel_h
+{
+	list-style-type: none;
+	text-align: left;
+	padding: 0px 8px 0px 8px;
+	margin: 0px 0px 0px 0px;
+	margin-left: auto;
+	margin-right: auto;
+	color: rgb(220,220,220); /* couleur des séparations */
+	border-bottom: 2px solid rgb(220,220,220);
+}
+
+span.panel_h a
+{
+	font-size: 0.9em;
+	color: black; /* la couleur du texte à proprement parlé : les liens */
+	font-weight: bold;
+}
+
+span.panel_h a:hover
+{
+	color: rgb(66,63,148);
+}
+
+/*******************************************************************
+*                                                                  *
+*     HOWTO : CLASSE DE CENTRAGE ~ AJOUT DE SYLV DU 26/10/2006     *
+*                                                                  *
+********************************************************************/
+
+/* centrer un élément de type inline dans un bloc */
+
+.centrage
+{
+	text-align: center;
+	position: relative;
+}
+
+/* centrer un élément de type bloc dans un autre bloc (ou une page) */
+
+.bloc_quelconque .autre_bloc
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*******************************************************************
+*                                                                  *
+*     STYLE DE TITRES PREDEFINIS ~ AJOUT DE SYLV DU 24/10/2006     *
+*                                                                  *
+********************************************************************/
+
+/* STYLE GENERAL DU TITRE : une bordure de deux pixels en bas, une taille et des couleurs règlables */
+/* Principe :: Couleur de la première lettre (cf. ci-dessous) de la couleur de la bordure, le reste étant réglable */
+
+.titre_menu
+{
+	color: rgb(32,55,133);
+	font-size: 1em;
+	text-align: left;
+	margin: 15px 0px 10px 0px;
+	padding: 0px 8px 0px 5px;
+	font-weight: bold;
+	border-bottom: 2px solid rgb(170,183,225);
+}
+
+/* Style de la première lettre (à encadrer dans un span) */
+
+.titre_menu span
+{
+	color: rgb(170,183,225);
+	font-size: 1.2em;
+}
+
+/*******************************************************************
+*                                                                  *
+*      STYLE D'OBJETS FLOTTANTS ~ AJOUT DE SYLV DU 25/10/2006      *
+*                                                                  *
+********************************************************************/
+
+/* FLOAT LEFT */
+
+.left
+{
+	float: left;
+}
+
+/* FLOAT RIGHT */
+
+.right
+{
+	float: right;
+}
+
+/* FLOAT BOTH */
+
+.both
+{
+	float: both;
+}
+
+
+
+/************************************************************************************
+*                                                                                   *
+*      STYLE DE BARRES DE MENUS POUR LES PARTIES ~ AJOUT DE SYLV POUR WOPE          *
+*                                                                                   *
+*************************************************************************************/
+
+.wope_menu_block
+{
+  margin: 10px 0px 5px 0px;
+  padding: 0px 0px 0px 0px;
+  border: 2px solid rgb(168,168,168);
+}
+
+.wope_menu_bar
+{
+  border: 1px solid rgb(60,60,60);
+  text-align: center;
+}
+
+.wope_menu_bar ul
+{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  overflow: hidden;
+  list-style-type: none;
+  height: 20px;
+  background: rgb(14,14,14) url('./images/menus/wope_menu/wope_menu_bg.png') center repeat-x;
+}
+
+.wope_menu_bar ul li
+{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: inline;
+}
+
+.wope_menu_bar ul li a
+{
+  border-right: 1px solid rgb(60,60,60);
+  border-left: 1px solid rgb(60,60,60);
+  padding: 2px 10px 2px 10px;
+  margin: 0px -2px 0px -2px;
+  color: white;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.wope_menu_bar ul li a:hover
+{
+  background: rgb(14,14,14) url('./images/menus/wope_menu/hover_bg.png') bottom repeat-x;
+}
+
+
+/* *** *** */
+
+
+div.meetmind_menu_block,
+div.meetmind_alt_menu_block
+{
+	margin: 12px auto 8px auto;
+	padding: 0px 10px 0px 10px;
+	height: 20px;
+	background: rgb(93, 88, 162) url(./images/modules/titles/module-title.png) center repeat-x;
+	border: 1px solid rgb(123,118,198);
+	text-align: center;
+}
+
+* html div.meetmind_menu_block,
+* html div.meetmind_alt_menu_block
+{
+	margin: 8px auto 5px auto;
+	padding: 0px 10px 0px 10px;
+}
+
+div.meetmind_menu_block ul.meetmind_menu,
+div.meetmind_alt_menu_block ul.meetmind_menu
+{
+	height: 20px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px auto 0px auto;
+	overflow: hidden;
+}
+
+div.meetmind_menu_block ul.meetmind_menu li,
+div.meetmind_alt_menu_block ul.meetmind_menu li
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	height: 20px;
+	overflow: hidden;
+	list-style-type: none;
+	display: inline;
+}
+
+* html div.meetmind_menu_block,
+* html div.meetmind_alt_menu_block
+{
+	background: url(./images/modules/titles/module-title_93-88-162.png) repeat-x top;
+}
+
+div.meetmind_menu_block ul.meetmind_menu li a,
+div.meetmind_alt_menu_block ul.meetmind_menu li a
+{
+	padding: 10px 10px 10px 10px;
+	margin: 0px -2px 0px -2px;
+	text-decoration: none;
+	border-right: 1px solid rgb(70,65,125);
+	font-size: 0.9em;
+	font-weight: bold;
+	color: white;
+}
+
+* html body div.meetmind_menu_block ul.meetmind_menu li a,
+* html body div.meetmind_alt_menu_block ul.meetmind_menu li a
+{
+	padding: 1px 10px 1px 10px;
+	margin: 0px -4px 0px -2px;
+	border-right: 1px solid rgb(70,65,125);
+	font-size: 0.9em;
+	font-weight: bold;
+	color: white;
+}
+
+div.meetmind_menu_block ul.meetmind_menu li a.mm_first
+{
+	border-left: 1px solid rgb(100,95,155);
+}
+
+div.meetmind_menu_block ul.meetmind_menu li a.mm_last
+{
+	border-right: 1px solid rgb(100,95,155);
+}
+
+div.meetmind_menu_block ul.meetmind_menu li a:hover
+{
+	background: rgb(70,65,125) url(./images/modules/titles/module-title.png) center repeat-x;
+	text-decoration: none;
+}
+
+* html div.meetmind_menu_block ul.meetmind_menu li a:hover,
+* html div.meetmind_alt_menu_block ul.meetmind_menu li a:hover
+{
+	color: white;
+	background: url(./images/modules/titles/module-title_70-65-125.png) repeat-x top;
+}
+
+.page div.meetmind_menu_block ul.meetmind_menu .selected_part
+{
+	background: rgb(70,65,125) url(./images/modules/titles/module-title.png) center repeat-x;
+}
+
+* html .page div.meetmind_menu_block ul.meetmind_menu .selected_part,
+* html .page div.meetmind_alt_menu_block ul.meetmind_menu .selected_part
+{
+	color: white;
+	background: url(./images/modules/titles/module-title_70-65-125.png) repeat-x top;
+}
+
+
+
+/***********      STYLE ALTERNATIF      ***********/
+
+div.meetmind_alt_menu_block
+{
+	background: rgb(93, 88, 162) url(./images/modules/titles/module-title_214-219-255.png) center repeat-x;
+	border: 1px solid rgb(155, 154, 199);
+}
+
+* html div.meetmind_alt_menu_block
+{
+	background: url(./images/modules/titles/module-title_214-219-255.png) repeat-x top;
+}
+
+div.meetmind_alt_menu_block ul.meetmind_menu li a
+{
+	border-right: 1px solid rgb(197,196,226);
+	color: rgb(66, 63, 148);
+}
+
+* html body div.meetmind_alt_menu_block ul.meetmind_menu li a
+{
+	padding: 1px 10px 1px 10px;
+	margin: 0px -4px 0px -2px;
+	border-right: 1px solid rgb(197,196,226);
+	color: rgb(66, 63, 148);
+}
+
+div.meetmind_alt_menu_block ul.meetmind_menu li a.mm_first
+{
+	border-left: 1px solid rgb(215,215,237);
+}
+
+div.meetmind_alt_menu_block ul.meetmind_menu li a.mm_last
+{
+	border-right: 1px solid rgb(215,215,237);
+}
+
+div.meetmind_alt_menu_block ul.meetmind_menu li a:hover
+{
+	color: white;
+	background: rgb(165,169,252) url(./images/modules/titles/module-title.png) center repeat-x;
+	text-decoration: none;
+}
+
+* html div.meetmind_alt_menu_block ul.meetmind_menu li a:hover
+{
+	color: white;
+	background: url(./images/modules/titles/module-title_165-169-252.png) repeat-x top;
+}
+
+.page div.meetmind_alt_menu_block ul.meetmind_menu .selected_part
+{
+	color: white;
+	background: rgb(165,169,252) url(./images/modules/titles/module-title.png) center repeat-x;
+}
+
+* html .page div.meetmind_alt_menu_block ul.meetmind_menu .selected_part
+{
+	color: white;
+	background: url(./images/modules/titles/module-title_165-169-252.png) repeat-x top;
+}
+
+
+
+/********************************************************
+*                                                       *
+*          STYLE DES ITEMS DE CALENDRIER YAHOO          *
+*                                                       *
+*********************************************************/
+
+input.calendar_input
+{
+	float: left;
+	height: 1.3em;
+	width: 65px;
+	font-size: 0.95em;
+	font-family: "Trebuchet MS";
+	margin-left: 3px;
+	padding-left: 3px;
+}
+
+/* see ".calendar_burtton" */
+/*.create_cal_button
+{
+	float: left;
+	display: block;
+	height: 22px;
+	width: 22px;
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
+  background: url(../../images/common/calendar.png) no-repeat;
+}*/
+
+
+/*** ICONE MAIL ***/
+
+.mini_mail
+{
+	background: url(images/common/minimail_small.png) left no-repeat;
+}
+
+* html .mini_mail
+{
+	background: url(images/common/minimail_small_8bits.png) left no-repeat;
+}
+
+.mini_trombi
+{
+  background: url(images/common/minitrombi.png) left no-repeat;
+}
+
+
+/*** STYLE DES TABLEAUX DATA_TABLE (ADMIN, ABUS, ...) ***/
+
+.data_table
+{
+	margin: 5px auto 5px auto;
+}
+
+.data_table th
+{
+	background-color: rgb(214, 219, 255);
+}
+
+.data_table tbody tr:hover
+{
+	background-color: rgb(240, 245, 255);
+}
+
+/*** STYLE DU BANDEAU DE PUB DU FOOTER ***/
+
+html body #footer #ad_space_2
+{
+	height: 110px;
+	width: 600px;
+	margin: 55px 0px 0px 145px;
+	text-align: right;
+	overflow: hidden;
+}
+
+html body #footer #ad_space_2 .pub
+{
+	margin: 0px 0px 0px 0px;
+}
+
+
+/***   STYLE DES MESSAGES D'ERREUR DE TROMBI   ***/
+
+.error_block
+{
+	float: left;
+	padding: 1px 1px 1px 5px;
+	font-style: italic;
+	font-weight: normal;
+	color: red;
+}
+
+
+/********************************************************************* 
+*                                                                    *
+*    STYLE DES BOUTONS DE CHANGEMENTS DE PAGE ~ AJOUT SYLV 11/2006   *
+*                                                                    *
+**********************************************************************/
+
+.pages_list
+{
+	margin: 5px 0px 5px 5px;
+	padding: 5px 10px 5px 5px;
+	position: relative;
+}
+
+.pages_list a
+{
+	margin: 0px 1px 0px 1px;
+	height: 16px;
+	padding: 0px 4px 0px 4px;
+	color: rgb(66,63,148);
+	background: rgb(228,235,243);
+	border: 1px solid rgb(199,201,215);
+}
+
+.pages_list a:hover
+{
+	color: rgb(245,245,245);
+	background: rgb(99,101,160);
+	border: 1px solid rgb(132,144,168);
+}
+
+.pages_list span.selected_page
+{
+	color: rgb(180,180,180);
+}
+
+/*
+Copyright (c) 2006, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+Version 0.12
+*/
+
+.yui-calcontainer {
+position: relative;
+padding:5px;
+background-color:#F7F9FB;
+border:1px solid #7B9EBD;
+float: left;
+overflow: hidden;
+}
+
+*html .yui-calcontainer {
+padding-top: 20px;
+z-index: 400;
+}
+
+.yui-calcontainer iframe {
+	position:absolute;
+	border:none;
+	margin:0;
+	padding:0;
+	left:-1px;
+	top:-1px;
+	z-index:0;
+	width:50em;
+	height:50em;
+}
+
+.yui-calcontainer.multi {
+	padding:0;
+}
+
+.yui-calcontainer.multi .groupcal {
+	padding:5px;
+	background-color:transparent;
+	z-index:1;
+	float:left;
+	position:relative;
+	border:none;
+}
+
+.yui-calcontainer .title {
+font:100% sans-serif;
+color:#000;
+font-weight:bold;
+margin-bottom:5px;
+height:25px;
+position:absolute;
+top:3px;left:5px;
+z-index:1;
+}
+
+.yui-calcontainer .close-icon {
+position:absolute;
+right:3px;
+top:3px;
+border:none;
+z-index:1;
+}
+
+/* Calendar element styles */
+
+.yui-calendar {
+font:100% sans-serif;
+text-align:center;
+border-spacing:0;
+border-collapse:separate;
+position: relative;
+}
+
+.yui-calcontainer.withtitle {
+	padding-top:1.5em;
+}
+
+.yui-calendar .calnavleft {
+position:absolute;
+background-repeat:no-repeat;
+cursor:pointer;
+top:2px;
+bottom:0;
+width:9px;
+height:12px;   
+left:2px;
+z-index: 1;
+}
+
+.yui-calendar .calnavright {
+position:absolute;
+background-repeat:no-repeat;
+cursor:pointer;
+top:2px;
+bottom:0;
+width:9px;
+height:12px;  
+right:2px;
+z-index: 1;
+}
+
+.yui-calendar td.calcell {
+padding:.1em .2em;
+border:1px solid #E0E0E0;
+text-align: center;
+}
+
+.yui-calendar td.calcell a {
+color:#003DB8;
+text-decoration:none;
+}
+
+.yui-calendar td.calcell.today {
+border:1px solid #000;
+}
+
+.yui-calendar td.calcell.oom {
+cursor:default;
+color:#999;
+background-color:#EEE;
+border:1px solid #E0E0E0;
+}
+
+.yui-calendar td.calcell.selected {
+color:#003DB8;
+background-color:#FFF19F;
+border:1px solid #FF9900;
+}
+
+.yui-calendar td.calcell.calcellhover {
+cursor:pointer;
+color:#FFF;
+background-color:#FF9900;
+border:1px solid #FF9900;
+}
+
+.yui-calendar td.calcell.calcellhover a {
+color:#FFF;
+}
+
+.yui-calendar td.calcell.restricted {
+text-decoration:line-through;
+}
+
+.yui-calendar td.calcell.previous {
+color:#CCC;
+}
+
+.yui-calendar td.calcell.highlight1 { background-color:#CCFF99; }
+.yui-calendar td.calcell.highlight2 { background-color:#99CCFF; }
+.yui-calendar td.calcell.highlight3 { background-color:#FFCCCC; }
+.yui-calendar td.calcell.highlight4 { background-color:#CCFF99; }
+
+
+.yui-calendar .calhead {
+border:1px solid #E0E0E0;
+vertical-align:middle;
+background-color:#FFF;
+}
+
+.yui-calendar .calheader {
+position:relative;
+width:100%;
+text-align:center;
+}
+
+.yui-calendar .calheader img {
+border:none;
+}
+
+.yui-calendar .calweekdaycell {
+color:#666;
+font-weight:normal;
+text-align: center;
+width: 1.5em;
+}
+
+.yui-calendar .calfoot {
+background-color:#EEE;
+}
+
+.yui-calendar .calrowhead, .yui-calendar .calrowfoot {
+color:#666;
+font-size:9px;
+font-style:italic;
+font-weight:normal;
+width:15px;
+}
+
+.yui-calendar .calrowhead {
+border-right-width:2px;
+}
+
+/*Specific changes for calendar running under fonts/reset */
+.yui-calendar a:hover {background:inherit;}
+p#clear {clear:left; padding-top:10px;}
+
+
+/*** STYLE DE LA FICHE TROMBI ***/
+
+html body .dialbox .trombi_card dl dd
+{
+	float: left;
+	font-size: 0.9em;
+	font-style: italic;
+	margin: 0px 0px 0px 10px;
+	padding: 5px 0px 1px 0px;
+}
+
+html body .dialbox .trombi_card dl dt
+{
+	float: left;
+	font-size: 0.9em;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color: rgb(73,76,146);
+	font-weight: bold;
+	font-style: normal;
+}
+
+html body .dialbox .trombi_card dl dt:first-letter
+{
+	color: rgb(32,32,64);
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+html body .dialbox .trombi_card .tabs
+{
+  overflow: hidden;
+  background: none;
+  border: none;
+	text-align: center;
+}
+
+* html body .dialbox .trombi_card ul.tabs
+{
+  background-image: none;
+}
+
+html body .dialbox .trombi_card ul.tabs li
+{
+	font-weight: bold;
+  color: rgb(95,95,155);
+	display: inline;
+	border: none;
+  padding-top: 3px;
+	padding-bottom: 3px;
+	background: rgb(245,245,245);
+}
+
+* html body .dialbox .trombi_card ul.tabs li
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+html body .dialbox .trombi_card ul.tabs li a
+{
+  font-weight: bold;
+  color: rgb(95,95,155);
+  display: inline;
+	border: 0px solid rgb(155,154,199);
+}
+				
+* html body .dialbox .trombi_card ul.tabs li a
+{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid rgb(155,154,199);
+}
+
+html body .dialbox .trombi_card ul.tabs a:hover
+{
+  background: rgb(111,111,164);
+  color: white;
+}
+
+html body .dialbox .trombi_card ul.tabs .selectedTab a
+{
+  font-weight: bolder;
+  background: rgb(155,154,199);
+  color: white;
+}
+
+html body .dialbox .trombi_card ul.tabs .selectedTab
+{
+  font-weight: bolder;
+  background: rgb(155,154,199);
+  background-image: none;
+  color: white;
+}
+
+html body .dialbox .trombi_card .tabsContent
+{
+	width: 538px;
+	height: 300px;
+	overflow: auto;
+  background-color: none;
+	padding: 15px 3px 3px 3px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 1px solid rgb(155,154,199);
+
+}
+
+* html body .dialbox .tabsContent
+{
+	border: none;
+}
+
+html body .dialbox .trombi_card .clear
+{
+  height: 6px;
+	padding: 0px 0px 0px 0px;
+	line-height: 0px;
+}
+	
+/*********************************************************
+*                                                        *
+*    STYLE DE LA SELECTION DE FICHIERS (FILE MANAGER)    *
+*                                                        *
+**********************************************************/
+
+#file_browser .module .title
+{
+  background: url(images/modules/titles/module-title_forum.png);
+	border-bottom: 1px solid rgb(28,28,92);
+}
+
+.files_table_window
+{
+	border: 1px solid black;
+}
+
+.files_table
+{
+	text-align: center;
+}
+
+.files_table td.file:hover
+{
+	background-color: rgb(240, 245, 255);
+}
+
+.files_table td.selected
+{
+	background-color: rgb(225, 228, 255);
+}
+
+.files_table td.selected:hover
+{
+	background-color: rgb(225, 228, 255);
+}
+
+/*** STYLE DES BLOCS UPLOAD OR CHOOSE ***/
+
+
+.upload_or_choose
+{
+	margin: 5px 0px 5px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.upload_or_choose div.form-input
+{
+	height: 25px;
+}
+
+.upload_or_choose div.form-input label
+{
+	height: 1em;
+	margin: 3px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.upload_or_choose a.my_files.link_button
+{
+	margin: 0px 10px 0px 0px;
+}
+
+.upload_or_choose a.my_files.link_button
+{
+	margin: 0px 10px 0px 0px;
+}
+
+* html .upload_or_choose a.my_files.link_button
+{
+	margin: 0px 10px 0px 0px;
+}
+
+.remaining_space
+{
+	float: right;
+	margin-top: -25px;
+	margin-right: 40px;
+	color: rgb(32,55,133);
+	font-weight: bold;
+	
+}
+
+.remaining_space span
+{
+	color: black;
+	font-size: 0.9em;
+	font-weight: normal;
+	padding-left: 5px;
+}
+
+/***   STYLE DE LA PAGE DU BROWSER   ***/
+
+#file_browser .files_menu
+{
+	margin: 0px 0px 0px 0px;
+	padding: 8px 8px 8px 8px;
+	width: 130px;
+	float: right;
+}
+
+#file_browser .files_menu .panel
+{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin: 0px 0px 15px 0px;
+}
+
+#file_browser .files_menu dt
+{
+	margin-top: 5px;
+	color: rgb(32,55,133);
+	font-weight: bold;
+}
+
+#file_browser .files_menu dd
+{
+	font-size: 0.9em;
+	padding-left: 5px;
+}
+
+#file_browser .module .title
+{
+	background: rgb(93, 88, 162) url(./images/modules/titles/module-title.png) center repeat-x;
+	border-bottom: 2px solid rgb(155, 154, 199);
+}
+* html #file_browser .module .title
+{
+	background: url(images/modules/titles/module-title_93-88-162.png) repeat-x top;
+}
+
+/***   STYLE DES BLOCS DE DEBUG   ***/
+
+.debug
+{
+	padding: 3px 3px 3px 3px;
+	margin: 2px 2px 2px 2px;
+	color: white;
+	font-weight: bold;
+	background: rgb(224,123,123);
+	border: 2px solid rgb(178,9,9);
+	z-index: 500;
+	overflow: auto;
+}
+.debug pre
+{
+	color: black;
+}

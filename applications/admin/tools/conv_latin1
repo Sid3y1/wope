@@ -1,0 +1,28 @@
+#!/bin/bash
+
+for i in `find . -type f -name "*.php"`
+do
+		name=`basename $i`
+		
+		cp $i /tmp/
+		
+		cat /tmp/$name | iconv -f utf-8 -t utf-8 > $i
+
+		cp $i /tmp/
+		
+		cat /tmp/$name | iconv -f utf-8 -t latin1 > $i
+
+done	
+
+for i in `find . -type f -name "*.inc"`
+do
+		name=`basename $i`
+
+		cp $i /tmp/
+		
+		cat /tmp/$name | iconv -f utf-8 -t utf-8 > $i
+		
+		cp $i /tmp/
+		
+		cat /tmp/$name | iconv -f utf-8 -t latin1 > $i
+done	

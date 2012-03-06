@@ -1,0 +1,17 @@
+html body #index .column0 .mpub .title h2
+{
+	margin-left: 10px;
+}
+
+html body #index .column0 .mpub .extraDiv1 span
+{
+	display: none;
+}
+
+html body #index .column0 .mpub .content .pub
+{
+	height: 320px;
+	width: 220px;
+	overflow: hidden;
+	margin: 10px auto 10px auto;
+}

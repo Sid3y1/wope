@@ -1,0 +1,43 @@
+
+.add_module .title .extraDiv1 span
+{
+  margin-top: 1px;
+  background-image: url(../../images/modules/logos/application_add.png);
+}
+
+* html .add_module .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/application_add.png', sizingMethod='scale')";
+  return 'none';
+  })(this));
+}							
+
+
+.add_module ul
+{
+  list-style: none;
+}
+
+.add_module .add_modules_button
+{
+	color: rgb(66,63,148);
+	font-weight: bold;
+	font-size: 0.9em;
+	background: rgb(228,235,243);
+	border: 1px solid rgb(199,201,215);
+	padding: 1px 2px 1px 2px;
+	margin-left: 5px;						
+}
+
+.add_module .add_modules_button:hover
+{
+	color: rgb(245,245,245);
+	background: rgb(99,101,160);
+	border: 1px solid rgb(132,144,168);
+}
+
+*+html .add_module .add_modules_form span
+{
+	position: relative;
+}

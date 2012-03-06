@@ -1,0 +1,741 @@
+/*********************************************************************
+*                                                                    *
+*            FEUILLE DE STYLE DU TROMBINOSCOPE COMPILABLE            *
+*                                                                    *
+**********************************************************************/
+
+
+
+/***   STYLE DES ELEMENTS GENERAUX DE LA PARTIE   ***/
+	
+.admin_link
+{
+	float: right;
+	margin: 0px 0px 5px 0px;
+}
+
+
+		/*** STYLE DES COLONNES ***/
+
+#trombi .colomn1
+{
+  width: 260px;
+  float: left;
+  overflow: hidden;
+}
+
+#trombi .colomn2
+{
+  width: 500px;
+  float: right;
+  overflow: hidden;
+}
+
+
+		/*** STYLE DES MODULES ***/
+
+				/*** BLOC MODULE ***/
+			
+				/*** BLOC TITRE ***/
+
+
+/* GENERAL */
+
+/* COLONNE 1 */
+
+#trombi .colomn1 .module
+{
+  border: 2px solid rgb(190,190,190);
+}
+
+#trombi .colomn1 .module_border
+{
+  border: 1px solid rgb(70,70,70);
+  background-color: white;
+}
+
+#trombi .colomn1 .module .content
+{
+  background-color: white;
+}
+
+#trombi .colomn1 .module .title
+{
+  background-color: black;
+  background: url('../../images/modules/titles/entete_png_noire.png') repeat-x center;
+  border-bottom: 1px solid rgb(70,70,70)
+}
+* html #trombi .colomn1 .module .title
+{
+  background: url('../../images/modules/titles/entete_png_noire.png') repeat-x top;
+}
+
+*+html #trombi .colomn1 .module .title
+{
+  background: url('../../images/modules/titles/entete_png_noire.png') repeat-x top;
+}
+
+/* COLONNE 2 */
+
+/***    STYLE DES ONGLETS    ***/
+
+html body .tabs
+{
+  background: none;
+  border: none;
+}
+
+html body .tabs
+{
+  border-bottom: solid 1px rgb(155, 154, 199);
+}
+
+* html body ul.tabs
+{
+  background-image: none;
+}
+
+html body ul.tabs li a
+{
+  font-weight: bold;
+  color: rgb(95,95,155);
+  display: inline;
+  border: 0px solid rgb(155,154,199);
+}
+
+* html body .dialbox ul.tabs li a
+{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgb(155,154,199);
+}
+
+html body .dialbox ul.tabs li
+{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background: rgb(245,245,245);
+}
+
+* html body .dialbox ul.tabs li
+{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+								
+html body ul.tabs a:hover
+{
+  background: rgb(111,111,164);
+  color: white;
+}
+
+html body ul.tabs .selectedTab a
+{
+  font-weight: bolder;
+  background: rgb(155,154,199);
+  color: white;
+}
+
+html body ul.tabs .selectedTab
+{
+  font-weight: bolder;
+  background: rgb(155,154,199);
+  background-image: none;
+  color: white;
+}
+
+
+/***   STYLE DU CONTENU DES ONGLETS   ***/
+
+html body .tabsContent
+{
+  background-color: none;
+  padding: 0px 0px 0px 0px;
+}
+
+/* Cas de la fiche trombi */
+html body .dialbox .tabsContent
+{
+  background-color: none;
+  padding: 15px 3px 3px 3px;
+}
+
+
+#trombi .tabsContent fieldset
+{
+	border: none;
+	padding: 0px 0px 0px 0px;
+}
+
+#trombi .tabsContent .form-input
+{
+  padding: 0px 0px 0px 0px;
+}
+
+#trombi .tabsContent .form-input
+{
+  padding: 0.45em 0px 0.45em 0px;
+  margin: 3px 0px 3px 0px;
+}
+
+#trombi .tabsContent p.form-input input
+{
+  margin: 0px 0px 0px 0px;
+}
+
+#trombi .tabsContent p.form-input input
+{
+  margin: 0px 0px 0px 0px;
+}
+
+#trombi .tabsContent label
+{
+	width: 130px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: rgb(32,55,133);
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+#trombi .tabsContent label
+{
+	width: 100px;
+}
+
+#trombi .tabsContent label span
+{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgb(170,183,225);
+}
+	
+
+/***   STYLE DES ELEMENTS DE LA COLONNE DE DROITE   ***/
+
+		/*** STYLE DU BLOC <DL>   ***/
+
+#trombi .user-list
+{
+	margin: 0px auto 0px auto;
+	width: 476px;
+	overflow: hidden;
+}
+
+
+		/***   STYLE DU BLOC D'AVATAR   ***/
+
+#trombi .picture_block
+{
+	float: left;
+	margin: 0px 0px 0px 0px;
+}
+
+#trombi .picture_block .avatar
+{
+	display: table-cell;
+	width: 80px;
+	height: 93px;
+	text-align: center;
+	vertical-align: middle;
+  cursor: pointer;
+}
+
+#trombi .picture_block .avatar img
+{
+	border: 2px solid rgb(255,183,111);
+}	
+
+#trombi .picture_block .avatar *
+{
+	vertical-align: middle;
+}
+
+/*\*//*/
+#trombi .picture_block .avatar
+{
+	display: block;
+}
+
+#trombi .picture_block .avatar span
+{
+	display: inline-block;
+	height: 100%;
+	width: 1px;
+}
+/**/
+
+* html .picture_block .avatar span
+{
+	display: inline-block;
+	height: 100%;
+}
+*+html .picture_block .avatar span
+{
+	display: inline-block;
+	height: 100%;
+}
+
+
+* html .picture_block .avatar img
+{
+	margin-top: -2px;
+}
+
+
+
+
+	
+
+
+/***   STYLE DU BLOC CONTENANT TOUTES LES INFORMATIONS UTILISATEUR   ***/
+
+#trombi .details_block
+{
+	float: left;
+	margin: 0px 0px 0px 5px;
+	padding: 8px 2px 5px 2px;
+	width: 380px;
+	height: 80px;
+	font-size: 1em;
+	background: rgb(255,247,234);
+  border: 1px solid rgb(255,216,182);
+	overflow: hidden;
+}
+
+* html #trombi .details_block
+{
+	width: 375px;
+}
+
+
+
+		/*** STYLE DE LA LISTE D'ACTIONS REALISABLES SUR UN CONTACT ***/
+
+
+#trombi .details_block ul.panel
+{
+	float: right;
+	width: 175px;
+	height: 75px;
+	margin: 0px 0px 0px 0px;
+	padding: 1px 0px 1px 0px;
+	border-left: 2px solid rgb(255,183,111);
+	overflow: hidden;
+}
+
+#trombi .details_block ul.panel li
+{
+	padding-left: 6px;
+}
+
+#trombi .details_block ul.panel li span
+{
+	color: rgb(240,148,56);
+}
+
+#trombi .details_block ul.panel li a:hover
+{
+	color: rgb(240,148,56);
+}
+
+
+		/***   STYLE DE LA "PIECE D'IDENTITE" D'UN CONTACT   ***/
+
+/* Bloc conteneur */
+#trombi .infos_block
+{
+  float: left;
+  width: 190px;
+	height: 75px;
+	margin: 0px 0px 0px 0px;
+  padding: 1px 3px 1px 3px;
+  overflow: hidden;
+	list-style-type: none;
+}
+			
+#trombi .infos_block li a
+{
+	padding-left: 25px;
+	font-style: italic;
+/*	background: url(../../images/common/minimail_small.png) left no-repeat; */
+}
+
+* html #trombi .infos_block li a
+{
+/*	background: url(../../images/common/minimail_small.png) left no-repeat; */
+}
+
+/* Nom de l'utilisateur */
+#trombi .user-list .user_name
+{
+	float: right;
+	width: 390px;
+ 	margin: 1px 0px 0px 5px;
+ 	font-size: 1.20em;
+ 	font-weight: normal;
+}
+
+#trombi .user-list .user_name span
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 1px;
+	font-size: 0.8em;
+	color: rgb(180,180,180);
+}
+
+/* Etiquettes des champs de la carte */
+#trombi .infos_block li span,
+#trombi .infos_block li a
+{
+  font-size: 0.90em;
+	color: black;
+}
+
+#trombi .infos_block li .item_title
+{
+	font-weight: bold;
+	color: rgb(73,76,146);
+}
+
+
+		/*** STYLE DE lA BARRE DE SEPARATION ENTRE DEUX UTILISATEURS ***/
+
+#trombi .user_sep
+{
+	height: 25px;
+}
+
+/* Cas de la fiche trombi */
+html body .dialbox .clear
+{
+	height: 6px;
+	padding: 0px 0px 0px 0px;
+	line-height: 0px;
+}
+
+
+
+		/*** STYLE DE LA POPUP DE LA FICHE TROMBI ***/
+
+html body .dialbox dl dd
+{
+	font-size: 0.9em;
+	float: left;
+	font-style: italic;
+	margin: 0px 0px 0px 10px;
+	padding: 1px 0px 1px 0px;
+}
+
+html body .dialbox dl dt
+{
+	font-size: 0.9em;
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color: rgb(73,76,146);
+	font-weight: bold;
+	font-style: normal;
+}
+
+html body .dialbox dl dt:first-letter
+{
+	color: rgb(32,32,64);
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+html body .dialbox .tabsContent
+{
+	height: 300px;
+	overflow: auto;
+}
+
+html body .dialbox .close_avatar_prev
+{
+	width: 50px;
+	margin: 1px auto 1px auto;
+}
+
+#trombi .members_nb
+{
+	margin: 5px 7px 10px 0px;
+	padding: 5px;
+	font-size: 1em;
+	background: rgb(253,250,255);
+  border: 1px solid rgb(255,235,243);
+}
+
+
+		/*** STYLE DE LA POPUP FICHE TROMBI ***/
+
+html body .dialbox dl dd
+{
+	float: left;
+	font-size: 0.9em;
+	font-style: italic;
+	margin: 0px 0px 0px 10px;
+	padding: 5px 0px 1px 0px;
+}
+
+html body .dialbox dl dt
+{
+	float: left;
+	font-size: 0.9em;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color: rgb(73,76,146);
+	font-weight: bold;
+	font-style: normal;
+}
+
+html body .dialbox dl dt:first-letter
+{
+	color: rgb(32,32,64);
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+html body .dialbox .tabsContent
+{
+	height: 300px;
+	overflow: auto;
+}
+
+html body .dialbox .close_avatar_prev
+{
+	width: 50px;
+	margin: 1px auto 1px auto;
+}
+
+
+/***   STYLE DE LA FICHE TROMBI   ***/
+
+.search_icon_block
+{
+	margin: -2px 0px 0px 0px;
+	overflow: hidden;
+}
+
+.search
+{
+	float: left;
+	padding: 0px 0px 0px 0px;
+	margin: 5px 0px 0px 3px;
+}
+
+.icon_search
+{
+	float: left;
+	display: block;
+	width: 40px;
+	height: 30px;
+	background: url(../../images/parties/trombi/search.png) no-repeat;
+}
+
+* html .icon_search
+{
+
+	background-image: expression((function(element){
+	  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/trombi/search.png', sizingMethod='scale')";
+		return 'none';
+		})(this));											
+}
+
+.trombi_card .header_block
+{
+	width: 460px;
+	overflow: hidden;
+	border: 1px solid rgb(234,234,255);
+	border-top: none;
+	padding: 8px 8px 20px 8px;
+	background: white url(../../images/parties/trombi/deco_trombi.gif) repeat-x bottom;
+	margin-bottom: 20px;
+}
+
+.trombi_card .header_block .user_photos_block
+{
+	margin: 0px 0px 5px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+* html .trombi_card .header_block .user_photos_block
+{
+	position: relative;
+}
+
+.trombi_card .header_block .email_block
+{
+	margin: 0px 6px 0px 0px;
+}
+
+.trombi_card .header_block .user_photos_block,
+.trombi_card .header_block .email_block
+{
+	text-align: right;
+}
+
+.trombi_card .header_block .email_block .mini_mail,
+.trombi_card .header_block .user_photos_block a
+{
+	color: rgb(30, 30, 30);
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.trombi_card .header_block .email_block .mini_mail:hover,
+.trombi_card .header_block .user_photos_block a:hover
+{
+  color: rgb(33, 54, 132);
+}
+
+.trombi_card .header_block .email_block .mini_mail
+{
+	padding-left: 25px;
+}
+
+* html .trombi_card .header_block .email_block .mini_mail
+{
+	zoom: 1;
+}
+
+.trombi_card .header_block .photo_block
+{
+	float: left;
+}
+
+.trombi_card .header_block .summary_block
+{
+	float: left;
+	margin: 0px 0px 0px 5px;
+}
+
+.trombi_card .header_block .summary_block .name_line
+{
+	width: 370px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 2px;
+	border-bottom: solid 1px rgb(33, 54, 132);
+}
+
+.trombi_card .header_block .summary_block .name_line h3
+{
+	display: inline;
+	color: rgb(33, 54, 132);
+}
+
+.trombi_card .header_block .summary_block .name_line .social_status
+{
+	padding-left: 10px;
+	color: rgb(160,160,160);
+}
+
+.trombi_card .header_block .summary_block .summary_infos
+{
+	text-align: right;
+}
+
+.trombi_card .header_block .summary_block .summary_infos h4
+{
+	color: rgb(33, 54, 132);
+	margin: 6px 0;
+}
+
+.trombi_card .header_block .summary_block .summary_infos p
+{
+	margin: 6px 0;
+}
+
+.trombi_card .main_block
+{
+	border: 1px solid rgb(234,234,255);
+	border-top: none;
+	padding: 8px 8px 20px 8px;
+	background: white url(../../images/parties/trombi/deco_trombi.gif) repeat-x bottom;
+	margin-top: none;
+}
+
+.trombi_card .main_block dl
+{
+	text-align: right;
+}
+
+.trombi_card .main_block dl dt
+{
+	float: left;
+	margin-top : 5px;
+}
+
+.trombi_card .main_block dl dd
+{
+	color: rgb(33, 54, 132);
+	font-weight: bold;
+}
+
+.trombi_card .main_block dl dd.small
+{
+	margin: 0px 0px 0px 10px;
+	padding: 5px 0px 1px 0px;
+}
+
+.trombi_card .main_block dl dd.big
+{
+	text-align: left;
+	margin: 0px 0px 10px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.trombi_card .main_block dl dd.big p
+{
+	margin: 8px 0px 15px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+* html .trombi_card .main_block dl dd.big p
+{
+	margin: 0px 0px 5px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.trombi_card .main_block h3
+{
+	border-bottom: solid 1px rgb(33, 54, 132);
+}
+
+
+/***   STYLE DE L'AUTOCOMPLETE DU TROMBI (PARTIE RECHERCHE)  ***/
+
+#trombi .autocomplete_container {
+	position:relative;
+	top:0px;
+	left:0px;
+	z-index:9050;
+}
+
+#trombi .autocomplete_container .yui-ac-content {
+	color: rgb(69,98,156);
+	position:absolute;
+	left:0;
+	top:0;
+	width:20em;
+	border:1px solid rgb(148,165,200);
+	background:rgb(245,245,245);
+	overflow:hidden;
+	text-align:left;
+	z-index:9050;
+}
+
+#trombi .autocomplete_container ul {
+	padding:5px 0;
+	width:100%;
+}
+
+#trombi .autocomplete_container li {
+	padding:0 5px;
+	cursor:default;
+	white-space:nowrap;
+}
+
+#trombi .autocomplete_container li.yui-ac-highlight {
+	background:rgb(148,165,200);
+}

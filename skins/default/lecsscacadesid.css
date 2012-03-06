@@ -1,0 +1,252 @@
+.displayData  thead th {
+  border: solid 1px red;
+	background-color:#CCC;
+}
+.displayData  tbody td {
+  border: solid 1px black;
+}
+
+.selected {
+	background-color: #CCC;
+  cursor: pointer;
+}
+
+.selectedline {
+	background-color: #CCF;
+  cursor: pointer;
+}
+
+
+
+
+hr {
+	border-bottom: 2px solid rgb(0, 102, 153);
+}
+
+.magicForm {
+  display:block;
+}
+
+
+.analyse {
+width:600px;
+height:200px;
+border: solid 2px black;
+background-color:#FBB;
+}
+
+
+
+
+
+
+
+/* Num pages */
+.navPages
+{
+	/*padding: 5px;*/
+  padding: 0;
+}
+.navPages dd
+{
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.navPages dl
+{
+  float: right;
+	/*margin: -10px 0;*/
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+/* La ou c'est écrit "pages :" */
+.navPages dt
+{
+  float: left;
+  padding: 0;
+  margin: 8px .5em 0 0;
+  width: auto;
+}
+.navPages ul
+{
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navPages li
+{
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.navPages a
+{
+  float: left;
+  display: block;
+  margin: 9px 2px;
+}
+.navPages a.here
+{
+  color: rgb(110, 110, 110);
+  cursor: default;
+}
+/* icones suivante | précédente */
+.navPages a.previous,
+.navPages a.next
+{
+  height: 20px;
+  width: 20px;
+  margin: .6em 4px;
+  text-indent: 20px;
+  overflow: hidden;
+  background: url(images/next.png) center no-repeat;
+}
+.navPages a.previous
+{
+  background: url(images/previous.png) center no-repeat;
+}
+.navPages a.next
+{
+  background: url(images/next.png) center no-repeat;
+}
+
+
+/* Lien mail to */
+.mailTo a
+{
+  margin-left: 4px;
+}
+.mailTo .popup
+{
+  margin: 0;
+  display: block;
+  height: 18px;
+  width: 18px;
+	background-color: red;
+  text-indent: 18px;
+  overflow: hidden;
+  float: left;
+}
+
+
+/* Tabs */
+.tabs
+{
+  padding: 5px 0;
+  background: rgb(93, 88, 162) url(./images/module-title.png) top repeat-x;
+  border: 1px solid rgb(155, 154, 199);
+}
+.tabs li
+{
+  /*border: 2px solid black;*/
+  padding: 5px 0;
+  /*margin: -0.7em 0;*/
+  display: inline;
+}
+.tabs a
+{
+  padding: 5px 15px;
+  color: white;
+}
+.tabs a:hover
+{
+  background: rgb(110, 149, 55) url(./images/module-title.png) top repeat-x;
+  color: white;
+}
+.selectedTab
+{
+  background: rgb(234, 103, 24) url(./images/module-title.png) top repeat-x;
+}
+
+.tabsContent
+{
+  border: solid 1px rgb(155, 154, 199);;
+  padding: 5px;
+  background-color: white;
+}
+
+/* dataDisplay */
+.dataDisplay
+{
+  border-spacing: 0;
+}
+.dataDisplay td
+{
+  background: rgb(207, 228, 249) url(./images/module-title.png) top repeat-x;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: rgb(153, 189, 218);
+  padding: 5px;
+}
+.dataDisplay th
+{
+  background: rgb(252, 218, 174) url(./images/module-title.png) top repeat-x;
+  border-top: 1px solid rgb(248, 163, 48);
+  border-bottom: 1px solid rgb(153, 189, 218);
+  padding: 5px;
+  color: rgb(50, 50, 50);
+  /*text-align: left;
+  vertical-align: top;*/
+}
+.dataDisplay th span
+{
+  /*display: block;*/
+}
+.dataDisplay td.navPages
+{
+  background: none;
+  border: none;
+}
+
+/*  */
+a.delete
+{
+  height: 20px;
+  width: 20px;
+  display: block;
+  text-indent: 20px;
+  overflow: hidden;
+  background: url(images/cross.png) center no-repeat;
+}
+a.up,
+a.down
+{
+  height: 20px;
+  width: 20px;
+  display: block;
+  text-indent: 20px;
+  overflow: hidden;
+  float: right;
+  background: center no-repeat;
+}
+a.up
+{
+  background-image: url(images/up.png);
+}
+a.down
+{
+  background-image: url(images/down.png);
+}
+
+
+/* magicText */
+.magicText
+{
+  width: 100%;
+}
+
+
+/* magicForm */
+form .error input,
+form .error textarea
+{
+	background-color: rgb(255, 187, 187);
+	border-color: rgb(255, 102, 102);
+}
+form .error input:focus,
+form .error textarea:focus
+{
+  background-color: rgb(255, 214, 214);
+	border-color: rgb(255, 151, 151);
+}

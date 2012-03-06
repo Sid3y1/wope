@@ -1,0 +1,11 @@
+#!/bin/bash
+
+IMG_DIR='photo_joke'
+
+for PICTURE in `/bin/ls $IMG_DIR`
+do
+   echo $PICTURE
+   /usr/bin/convert -compress JPEG -thumbnail 75x75 ./$IMG_DIR/$PICTURE ./$IMG_DIR/$PICTURE
+
+done
+

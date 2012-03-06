@@ -1,0 +1,73 @@
+/*****************************************************
+*                                                    *
+*           FEUILLE DE STYLE DU SONDAGE              *
+*                                                    *
+******************************************************/
+
+.survey-result .stat-bar 
+{  
+	border: 1px solid rgb(241,240,248);
+  background-color: rgb(230,229,245);
+  height: 10px;
+	width: 500px;
+	margin-bottom: 10px;
+}
+
+.survey-result
+{
+	padding: 5px 5px 10px 5px;
+	background: rgb(222,220,241);
+	border: 1px solid rgb(199,196,223);
+}
+
+.page p b
+{
+	color: indigo;
+	font-weight: bolder;
+}
+
+.page p
+{
+	margin-bottom: 15px;
+}
+
+.page h2
+{
+	color: indigo;
+}
+
+.survey-result dt
+{
+	color: indigo;
+	font-weight: bold;
+}
+
+.survey-result .stat-bar .result_bar
+{
+	line-height: 0px;
+	font-size: 0px;
+	background: rgb(199,196,223);
+}
+
+.survey-result .percent
+{
+	font-style: italic;
+}
+
+h1
+{
+	color: indigo;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.liste_sondages
+{
+	list-style-type: none;
+}
+
+.ligne_liste_sondages a
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}

@@ -1,0 +1,929 @@
+#admin .admin_column1
+{
+  width: 384px;
+  float: left;
+}
+
+#admin .admin_column2
+{
+  width: 384px;
+  float: right;
+}
+
+#admin .admin_menu1
+{
+  width: 246px;
+  float: left;
+}
+
+#admin .admin_menu1,
+#admin .admin_menu2
+{
+  padding: 0px 0px 0px 0px;
+}
+
+/*** CORRECTION DE DECALAGE ***/
+
+#admin .admin_menu2 form
+{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+/*** FIN ***/
+
+#admin .admin_menu2
+{
+  width: 522px;
+  float: right;
+}
+
+#admin .admin_menu1 .module
+{
+  margin: 0px auto 10px auto;
+  border: 2px solid rgb(190,190,190);
+}
+
+#admin .admin_menu1 .module_border
+{
+  margin: 0px 0px 0px 0px;
+  border: 1px solid rgb(70,70,70);
+  background-color: white;
+}
+
+#admin .admin_menu1 .module .content
+{
+  background-color: white;
+}
+
+#admin .admin_menu1 .module .title
+{
+  background-color: black;
+  background: url('../../images/modules/titles/entete_png_noire.png') repeat-x center;
+  border-bottom: 1px solid rgb(70,70,70)
+}
+* html #admin .admin_menu1 .module .title
+{
+  background: url('../../images/modules/titles/entete_png_noire.png') repeat-x top;
+}
+
+*+html #admin .admin_menu1 .module .title
+{
+  background: url('../../images/modules/titles/entete_png_noire.png') repeat-x top;
+}
+
+#admin .data_table tbody tr span.no
+{
+	color: #FF0000;
+	font-weight: bold;
+}
+
+#admin .data_table tbody tr span.yes
+{
+	color: #55BB55;
+	font-weight: bold;
+}
+
+#admin .data_table tbody tr.no_active
+{
+	background-color: #FF8888;
+}
+
+#admin .data_table tbody tr.active
+{
+	background-color: rgb(200,255,199);
+}
+
+#admin .data_table tbody tr.proposal
+{
+	background-color: rgb(255,213,146);
+}
+
+#admin .data_table tbody tr.ended
+{
+	background-color: rgb(230,230,230);
+}
+
+#admin .data_table tbody tr.archived
+{
+	background-color: rgb(171,171,171);
+}
+
+#admin .data_table tbody tr.no_valid
+{
+	background-color: #FF8888;
+}
+
+#admin .data_table tbody tr.future_ad
+{
+	background-color: #8888FF;
+}
+
+#admin .data_table tbody tr.current_ad
+{
+	background-color: #88FF88;
+}
+
+#admin .data_table tbody tr.archive
+{
+	background-color: #888888;
+}
+
+#admin .enhanced_data_table
+{
+  border-spacing: 0;
+}
+
+#admin .enhanced_data_table td
+{
+	padding: 4px 5px;
+}
+
+#admin .enhanced_data_table tr th
+{
+	background: rgb(210,213,230);
+	padding: 5px;
+}
+
+#admin .enhanced_data_table .details
+{
+	font-size: 0.9em;
+	color: rgb(100,100,100);
+}
+
+#admin .line_a
+{
+	background: rgb(226,229,246);
+}									
+
+#admin .line_b
+{
+	background: rgb(243,245,255);
+}
+
+#admin ul.tree,
+#admin ul.tree li
+{
+	zoom: 1;
+	position: relative;
+}
+
+#admin ul.tree li.tree_element .user_right
+{
+	padding-left: 10px;
+}
+
+#admin ul.tree.tree_prefs
+{
+	font-weight: bold;
+}
+
+#admin ul.tree .sub_tree
+{
+	padding-left: 0px;
+	margin: 0px 0px 5px 18px;
+}
+
+#admin ul.tree .sub_tree li a.user_right
+{
+	font-weight: normal;
+	color: rgb(120,120,120);
+	padding: 0px 0px 0px 2px;
+}
+
+#admin ul.tree li.tree_element
+{
+	list-style-type: none;
+}
+
+#admin ul.tree li.tree_element a.expand_tree
+{
+	position: absolute;
+	font-weight: bolder;
+}
+
+/*********************************************************
+*                                                        *
+*      AJOUT SYLV DU 24/10/2006 ~ CREATION DE LA CSS     *
+*                                                        *
+**********************************************************/
+#admin a.bottom
+{
+  height: 18px;
+	width: 14px;
+	display: block;
+	text-indent: 20px;
+	overflow: hidden;
+	background: url(../../images/common/icon-bottom.png) no-repeat;
+}
+
+#admin a.top
+{
+  height: 18px;
+  width: 14px;
+	display: block;
+	text-indent: 20px;
+	overflow: hidden;
+  background: url(../../images/common/icon-top.png) no-repeat;
+}
+
+* html #admin a.bottom
+{
+  background-image: expression((function(element){
+  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/common/icon-bottom.png', sizingMethod='scale')";
+  return 'none';
+  })(this));
+}
+
+* html #admin a.top
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/common/icon-top.png', sizingMethod='scale')";
+	return 'none';
+	})(this));
+}
+								
+#admin ul.panel
+{
+	border-left: 2px solid rgb(170,183,225);
+}
+
+#admin ul.panel.stats
+{
+	border-left: none;
+}
+
+#admin ul.panel li.link_menu a:hover
+{
+	color: rgb(145,160,207);
+}
+
+#admin .first_menu
+{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+#admin span.panel_h
+{
+	color: rgb(95,108,192);
+	border-bottom: 2px solid rgb(95,108,192);
+}
+
+#admin span.panel_h a:hover
+{
+	color: rgb(95,108,192);
+}
+
+#admin #menu_prefs
+{
+	margin: 15px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#admin ul.panel_h.mini
+{
+	border-bottom: 2px solid rgb(170,183,225);
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 280px;
+}
+
+#admin ul.panel_h.mini li a:hover
+{
+	color: rgb(145,160,207);
+}
+
+#admin span.titre_menu
+{
+	margin: 15px 0px 10px 0px;
+}
+
+#admin em
+{
+	font-size: 0.9em;
+	font-style: italic;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#admin .right_tree
+{
+	font-size: 0.9em;
+}
+
+#admin form
+{
+	margin-left: 15px;
+}
+
+#admin .form-radio
+{
+	margin: 8px 0px 10px 3px;
+	padding: 1px 0px 1px 0px;
+}
+
+#admin .form-radio label
+{
+	padding: 0px 0px 0px 3px;
+}
+
+#admin .action_link
+{
+	color: rgb(66,63,148);
+	font-weight: bold;
+	font-size: 0.9em;
+	background: rgb(245,245,245);
+	border: 1px solid rgb(199,201,215);
+	padding: 1px 2px 1px 2px;
+	margin: 0px 0px 0px 0px;
+}
+
+#admin .action_link:hover
+{
+	color: rgb(245,245,245);
+	background: rgb(99,101,160);
+	border: 1px solid rgb(132,144,168);
+}
+
+#admin .action
+{
+	margin: 15px 0px 15px 0px;
+	padding: 1px 0px 1px 0px;
+}
+
+#admin .form_give
+{
+	margin: 10px 0px 0px 25px;
+	padding: 1px 1px 1px 1px;
+	background-color: rgb(243,245,252);
+	border: 1px solid rgb(235,239,249);
+	width: 233px;
+}
+
+#admin .exp
+{
+	font-weight: bold;
+}
+
+#admin .exp_child
+{
+	font-size: 0.9em;
+}
+
+#admin .branch_1
+{
+	color: rgb(216,42,42);
+}
+
+#admin .branch_2
+{
+	color: rgb(244,199,44);
+}
+
+#admin .branch_3
+{
+	color: rgb(120,177,50);
+}
+
+#admin .branch_4
+{
+	color: rgb(101,121,186);
+}
+
+#admin .branch_5
+{
+	color: rgb(172,72,187);
+}
+
+#admin .branch_6
+{
+	color: rgb(241,27,228);
+}
+
+#admin .branch_7
+{
+	color: rgb(230,233,20);
+}
+
+#admin .branch_8
+{
+	color: rgb(185,194,220);
+}
+
+#admin .branch_9
+{
+	color: rgb(165,165,165);
+}
+
+#admin .branch_10
+{
+	color: black;
+}
+
+#admin .trash
+{
+	height: 16px;
+	width: 16px;
+	display: block;
+	background-image: url('../../images/common/cross.png');
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+* html body #admin .trash
+{
+	display: block;
+	background: url('../../images/common/cross.png') no-repeat;
+}
+
+#admin .edit
+{
+	height: 20px;
+	width: 19px;
+	display: block;
+	background: url('../../images/common/icon-edit.png') no-repeat;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+* html #admin .edit
+{
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/common/icon-edit.png', sizingMethod='scale')";
+	return 'none';
+	})(this))
+}
+
+#admin .see
+{
+	height: 16px;
+	width: 23px;
+	display: block;
+	background: url('../../images/parties/forum/forum/icon-see_no_new.png') no-repeat;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+* html #admin .see
+{
+	height: 16px;
+	width: 23px;
+	background-image: expression((function(element){
+	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/forum/forum/icon-see_no_new.png', sizingMethod='scale')";
+	return 'none';
+	})(this))
+}
+
+#admin fieldset
+{
+	border: none;
+}
+
+#admin span.nom_champ 
+{
+/*	background: rgb(238,241,248); */
+	border-bottom: 1px solid rgb(230,233,243);
+	color: rgb(87,104,162);
+	font-weight: bold;
+	padding: 1px 5px 1px 2px;
+	margin: 0px 0px 0px 0px;
+}
+
+#admin span.contenu_champ
+{
+	font-size: 0.9em;
+	font-style: italic;
+	margin: 2px 0px 0px 2px;
+}
+
+#admin div.separation_classe_infos
+{
+	height: 2px;
+	width: 40%;
+	margin-left: 5px;
+	margin-right: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 0;
+	font-size: 0;
+	background: rgb(220,226,242);
+}
+
+/*** PARTIE TRADE : SECTION LISTE DES CATEGORIES ***/
+
+#admin #trade_admin_content .sub_category_line
+{
+	overflow: hidden;
+	height: 20px;
+	width: 490px;
+	margin: 0px 0px 1px 15px;
+	padding: 0px 0px 0px 0px;
+}
+
+#admin #trade_admin_content .sub_category_line.color1
+{
+	background: rgb(239,241,255);
+}
+
+#admin #trade_admin_content .sub_category_line.color2
+{
+	background: rgb(223,227,255);
+}
+
+#admin #trade_admin_content .category_line
+{
+	overflow: hidden;
+	height: 20px;
+	width: 530px;
+	margin: 20px 0px 3px 5px;
+	padding: 0px 0px 0px 0px;
+	background-color: rgb(194, 201, 255);
+	border-bottom: 1px solid rgb(177,186,255);
+}
+
+#admin #trade_admin_content .category_line .delete,
+#admin #trade_admin_content .sub_category_line .delete
+{
+	margin: 1px 0px 0px 0px;
+}
+
+* html #admin #trade_admin_content .category_line .delete,
+* html #admin #trade_admin_content .sub_category_line .delete
+{
+	margin: 3px 0px 0px 0px;
+}
+
+#admin #trade_admin_content .sub_category_block
+{
+	width: 435px;
+	margin: 1px 5px 1px 15px;
+	padding: 0px 0px 0px 0px;
+}
+
+#admin #trade_admin_content .category_block
+{
+	font-weight: bold;
+	width: 490px;
+	margin: 1px 5px 1px 5px;
+	padding: 0px 0px 0px 0px;
+}
+
+#admin .categories_list_block
+{
+	width: 570px;
+	margin: 0px auto 10px auto;
+}
+
+/*** STYLE DES ONGLETS ***/
+
+#admin .tabs
+{
+background: none;
+border: none;
+border-bottom: solid 1px rgb(155, 154, 199);
+}
+
+* html #admin ul.tabs
+{
+background-image: none;
+}
+
+#admin ul.tabs li a
+{
+font-weight: bold;
+color: rgb(95,95,155);
+display: inline;
+border: 0px solid rgb(155,154,199);
+}
+
+#admin ul.tabs a:hover
+{
+background: rgb(111,111,164);
+color: white;
+}
+
+#admin ul.tabs .selectedTab a
+{
+font-weight: bolder;
+background: rgb(155,154,199);
+color: white;
+}
+
+#admin ul.tabs .selectedTab
+{
+font-weight: bolder;
+background: rgb(155,154,199);
+background-image: none;
+color: white;
+}
+
+
+/***   STYLE DU CONTENU DES ONGLETS   ***/
+
+#admin .tabsContent
+{
+background-color: none;
+padding: 0px 0px 0px 5px;
+overflow: hidden;
+}
+
+/*** ADMIN NEWSLETTER ***/
+
+#admin #newsletter_admin_content .categ_title .titre_menu
+{
+	font-size: 1.15em;
+}
+
+#admin #newsletter_admin_content .categ_title .titre_menu span
+{
+	font-size: 1.25em;
+}
+
+#admin #newsletter_admin_content .article_block
+{
+	margin: 8px 0px 4px 0px;
+	padding: 2px 2px 2px 2px;
+	background: #f5f6ff;
+	border: 1px solid #dee1ff;
+}
+
+#admin #newsletter_admin_content .article_block .actions
+{
+	padding: 5px 5px 5px 5px;
+}
+
+#admin #newsletter_admin_content .article_title
+{
+	margin: 5px 0px 0px 5px;
+	color: #656a9b;
+	font-weight: bold;
+}
+
+#admin #newsletter_admin_content .article_content
+{
+	padding: 1px 5px 1px 5px;
+	font-size: 0.9em;
+	text-indent: 15px;
+	text-align: justify;
+}
+
+/*** STYLE DE LA FICHE TROMBI D'UN UTILISATEUR ***/
+
+html body #admin #admin_user_content .tabsContent
+{
+	padding: 15px 1px 1px 10px;
+}
+
+html body #admin #admin_user_content dl dd
+{
+  float: left;
+  font-size: 0.9em;
+  font-style: italic;
+  margin: 0px 0px 0px 10px;
+	padding: 1px 0px 1px 0px;
+}
+
+html body #admin #admin_user_content dl dt
+{
+	float: left;
+	font-size: 0.9em;
+	margin: 0px 0px 5px 0px;
+	padding: 0px 0px 0px 0px;
+	color: rgb(73,76,146);
+	font-weight: bold;
+	font-style: normal;
+}
+
+html body #admin #admin_user_content dl dt:first-letter
+{
+	color: rgb(32,32,64);
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+/***   STYLE DE LA PAGE D'ACCUEIL   ***/
+
+#admin .admin_home_item_list
+{
+  overflow: hidden;
+  font-size: 0.9em;
+	width: 320px;
+  margin: 2px auto 2px auto;
+  padding: 3px 0px 0px 10px;
+  height: 20px;
+}
+
+#admin .line_1
+{
+	background: rgb(216,219,236);
+}									
+
+#admin .line_2
+{
+	background: rgb(233,235,245);
+}
+
+#admin .end_list_clear
+{
+	height: 15px;
+	clear: both;
+}
+
+.error_message
+{
+	padding-left: 8px;
+	font-style: italic;
+	color: red;
+}
+
+#admin .big
+{
+	font-weight: bold;
+}
+
+#admin .normal
+{
+	/* nothing */
+	padding-left: 8px;
+}
+
+#admin .small
+{
+	font-size: 0.9em;
+	padding-left: 15px;
+}
+
+/*** Admin Sondages ***/
+
+
+#admin .color_legend
+{
+	float: left;
+	height: 10px;
+	width: 10px;
+	display: block;
+	border: 1px solid black;
+	margin: 3px 8px 0px 15px;
+	padding: 0px 0px 0px 0px;
+}
+
+#admin .legend_span
+{
+	float: left;
+}
+
+#admin .sep
+{
+	height: 10px;
+}
+
+.dialbox .survey_title_block
+{
+	width: 520px;
+	overflow: hidden;
+	margin: 20px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color: rgb(32,55,133);
+	font-weight: bold;
+}
+
+.dialbox .survey_title_block em
+{
+	font-weight: normal;
+	color: black;
+}
+
+.dialbox .survey_answer_block
+{
+	width: 480px;
+	overflow: hidden;
+	margin: 2px 0px 0px 8px;
+	padding: 0px 0px 0px 0px;
+	font-size: 0.9em;
+}
+
+		/*** Style des blocs de résultats ***/
+
+.dialbox .results_block
+{
+	width: 300px;
+	height: 12px;
+	margin: 0px 0px 0px 8px;
+	padding: 0px 0px 0px 0px;
+	background: rgb(215,226,224);
+}
+
+.dialbox .results_block span
+{
+	position: absolute;
+}
+
+.dialbox .results
+{
+	height: 12px;
+	padding: 0px 0px 0px 0px;
+	line-height: 0px;
+	font-size: 0px;
+	background: rgb(145,231,139);
+	border-right: 1px solid #f6fff5;
+}
+
+
+/*** USER ADMIN ***/
+
+.visit_prompt
+{
+  margin: 5px 0px 10px 0px;
+  padding: 5px;
+  font-size: 1em;
+  background: rgb(234,234,255);
+	border: 1px solid rgb(224,224,245);
+}
+
+.user_list .user_row
+{
+	border: 1px solid rgb(234,234,255);
+	border-top: none;
+	padding: 4px 8px 16px 8px;
+	background: white url(../../images/parties/trombi/deco_trombi.gif) repeat-x bottom;
+	margin-bottom: 10px;
+}
+
+.user_list .user_row .user_photo
+{
+	float: left;
+	margin-top: -10px;
+}
+
+.user_list .user_row .row_up
+{
+	text-align: right;
+	line-height: 2em;
+}
+
+.user_list .user_row .row_up h3
+{
+	color: rgb(33, 54, 132);
+	margin: 0 0 0 0;
+}
+
+.user_list .user_row .row_up .mini_mail
+{
+  padding-left: 25px;
+  color: rgb(255, 50, 50);
+}
+
+* html .user_list .user_row .row_up .mini_mail
+{
+	zoom: 1;		
+}
+
+.user_list .user_row .row_up .mini_trombi
+{
+  padding-left: 30px;
+  color: rgb(200, 50, 20);
+}
+
+* html .user_list .user_row .row_up .mini_trombi
+{
+	zoom: 1;		
+}
+
+.picture_block
+{
+	float: left;
+	margin: 0px 0px 0px 0px;
+}
+
+.picture_block .avatar
+{
+	display: table-cell;
+	width: 80px;
+	height: 93px;
+	text-align: center;
+	vertical-align: middle;
+  cursor: pointer;
+}
+
+.picture_block .avatar img
+{
+	border: 2px solid rgb(135,137,178);
+}
+
+.picture_block .avatar *
+{
+	vertical-align: middle;
+}
+
+* html .picture_block .avatar span
+{
+	display: inline-block;
+	height: 100%;
+}
+
+* html .picture_block .avatar img
+{
+	margin-top: -2px;
+}
+

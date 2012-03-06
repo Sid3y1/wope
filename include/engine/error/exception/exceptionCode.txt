@@ -1,0 +1,31 @@
+0 unknow error :
+----------------
+
+1 general error :
+-----------------
+
+
+2 file errors : 
+--------------
+
+2000 : Fichier locaux
+	2000 : Unkown error type local file
+	2001 : The local file is not readable
+	2002 : The local file is not writable
+
+2100 : Fichiers distants
+	2100 : Unknown error type distant file	
+	2101 : The distant file is not readable
+	2102 : The distant file is not writable
+
+
+3 database errors :
+------------------
+	3000 : Unknown error type database
+	3001 :
+	3002 :
+	3003 : Unknown method
+
+4 modules errors :
+-----------------
+	4000 : Unknown error concerning modules

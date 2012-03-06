@@ -1,0 +1,113 @@
+/*****************************************************************************
+*                                                                            *
+*     FEUILLE DE STYLE DE LA PARTIE LIENS UTILES ~ AJOUT SYLV 31/11/2006     *  
+*                                                                            *
+******************************************************************************/
+
+#liens_utiles .menu_block .module .title
+{
+  background-color: rgb(214, 219, 255);
+  border-bottom: 1px solid rgb(173, 183, 255);
+}
+* html #liens_utiles .menu_block .module .title
+{
+  background: url(../../images/modules/titles/module-title_214-219-255.png) repeat-x top;
+}
+
+#liens_utiles .menu_block .module .title h2
+{
+  float: left;
+  margin: -0.7em 5px -0.7em 10px;
+  color: rgb(66, 63, 148);
+  text-transform: capitalize;
+	font-weight: 900;  
+}
+
+#liens_utiles .menu_block .module .title .extraDiv1 span
+{
+  height: auto;
+  width: auto;
+  background: none;
+}
+
+.menu_block
+{
+	margin: 0px 20px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 180px;
+}
+
+.list_block
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 570px;
+}
+
+.link_line
+{
+	padding: 1px 0px 1px 5px;
+	margin: 2px 0px 2px 15px;
+	width: 515px;
+}
+
+.link_line .block_link_title
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 410px;
+}
+
+.link_line span
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 5px;
+	font-size: 0.8em;
+}
+
+.link_line .useful_link
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: rgb(73,80,122);
+}
+
+.link_line .useful_link:hover,
+{
+	color: rgb(19,29,94);
+}
+
+.link_line.a1
+{
+	background: rgb(233,235,245);
+}
+
+.link_line.b1
+{
+	background: rgb(216,219,236);
+}
+
+.admin_link
+{
+	float: left;
+	margin: 15px 0px 0px 0px;
+}
+
+/*** STYLE DES TOOLTIPS ***/
+
+.tooltips .tt_link_title
+{
+	font-weight: bold;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.tooltips .tt_link_description
+{
+	font-weight: normal;
+	font-size: 0.9em;
+	padding: 0px 0px 0px 5px;
+	margin: 0px 0px 0px 0px;
+}

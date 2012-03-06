@@ -1,0 +1,172 @@
+/**************************************************
+*                                                 *
+*    FEUILLE DE STYLE DE LA PARTIE COVOITURAGE    *  
+*                                                 *
+***************************************************/
+
+table.cov_results
+{	
+	border: 1px solid rgb(170,183,225);
+	background: rgb(245,245,245);
+	padding: 1px;
+}
+
+.plan_de_travail
+{
+	background: none;
+	padding: 2px;
+}
+
+.plan_de_travail h2
+{
+	background: none;
+  color: rgb(85,43,143);
+}
+
+table th
+{	
+	background: rgb(215,220,251);
+	padding: 5px;
+}
+
+.covoiturage_gauche
+{
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 390px;
+}
+
+.covoiturage_droite
+{
+	float: right;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 375px;
+}
+
+/**************************************************************
+*                                                             *
+*     AJOUTS DE SYLVAIN DU 23/10/2006 ~ REFONTE DE LA CSS     *
+*                                                             *
+***************************************************************/
+
+.covoiturage_droite ul.panel
+{
+	padding: 2px 0px 2px 3px;
+	border-left: 2px solid rgb(170,183,225);
+}
+
+.covoiturage_droite ul.panel li.link_menu a
+{
+	text-align: left;
+	font-weight: bold;
+	color: black;
+}
+
+.covoiturage_droite ul.panel li.link_menu a:hover
+{
+	color: rgb(170,183,225);
+}
+
+#covoiturage div.offre_demande_titre
+{
+	color: rgb(32,55,133);
+	font-size: 1em;
+	text-align: left;
+	width: 150px;
+	margin: 15px 0px 10px 0px;
+	padding: 0px 0px 0px 5px;
+	font-weight: bold;
+	border-bottom: 2px solid rgb(170,183,225);
+}
+
+#covoiturage div.offre_demande_titre span
+{
+	color: rgb(170,183,225);
+	font-size: 1.2em;
+}
+
+#covoiturage .covoiturage_droite .module .title,
+#covoiturage .information .title,
+#covoiturage .information2 .title,
+#covoiturage .information3 .title
+{
+  background-color: rgb(214, 219, 255);
+  border-bottom: 1px solid rgb(173, 183, 255);
+}
+
+* html #covoiturage .covoiturage_droite .module .title,
+* html #covoiturage .information .title,
+* html #covoiturage .information2 .title,
+* html #covoiturage .information3 .title
+{
+  background: url(../../images/modules/titles/module-title_214-219-255.png) repeat-x top;
+}
+
+*+html #covoiturage .covoiturage_droite .module .title,
+*+html #covoiturage .information .title,
+*+html #covoiturage .information2 .title,
+*+html #covoiturage .information3 .title
+{
+  background: url(../../images/modules/titles/module-title_214-219-255.png) repeat-x top;
+}
+
+#covoiturage .covoiturage_droite .module .title h2,
+#covoiturage .information .title h2,
+#covoiturage .information2 .title h2,
+#covoiturage .information3 .title h2
+{
+  float: left;
+  margin: -0.7em 5px -0.7em 10px;
+  color: rgb(66, 63, 148);
+  text-transform: capitalize;
+	font-weight: 900;  
+}
+#covoiturage .covoiturage_droite .module .title .extraDiv1 span,
+#covoiturage .information .title .extraDiv1 span,
+#covoiturage .information2 .title .extraDiv1 span,
+#covoiturage .information3 .title .extraDiv1 span
+{
+  height: auto;
+  width: auto;
+  background: none;
+}
+
+#covoiturage .information2 .module
+{
+	width: 380px;
+	margin-left: 35px;
+}
+
+#covoiturage .centrage
+{
+	margin: 20px 0px 8px 0px;
+}
+
+#covoiturage span.panel_h
+{
+	color: rgb(95,108,192);
+	border-bottom: 2px solid rgb(95,108,192);
+	width: 270px;
+}
+
+#covoiturage span.panel_h a:hover
+{
+	color: rgb(95,108,192);
+}
+
+#covoiturage div.offre_demande_titre.trajet
+{
+	width: 270px;
+}
+
+#covoiturage .left
+{
+	width: 400px;
+}
+
+#covoiturage .right
+{
+	width: 360px;
+}

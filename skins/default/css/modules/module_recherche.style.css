@@ -1,0 +1,119 @@
+/*************************************************
+*                                                *
+*      FEUILLE DE STYLE DU MODULE RECHERCHE      *
+*                                                *
+**************************************************/
+
+#search_tab
+{
+	width: 420px;
+	margin: 0px 0px 0px 0px;
+}
+
+* html #search_tab
+{
+	width: 440px;
+}
+
+#search_menu
+{
+	width: 50px;
+	margin: 28px 0px 0px 15px;
+}
+
+.recherche .content .tabs
+{
+	background: none;
+	border: none;
+}
+
+* html .recherche .content .tabs
+{
+	background-image: none;
+}
+
+.recherche .title .extraDiv1 span
+{
+  margin-top: 1px;
+  background-image: url(../../images/modules/logos/magnifier.png);
+}
+
+* html .recherche .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+    element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/magnifier.png', sizingMethod='scale')";
+    return 'none';
+    })(this));
+}
+
+.recherche ul,
+.recherche ul li,
+.recherche ul li *
+{
+	position: static;
+	z-index: 1;
+}
+
+.recherche .content .tabs li a
+{
+	font-weight: bold;
+	color: rgb(92,151,196);
+	display: inline;
+	border: 0px solid rgb(155,154,199);
+}
+
+.recherche .content .tabs a:hover
+{
+	background: rgb(145,193,230);
+	color: white;
+}
+
+.recherche .content .tabs .selectedTab a
+{
+ 			font-weight: bolder;
+			background: rgb(103,160,203);
+			color: white;
+}
+
+.recherche .content .tabs .selectedTab
+{
+ 			font-weight: bolder;
+			background: rgb(103,160,203);
+			background-image: none;
+			color: white;
+}
+
+.recherche .content .tabsContent
+{
+		 border: solid 1px rgb(103, 160, 203);
+     background-color: none;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+		 overflow: hidden;
+}
+
+
+.recherche .content .tabsContent form .form-input
+{
+	height: 3.4em;
+	overflow: hidden;
+	padding: 4px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.recherche .content .tabsContent form .form-input a .logo_recherche
+{
+	margin: -10px 5px -10px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+* html .recherche .content .tabsContent form .form-input a .logo_recherche
+{
+	margin: -5px 0px -5px 0px;
+}
+
+.recherche .content .tabsContent form
+{
+	margin: 10px 0px 3px 0px;
+	padding: 0px 0px 0px 0px;
+}

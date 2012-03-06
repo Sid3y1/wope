@@ -1,0 +1,126 @@
+/***********************************************************************
+*                                                                      *
+*        FEUILLE DE STYLE DU MODULE PHOTOS ~ AJOUT SYL 02/2007         *
+*                                                                      *
+************************************************************************/
+
+html body #index.page .column0 .photos .title .extraDiv1 span
+{
+	margin: -1px 0px 0px 10px;
+	width: 31px;
+	height: 28px;
+	background: url('../../images/modules/logos/module-photo.png');
+}
+
+* html body #index.page .column0 .photos .title .extraDiv1 span
+{
+	margin: 1px 0px 0px 10px;
+  background-image: expression((function(element){
+ 		element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/module-photo.png', sizingMethod='scale')";
+		return 'none';
+		})(this));
+}
+
+html body #index.page .column0 .photos .title h2
+{
+	margin-left: 150px;
+}
+
+
+* html body #index.page .column0 .photos .title h2
+{
+	margin-left: 25px;
+}
+
+.photos .content
+{
+	margin: 0px 0px -15px 0px;
+}
+
+.photos #photos
+{
+	position: relative;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 228px;
+}
+
+.photos .img_link img
+{
+	border: 2px solid rgb(81,84,151);
+}
+
+.photos .img_link:hover img
+{
+	border: 2px solid rgb(248,182,159);
+}
+
+.photos .img_infos
+{
+  margin: -2px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  clear: both;
+  text-align: center;
+  font-size: 0.8em;
+  color: rgb(120,120,120);
+}
+
+* html .photos .img_infos
+{
+  margin: 0px 0px 0px 0px;
+}
+
+*+html .photos .img_infos
+{
+  margin: 0px 0px 0px 0px;
+}
+
+.photos .buttons_block
+{
+	width: 50px;
+	height: 19px;
+	margin: 5px auto 0px auto;
+}
+
+*+html .photos .buttons_block
+{
+	margin: 5px auto 8px auto;
+}
+
+.photos .p_buttons
+{
+	float: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	display: block;
+	width: 19px;
+	height: 19px;
+}
+
+.photos .prev_photo
+{
+	background: url(../../images/parties/photo_album/prev.png);
+}
+
+.photos .next_photo
+{
+	margin-left: 10px;
+	background: url(../../images/parties/photo_album/next.png);
+}
+
+* html .photos .prev_photo
+{
+	background-image: expression((function(element){
+  	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/photo_album/prev.png', sizingMethod='scale')";
+	  return 'none';
+		})(this));
+}
+
+* html .photos .next_photo
+{
+	background-image: expression((function(element){
+  	element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/parties/photo_album/next.png', sizingMethod='scale')";
+	  return 'none';
+		})(this));
+}

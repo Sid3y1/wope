@@ -1,0 +1,426 @@
+.agenda
+{
+  margin: 0px auto 10px auto;
+  border: 2px solid rgb(255,221,156);
+}
+
+.agenda .module_border
+{
+  border: 1px solid rgb(200,154,68);
+  background-color: white;
+}
+
+.agenda .content
+{
+  margin: 0px 0px 0px 0px;
+  padding: 5px 5px 5px 5px;
+}
+
+.agenda .content #agenda_content
+{
+  margin: -10px 0px 5px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.agenda .title
+{
+  border-bottom: 1px solid rgb(200,154,68);
+  background: url(../../images/modules/titles/entete_png_orange.png) repeat-x center;
+}
+
+* html #index .agenda .title
+{
+  background: url(../../images/modules/titles/entete_png_orange.png) repeat-x top;
+}
+
+*+html #index .agenda .title
+{
+  background: url(../../images/modules/titles/entete_png_orange.png) repeat-x top;
+}
+
+.agenda .title .extraDiv1 span
+{
+  background-image: url(../../images/modules/logos/calendar.png);
+}
+* html .agenda .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+      element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/calendar.png', sizingMethod='scale')";
+      return 'none';
+      })(this));
+}
+
+.agenda .month
+{
+  width: 175px;
+	height: 160px;
+  text-align: center;
+  border-spacing: 0px;
+	margin-left: 13px;
+}
+.agenda .month th
+{
+  border: 0.5px solid rgb(153, 189, 218);
+  background: rgb(252, 218, 174) url(../../images/modules/titles/module-title.png) center repeat;
+  padding: 1px 1px 1px 1px;
+	margin: 0px 0px 0px 0px;
+}
+* html .agenda .month th
+{
+  background-image: expression((function(element){
+      element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/titles/module-title.png', sizingMethod='scale')";
+      return 'none';
+      })(this));
+}
+.agenda .month td
+{
+  border: 0.5px solid rgb(153, 189, 218);
+	border-top: none;
+  background: rgb(207, 228, 249) url(../../images/modules/titlesmodule-title.png) center repeat;
+  padding: 1px 1px 1px 1px;
+	margin: 0px 0px 0px 0px;
+  color: rgb(47, 68, 160);
+}
+* html .agenda .month td
+{
+  background-image: expression((function(element){
+      element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/titles/module-title.png', sizingMethod='scale')";
+      return 'none';
+      })(this));
+}
+
+.agenda .month td:hover
+{
+  border-color: rgb(219, 171, 171);
+  background-color: rgb(255, 232, 232);
+}
+.agenda .month .today
+{
+  border: 0.5px solid white;
+  background-color: rgb(255, 200, 200);
+}
+.agenda .month .event
+{
+  border: 0.5px solid white;
+  background-color: rgb(207, 255, 179);
+}
+.agenda .month .noday
+{
+  background-color: rgb(234, 234, 234);
+}
+
+.agenda .nav
+{
+  height: 20px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.agenda .nav a
+{
+  display: block;
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+  text-indent: 20px;
+  float: left;
+}
+
+.agenda a.previous
+{
+	width: 16px;
+  height: 16px;
+  background-image: url(../../images/modules/module_agenda/previous.png);
+}
+
+.agenda a.next
+{
+	width: 16px;
+  height: 16px;
+  background-image: url(../../images/modules/module_agenda/next.png);
+}
+
+.agenda .content div .col_right .nextEvents dd
+{
+	font-size: 0.9em;
+	font-weight: bold;
+	margin: 0px 0px 2px 5px;
+}
+
+.agenda .content .bottom .options_sem
+{
+	margin: 15px 0px 5px 5px;
+	text-align: left;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.agenda .content div .col_right .nextEvents #nextitre
+{
+	color: rgb(32,55,133);
+	font-size: 1em;
+	margin: 0px 0px 10px 0px;
+	font-weight: bold;
+	border-bottom: 2px solid rgb(170,183,225)
+}
+
+.agenda .content div .col_right .nextEvents #nextitre span
+{
+	color: rgb(170,183,225);
+	font-size: 1.2em;
+}
+
+.agenda .nav h3
+{
+  float: left;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  width: 164px;
+  text-align: center;
+}
+
+/*Style du bouton de changement de mode du calendrier (Mensuel/Hebdomadaire) */
+
+.agenda .content #agenda_content p a.link_button
+{
+	padding: 1px 2px 1px 2px;
+	margin: 4px 152px 0px 5px;
+}
+
+.agenda .content #agenda_content p a.mensuel
+{
+	padding: 1px 2px 1px 2px;
+	margin: 0px 0px 0px 5px;
+}
+
+/* Style du du calendrier en mode Hebdomadaire */
+
+/* Format general */
+
+.agenda .calendrier_sem
+{
+	margin-bottom: 0px;
+}
+
+/* Titre du calendrier */
+
+.agenda .content div#agenda_content div h3.semainier_bigtitredelamort
+{
+	width: 195px;
+	text-align: center;
+	margin: 0px 0px 15px 150px;
+	color: rgb(32,55,133);
+	font-size: 1em;
+	font-weight: bold;
+	border-bottom: 2px solid rgb(170,183,225)
+}
+
+.agenda .content div#agenda_content div h3.semainier_bigtitredelamort span
+{
+	color: rgb(170,183,225);
+	font-size: 1.2em;
+}
+
+
+/* Colonnes */
+.agenda .content #agenda_content #calendrier_sem tbody tr th.colonne_cal
+{
+	margin: 0px;
+}
+
+/* Separations des colonnes */
+
+.agenda .content div table .separation 
+{
+	background-image: url(../../images/modules/module_agenda/dotagenda.gif);
+}
+
+/* Nom des journees */
+
+.agenda .content div table tbody tr th a.semainier_jour
+{
+	text-align: center;
+	color: rgb(35,49,123);
+	margin-right: 0px;
+	font-size: 1em;
+	font-weight: bolder;
+}
+
+/* Style des evenements dans les colonnes jour */
+
+.agenda .event_sem
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* Mise en page général du module */
+
+.agenda .content div .col_left 
+{
+	float: left;
+	margin: 0px 5px 0px 5px;
+	padding: 0px 0px 0px 0px;
+}
+
+.agenda .content div .col_right 
+{
+	float: left;
+	width: 225px;
+	margin: 8px 20px 10px 25px;
+	text-align: left;
+	padding: 0px 0px 0px 0px;
+}
+
+.agenda .content. div .clear
+{
+	clear: both;
+}
+
+/* Syle du bouton de l'admin */
+
+.agenda .content .admin_link
+{
+	margin: 10px 0px 0px 0px;
+	float: left;
+}
+
+.agenda .centrage
+{
+	margin: 5px 0px 30px 0px;
+}
+
+* html .agenda .centrage
+{
+	position: relative;
+}
+
+*+html .agenda .centrage
+{
+	position: relative;
+}
+
+.agenda .centrage,
+.agenda .centrage span,
+.agenda .centrage span a,
+.agenda .link_button
+{
+	position: static;
+	z-index: 1;
+}
+
+.agenda .content .panel_h
+{
+	color: rgb(255,188,146);
+	border-bottom: 2px solid rgb(255,188,146);
+}
+
+.agenda .content .panel_h a
+{
+	color: black;
+}
+
+.agenda .content .panel_h a:hover
+{
+	color: rgb(242,131,62);
+}
+
+/***    STYLE DES TOOLTIPS    ***/
+
+
+.tooltips
+{
+	width: 300px;
+	padding: 0px 4px 4px 4px;
+}
+
+.tooltips p
+{
+	margin: 1px 0px 1px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.tooltips .tooltip
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.tooltips .tooltip div.img
+{
+	text-align: center;
+	overflow: hidden;
+	width: 52px;
+	height: 60px;
+	padding: 4px 1px 4px 1px;
+	float: left;
+}
+
+.tooltips .tooltip div.date
+{
+	float: left;
+	line-height: 0.8em;
+	font-size: 0.8em;
+	margin: 2px 0px 8px 3px;
+	padding: 0px 0px 0px 5px;
+}
+
+.tooltips .tooltip div.txt
+{
+	float: right;
+	width: 240px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 2px 0px;
+}
+
+.tooltips .tooltip div.txt span
+{
+	font-size: 1.1em;
+	border-bottom: 2px solid rgb(190,204,231);
+}
+
+.tooltips .tooltip div.txt span span
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: rgb(170,183,225);
+	border-bottom: none;
+}
+
+.tooltips .tooltip .content
+{
+	clear: both;
+	text-indent: 15px;
+	text-align: justify;
+	font-size: 0.9em;
+}
+
+.tooltips p.tt_infos span.tt_title
+{
+	font-size: 1.1em;
+	border-bottom: 2px solid rgb(190,204,231);
+}
+
+.tooltips p.tt_infos span.tt_title span
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: rgb(170,183,225);
+}
+
+.tooltips p.tt_infos span.tt_hour
+{
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.tooltips p.tt_place
+{
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.tooltips p.tt_place span
+{
+	font-weight: normal;

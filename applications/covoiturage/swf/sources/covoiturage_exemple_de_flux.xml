@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<carte>
+	<offre>
+		<zone id="56"/>
+		<zone id="10"/>
+	</offre>
+	<offre>
+		<zone id="12"/>
+		<zone id="10"/>
+	</offre>
+	<offre>
+		<zone id="10"/>
+		<zone id="15"/>
+	</offre>
+	<offre>
+		<zone id="58"/>
+		<zone id="29"/>
+	</offre>
+	<offre>
+		<zone id="75"/>
+		<zone id="10"/>
+	</offre>
+	<offre>
+		<zone id="53"/>
+		<zone id="10"/>
+	</offre>
+	<demande>
+		<zone id="56"/>
+		<zone id="10"/>
+		<zone id="13"/>
+	</demande>
+	<demande>
+		<zone id="45"/>
+		<zone id="18"/>
+		<zone id="13"/>
+	</demande>
+</carte>

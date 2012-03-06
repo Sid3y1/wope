@@ -1,0 +1,301 @@
+/*****************************************************
+*                                                    *
+*          FEUILLE DE STYLE DU MODULE TROMBI         *
+*                                                    *
+******************************************************/
+
+
+.trombi
+{
+  margin: 0px auto 10px auto;
+  border: 2px solid rgb(255,221,156);
+}
+
+.trombi .module_border
+{
+  border: 1px solid rgb(200,154,68);
+  background-color: white;
+}
+
+.trombi .title
+{
+  border-bottom: 1px solid rgb(200,154,68);
+  background: url(../../images/modules/titles/entete_png_orange.png) repeat-x center;
+}
+
+* html #index .trombi .title
+{
+  background: url(../../images/modules/titles/entete_png_orange.png) repeat-x top;
+}
+
+*+html #index .trombi .title
+{
+  background: url(../../images/modules/titles/entete_png_orange.png) repeat-x top;
+}
+
+.trombi .title .extraDiv1 span
+{
+  margin-top: 1px;
+  background-image: url(../../images/modules/logos/user.png);
+}
+* html .trombi .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+      element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/user.png', sizingMethod='scale')";
+      return 'none';
+      })(this));
+}
+
+.trombi .content ul
+{
+	text-align: left;
+	list-style-type: none;
+}
+
+.trombi .content ul,
+.trombi .content ul li,
+.trombi .content ul li *
+{
+	position: static;
+	z-index: 1;
+}
+
+.trombi ul .fete_du_jour
+{
+	margin: 5px 0 10px 0;
+	padding: none;
+	color: rgb(216,97,23);
+	font-weight: bolder;
+	font-style: normal;
+}
+
+.trombi ul .fete_du_jour a
+{
+	color: black;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.trombi ul .annivs_jour
+{
+	margin: 25px 0 5px 0;
+	color: rgb(216,97,23);
+	font-weight: bolder;
+	font-style: normal;
+}
+
+.trombi ul .annivs_jour a
+{
+	color: black;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.trombi .content ul li
+{
+	margin: 0 0 5px 15px;
+	color: rgb(216,97,23);
+	font-weight: normal;
+	font-style: italic;
+}
+
+.trombi .content ul li a
+{
+	margin: 0 0 5px 15px;
+	color: black;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.trombi .content .link_menu:hover
+{
+	color: rgb(242,131,62);
+}
+
+.trombi .content .panel
+{
+	border-left: 2px solid rgb(255,188,146);
+}
+
+.trombi .autocomplete_container {
+	position:relative;
+	top:0px;
+	left:0px;
+	z-index:9050;
+}
+.trombi .autocomplete_container .yui-ac-content {
+	color: rgb(69,98,156);
+	position:absolute;
+	left:0;
+	top:0;
+	width:20em;
+	border:1px solid rgb(148,165,200);
+	background:rgb(245,245,245);
+	overflow:hidden;
+	text-align:left;
+	z-index:9050;
+}
+
+.trombi .autocomplete_container ul {
+	padding:5px 0;
+	width:100%;
+}
+.trombi .autocomplete_container li {
+	padding:0 5px;
+	cursor:default;
+	white-space:nowrap;
+}
+.trombi .autocomplete_container li.yui-ac-highlight {
+	background:rgb(148,165,200);
+}
+
+/***   STYLE DE L'AUTOCOMPLETE DU TROMBI (PARTIE RECHERCHE)  ***/
+
+
+.trombi .autocomplete_container {
+	position:relative;
+	top:0px;
+	left:0px;
+	z-index:9050;
+}
+
+.trombi .autocomplete_container .yui-ac-content {
+	color: rgb(69,98,156);
+	position:absolute;
+	left:0;
+	top:0;
+	width:20em;
+	border:1px solid rgb(148,165,200);
+	background:rgb(245,245,245);
+	overflow:hidden;
+	text-align:left;
+	z-index:9050;
+}
+
+.trombi .autocomplete_container ul {
+	padding:5px 0;
+	width:100%;
+}
+
+.trombi .autocomplete_container li {
+	padding:0 5px;
+	cursor:default;
+	white-space:nowrap;
+}
+
+.trombi .autocomplete_container li.yui-ac-highlight {
+	background:rgb(148,165,200);
+}
+
+.trombi form
+{
+	margin: 0px 0px 0px 0px;
+	padding: 5px 5px 0px 5px;
+}
+
+.trombi .form-input
+{
+	margin: 0px 0px 5px 0px;
+}
+
+.trombi .last_users_block
+{
+	float: left;
+	width: 120px;
+	height: 78px;
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+	margin: 10px 1px 0px 1px;
+}
+
+.trombi .last_users_title
+{
+  margin: 10px 0px 3px 22px;
+	padding: 0px 0px 0px 0px;
+  line-height: 1.2em;
+  font-size: 1.2em;
+  font-weight: normal;
+  color: rgb(78,73,153);
+}
+
+.trombi .users_infos_block
+{
+	margin: -2px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 0.8em;
+	color: rgb(120,120,120);
+}
+
+* html .trombi .users_infos_block
+{
+  margin: 1px 0px 0px 0px;
+}	
+
+.trombi .left_column
+{
+	float: left;
+	width: 48%;
+	margin: 10px 5px 10px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.trombi .right_column
+{
+	float: right;
+	width: 50%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.trombi  ul .fete_du_jour
+{
+	margin: 5px 0 10px 0;
+	padding: none;
+	color: rgb(110,112,165);
+	font-weight: bolder;
+	font-style: normal;
+}
+
+.trombi  ul .fete_du_jour a
+{
+	color: black;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.trombi  ul .annivs_jour
+{
+	margin: 25px 0 5px 0;
+	color: rgb(110,112,165);
+	font-weight: bolder;
+	font-style: normal;
+}
+
+.trombi  ul .annivs_jour a
+{
+	color: black;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.trombi .left_column ul li
+{
+	list-style-type: none;
+	margin: 2px 0 2px 0;
+}
+
+.trombi .content .link_menu:hover
+{
+	color: rgb(110,112,165);
+}
+
+.trombi .content .panel
+{
+	clear: both;
+}
+
+.trombi .link_button
+{
+	float: left;
+	margin: 0px 0px 10px 0px;
+}

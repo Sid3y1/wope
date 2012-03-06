@@ -1,0 +1,573 @@
+/************************************************
+*                                               *
+*     FEUILLE DE STYLE DE LA PAGE ACTUALITE     *
+*                                               *
+*************************************************/
+#actualite_tag .content .col_g
+{
+	overflow: hidden;
+	margin: 10px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	float: left;
+	width: 65px;
+}
+
+#actualite_tag .content .col_d
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	float: right;
+	width: 660px;
+}
+
+#actualite_tag .specialclear2
+{
+	height: 1px;
+	width: 45px;
+	margin: 15px 0px 10px 10px;
+	background: rgb(218,216,243);
+}
+/*************************************************************************
+*                                                                        *
+*     FEUILLE DE STYLE CSS D'EDITION DES TYPES DE NEWS, ADMIN & NEW      *
+*                                                                        *
+**************************************************************************/
+
+
+.page .titre_edition_news
+{
+	color: indigo;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.page form .dataTable
+{
+	background: rgb(222,220,241);
+	border: 1px solid rgb(199,196,223);
+	padding: 5px;
+}
+
+.page form .dataTable tbody .ligne_titres
+{
+	background: rgb(241,240,248);
+	border: 1px solid rgb(231,229,242);
+}
+
+.page form .dataTable tbody tr td
+{
+	padding: 5px 0 5px 0;
+}
+
+.page form .dataTable tbody tr .derniere_ligne_news
+{
+	padding: 10px 0 5px 0;
+	font-weight: bold;
+	border-top: 1px solid rgb(199,196,223);
+}
+
+.page form .dataTable tbody tr #bouton_validation_news
+{
+	padding-left: 30px;
+}
+
+
+/* REFONTE MISE EN PAGE DE L'AFFICHAGE SECTION ADMIN - PAR SYLV 18/10/2006 */
+
+
+#actualite_tag  .modl_news .module
+{
+	float: left;
+	width: 350px;
+}
+
+#actualite_tag .modr_news .module
+{
+	float: right;
+	width: 350px;
+}
+
+#actualite_tag .types_news .module .title
+{
+  background-color: rgb(214, 219, 255);
+	border-bottom: 1px solid rgb(173, 183, 255);
+}
+
+* html #actualite_tag .types_news .module .title
+{
+	background: url(../../images/modules/titles/module-title_214-219-255.png) repeat-x top;
+  background-color: rgb(214, 219, 255);
+	border-bottom: 1px solid rgb(173, 183, 255);
+}
+
+#actualite_tag .types_news .module .title h2
+{
+  float: left;
+  margin: -0.7em 5px -0.7em 10px;
+  color: rgb(66, 63, 148);
+  text-transform: capitalize;
+	font-weight: 900;
+}													
+
+#actualite_tag .types_news .module .title .extraDiv1 span
+{
+	height: auto;
+  width: auto;
+  background: none;
+}
+
+#actualite_tag .panel
+{
+	margin: 5px 0px 15px 0px;
+	border-left: 2px solid rgb(132,129,184);
+}
+
+#actualite_tag .panel .link_menu a
+{
+	color: rgb(78,73,153);
+}
+
+#actualite_tag .panel .link_menu a:hover
+{
+	color: black;
+}
+
+/**** ****/
+
+#actualite_tag .module .content .row
+{
+	padding: 10px 5px 5px 5px;
+	margin-bottom: 15px;
+}
+
+#actualite_tag .module .content .row1
+{
+	border: 1px solid rgb(150,170,190);
+	background: rgb(240,243,247);
+}
+
+#actualite_tag .module .content .row2
+{
+	border: 1px solid rgb(247,177,108);
+	background: rgb(255,245,235);
+}
+
+#actualite_tag .module .content div.titre_news
+{
+	font-size: 1.2em;
+	font-weight: bold;
+	width: 390px;
+	margin: 0px 0px 2px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#actualite_tag .module .content div.titre_news p
+{
+	margin: 0px 0px 0px 5px;
+	padding: 0px 0px 0px 0px;
+}
+
+#actualite_tag .module .content div.titre1
+{
+  color: rgb(72,112,164);
+	border-bottom: 2px solid rgb(190,204,231);
+}
+
+#actualite_tag .module .content div.titre2
+{
+  color: rgb(233,106,29);
+	border-bottom: 2px solid rgb(245,180,77);
+}
+
+#actualite_tag .module .content div.titre1 p:first-letter
+{
+	font-size: 1.4em;
+  color: rgb(190,204,231);
+}
+
+#actualite_tag .module .content div.titre2 p:first-letter
+{
+	font-size: 1.4em;
+  color: rgb(245,180,77);
+}
+
+#actualite_tag .module .content .infos_creation_news
+{
+	color: rgb(69,140,235);
+	margin: 0px 0px 15px 5px;
+	font-style: italic
+}
+
+#actualite_tag .module .content .texte
+{
+	text-indent: 20px;
+	text-align: justify;
+	height: 70px;
+}
+/**********************************
+*                                 *
+*      SKIN DU NUAGE DE TAGS      *
+*                                 *
+***********************************/
+
+#actualite_tag .content .cloud
+{
+	width: 300px;
+
+	background-image: url("../../../../modules/module_news_tag/images/cloud.png");
+	border: 1px solid rgb(232,234,240);
+	margin: 5px 0px 8px 95px;
+	padding: 5px 5px 5px 5px;
+}
+
+#actualite_tag .content .cloud a
+{
+	color: rgb(69,98,156);
+}
+
+/*************************************
+*                                    *
+*      SKIN DU MENU UTILISATEUR      *
+*                                    *
+**************************************/
+
+#actualite_tag .content .menu
+{
+	margin-left: 85px;
+}
+
+#actualite_tag .content .bloc_add_tag,
+#actualite_tag .content .bloc_see_tags,
+#actualite_tag .content .bloc_see_all_comms
+{
+	float: left;
+}
+
+#actualite_tag .content .bloc_see_tags .see_tags,
+#actualite_tag .content .bloc_see_all_comms .see_all_comms,
+#actualite_tag .content .bloc_add_tag .add_tag
+{
+	text-align: right;
+	font-weight: bold;
+	font-size: 10px;
+	color: rgb(98,98,132);
+	margin: 0px 0px 0px 0px;
+	padding: 2px 4px 2px 4px;
+}
+
+#actualite_tag .content .bloc_see_all_comms,
+#actualite_tag .content .bloc_see_tags,
+#actualite_tag .content .bloc_add_tag
+{
+	height: 30px;
+	padding: 2px 5px 2px 5px;
+	margin: 0px 0px 0px 0px;
+}
+
+#actualite_tag .content .sep_blocs
+{
+	float: left;
+	margin-top: 5px;
+	height: 15px;
+	width: 1px;
+	background: rgb(218,216,243);
+}
+
+/********************************
+*                               *
+*     SKIN DES COMMENTAIRES     *
+*                               *
+*********************************/
+
+#actualite_tag .content .modele_comm
+{
+	padding: 1px 1px 1px 1px;
+	margin: 5px 5px 5px 10px;
+}
+
+#actualite_tag .content .modele_comm .info_comm
+{
+	width: 700px;
+	margin: 0px 0px 5px 0px;
+	font-weight: bold;
+	font-size: 0.95em;
+	color: rgb(135,135,135);
+	border-bottom: 2px solid rgb(199,201,215);
+}
+
+#actualite_tag .content .modele_comm .info_comm .auteur_comm
+{
+	color: rgb(146,156,225);
+}
+
+#actualite_tag .content .modele_comm .info_comm .auteur_comm strong
+{
+	font-size: 1.2em;
+	font-weight: 800;
+	color: rgb(115,129,224);
+}
+
+#actualite_tag .content .modele_comm .comm_texte
+{
+	text-indent: 15px;
+	font-size: 0.95em;
+}
+
+#actualite_tag .content .mon_comm
+{
+	color: rgb(69,98,156);
+	font-size: 0.95em;
+	font-weight: bold;
+	background: rgb(240,240,240);
+	border: 1px solid rgb(199,201,215);
+	margin: 0px 0px 5px 28px;
+}
+
+#actualite_tag .content .mon_comm:focus
+{
+	background: rgb(235,235,235);
+}
+
+#actualite_tag .content .poster_comm
+{
+	float: right;
+	color: rgb(98,98,132);
+	font-weight: 600;
+	font-size: 10px;
+	background: rgb(245,245,245);
+	border: 1px solid rgb(199,201,215);
+	padding: 1px 4px 2px 4px;
+	margin: 0px 30px 0px 0px;
+}
+
+#actualite_tag .content .poster_comm:hover
+{
+	color: rgb(245,245,245);
+	background: rgb(148,165,200);
+	border: 1px solid rgb(132,144,168);
+
+}
+
+/**************************************
+*                                     *
+*     SKIN DU TAGGING UTILISATEUR     *
+*                                     *
+***************************************/
+
+#actualite_tag .content .mon_tagging
+{
+	color: rgb(69,98,156);
+	font-weight: bold;
+	font-size: 12px;
+	background-image: url("../../../../modules/module_news_tag/images/cloud.png");
+	border: 1px solid rgb(232,234,240);
+	margin: 5px 5px 8px 65px;
+	padding: 5px 5px 5px 5px;
+	float: left;
+	width: 230px;
+}
+
+#actualite_tag .content .form_tagging
+{
+	float: left;
+	width: 100px;
+	padding: 0px 0px 0px 0px;
+}
+
+
+#actualite_tag .content .cloudform
+{
+	float: left;
+	margin: 5px 0px 8px 0px;
+	width: 250px;
+}
+
+/*************************************
+*                                    *
+*        SKIN DES OBJETS DIGG        *
+*                                    *
+**************************************/
+
+#actualite_tag .content .col_g .image_digg
+{
+	width: 62px;
+	height: 22px;
+	display: block;
+	background-image: url("../../../../modules/module_news_tag/images/digg.png");
+	margin: 15px 0px 0px 2px;
+}
+
+#actualite_tag .content .col_g .image_digg .score_digg
+{
+	text-align: center;
+	font-size: 0.95em;
+	color: rgb(187,175,3);
+	margin: 0px 0px 0px 0px;
+	padding: 4px 0px 0px 7px;
+}
+
+#actualite_tag .content .col_g .score_digg strong
+{
+	font-weight: 800;
+	color: rgb(102,97,54);
+}
+
+.enews .content .col_g .image_add_digg
+{
+	width: 62px;
+	height: 22px;
+	display: block;
+	background-image: url("../../../../modules/module_news_tag/images/digg_add.png");
+	margin: 10px 0px 0px 2px;
+}
+
+#actualite_tag .content .col_g .image_add_digg .add_digg
+{
+	text-align: center;
+	font-size: 0.95em;
+	font-weight: bold;
+	color: rgb(97,97,97);
+	margin: 0px 0px 0px 0px;
+	padding: 5px 0px 0px 9px;
+}
+
+/**************************************
+*                                     *
+*           SKIN DE L'ETOILE          *
+*                                     *
+***************************************/
+
+#actualite_tag .content .col_g .star_off
+{
+	margin: 0px 0px 15px 23px;
+	height: 16px;
+	width: 16px;
+	display: block;
+	background-image: url("../../../../modules/module_news_tag/images/star.png");
+}
+#actualite_tag .content .col_g .star_on
+{
+	margin: 0px 0px 15px 23px;
+	height: 15px;
+	width: 15px;
+	display: block;
+	background-image: url("../../../../modules/module_news_tag/images/star_on.gif");
+}
+
+.left
+{
+	float: left;
+}
+
+.right
+{
+	float: right;
+}
+
+.champ_ajouter_tag
+{
+	color: rgb(69,98,156);
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.bloc_ajout_tag
+{
+	margin: 0px auto 0px auto;
+	width: 380px;
+	padding: 4px 0px 0px 0px;
+}
+
+.bouton_ajout_tag
+{
+	margin-top: 5px;
+	display: block;
+	height: 30px;
+	width: 30px;
+	background: url("../../../../modules/module_news_tag/images/add_tag.png");
+}
+
+.bouton_ajout_tag:hover
+{
+	display: block;
+	height: 30px;
+	width: 30px;
+	background: url("../../../../modules/module_news_tag/images/ajout_tag_hover.png");
+}
+
+
+/*
+	AUTOCOMPLETE
+*/
+
+
+.mon_tagging_container {
+	position:relative;
+	top:25px;
+	left:100px;
+	z-index:9050;
+}
+.mon_tagging_container .yui-ac-content {
+	color: rgb(69,98,156);
+	position:absolute;
+	left:0;
+	top:0;
+	width:20em;
+	border:1px solid rgb(148,165,200);
+	background:rgb(245,245,245);
+	overflow:hidden;
+	text-align:left;
+	z-index:9050;
+}
+
+.mon_tagging_container ul {
+	padding:5px 0;
+	width:100%;
+}
+.mon_tagging_container li {
+	padding:0 5px;
+	cursor:default;
+	white-space:nowrap;
+}
+.mon_tagging_container li.yui-ac-highlight {
+	background:rgb(148,165,200);
+}
+
+
+/*
+	Cloud level
+*/
+#actualite_tag .content .cloud .tag_level_0 {
+	font-size: 0.8em;
+}
+
+#actualite_tag .content .cloud .tag_level_1{
+	font-size: 0.95em;
+}
+#actualite_tag .content .cloud .tag_level_2{
+	font-size: 1.1em;
+}
+#actualite_tag .content .cloud .tag_level_3{
+	font-size: 1.25em;
+}
+#actualite_tag .content .cloud .tag_level_4{
+	font-size: 1.4em;
+}
+#actualite_tag .content .cloud .tag_level_5{
+	font-size: 1.55em;
+}
+#actualite_tag .content .cloud .tag_level_6{
+	font-size: 1.7em;
+}
+#actualite_tag .content .cloud .tag_level_7{
+	font-size: 1.85em;
+}
+#actualite_tag .content .cloud .tag_level_8{
+	font-size: 2em;
+}
+#actualite_tag .content .cloud .tag_level_9{
+	font-size: 2.15em;
+}
+#actualite_tag .content .cloud .tag_level_10{
+	font-size: 2.30em;
+}

@@ -1,0 +1,254 @@
+/***********************************************************************
+*                                                                      *
+*      FEUILLE DE STYLE DU MODULE TODOLIST ~ AJOUT SYL 03/11/2006      *
+*                                                                      *
+************************************************************************/
+
+/** ELEMENTS GLOBAUX DU MODULE **/
+
+.todolist .clear
+{
+	width: 200px;
+}
+
+.todolist .content
+{
+	padding-bottom: 5px;
+}
+
+.todolist .title_block
+{
+	position: relative;
+	margin: 5px 0px 15px 0px;
+}
+
+.todolist .title_block span
+{
+	position: relative;
+}
+
+.todolist .title .extraDiv1 span
+{
+  background-image: url(../../images/modules/logos/tick.png);
+}
+
+* html .todolist .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/tick.png', sizingMethod='scale')";
+  return 'none';
+  })(this));
+}
+
+	
+
+
+/** STYLE GENERAL D'UNE LIGNE DE TÂCHE **/
+
+.todolist .task
+{
+	overflow: hidden;
+	font-size: 0.9em;
+	margin: 2px 0px 2px 10px;
+	padding: 0px 0px 0px 0px;
+	width: 481px;
+	height: 20px;
+	line-height: 0.9em;
+}
+
+.todolist .task_a
+{
+	background: rgb(233,235,245);
+}
+
+.todolist .task_b
+{
+	background: rgb(216,219,236);
+}
+
+.todolist .content #todo_block
+{
+	width: 490px;
+}
+
+/** DEFINITION DES OBJETS FLOTTANTS **/
+
+.todolist .content #todo_block #add_block.task *,
+.todolist .content #todo_block .task input,
+.todolist .content #todo_block .task .task_title_block,
+.todolist .content #todo_block .task .task_expiry_block,
+.todolist .content #todo_block .task a
+{
+	float: left;
+}
+
+/** DEFINITION DES OBJETS D'UNE LIGNE DE TÂCHE **/
+
+.todolist .done
+{
+	text-decoration: line-through;
+	cursor: text;
+}
+
+.todolist .not_done
+{
+	cursor: text;
+}
+
+.todolist .be_careful
+{
+	font-weight: bold;
+	color: red;
+}
+
+.todolist .del_link
+{
+	display: block;
+	width: 16px;
+	height: 16px;
+	margin: 2px 0px 2px 3px;
+	background: url(../../images/common/cross.png) no-repeat;
+}
+
+.todolist .task .task_title_block
+{
+	margin: 5px 0px 0px 3px;
+	padding: 0px 0px 0px 0px;
+	width: 335px;
+	height: 14px;
+}
+
+.todolist .task .task_title_block span
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.todolist .task .task_expiry_block
+{
+	margin: 5px 0px 0px 5px;
+	padding: 0px 0px 0px 0px;
+	width: 59px;
+	height: 14px;
+	cursor: text;
+}
+
+.todolist .task .task_expiry_block span
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.todolist .create_cal_button
+{
+	display: block;
+	height: 22px;
+	width: 22px;
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
+	background: url(../../images/common/calendar.png) no-repeat;
+}
+
+
+/** LES BLOCS CONTENANT LE CALENDRIER **/
+
+.todolist .content .cal_block
+{
+	position: absolute;
+	margin: 0px 25px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.todolist .content .cal_block #calContainer
+{
+	width: 200px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+
+/** LES CHAMPS "MAGIQUES" **/
+
+html body .page .todolist .task .magicText,
+html body .page .todolist .task .task_expiry_block .magicText
+{
+	height: 17px;
+	font-size: 1em;
+	width: 330px;
+	padding: 0px 0px 0px 0px;
+	font-weight: normal;
+	border: none;
+	margin: -4px 0px 0px 0px;
+	font-family: "Trebuchet MS";
+}
+
+.todolist .content .task_a .magicText
+{
+	background-color: rgb(216,219,236);
+}
+
+.todolist .content .task_b .magicText
+{
+	background-color: rgb(233,235,245);
+}
+
+html body .todolist .content .task .task_expiry_block .magicText
+{
+	width: 63px;
+}
+
+* html body .todolist .content .task .task_expiry_block .magicText
+{
+	margin-left: -5px;
+	width: 60px;
+}
+
+
+/** BLOC D'AJOUT DE TÂCHE **/
+
+.todolist #add_block
+{
+	overflow: visible;
+}
+
+.todolist .add_block
+{
+	font-size: 0.9em;
+	margin: 5px 0px 2px 15px;
+	font-weight: bold;
+}
+
+.todolist .add_block a span#show,
+.todolist .add_block a span#hide
+{
+	color: rgb(68,64,127);
+}
+
+.todolist .link_button
+{
+	font-size: 0.9em;
+	margin: 3px 0px 4px 10px;
+	padding: 1px 2px 1px 2px;
+}
+
+
+.todolist .content #todo_block #add_block.task #new_task_status
+{
+	margin-top: 4px;
+}
+
+.todolist .content #todo_block #add_block.task input.not_done,
+.todolist .content #todo_block #add_block.task input.done,
+.todolist .content #todo_block #add_block.task input.new_task_date
+{
+	height: 1.3em;
+	font-size: 0.95em;
+	font-family: "Trebuchet MS";
+	margin-left: 3px;
+}
+
+.todolist .content #todo_block #add_block.task input.new_task_date
+{
+	width: 65px;
+	padding-left: 3px;
+}

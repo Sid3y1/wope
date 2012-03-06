@@ -1,0 +1,216 @@
+/************************************************
+*                                               *
+*     FEUILLE DE STYLE DE LA PAGE ACTUALITE     *
+*                                               *
+*************************************************/
+
+/*************************************************************************
+*                                                                        *
+*     FEUILLE DE STYLE CSS D'EDITION DES TYPES DE NEWS, ADMIN & NEW      *
+*                                                                        *
+**************************************************************************/
+
+
+.page .titre_edition_news
+{
+	color: indigo;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.page form .dataTable
+{
+	background: rgb(222,220,241);
+	border: 1px solid rgb(199,196,223);
+	padding: 5px;
+}
+
+.page form .dataTable tbody .ligne_titres
+{
+	background: rgb(241,240,248);
+	border: 1px solid rgb(231,229,242);
+}
+
+.page form .dataTable tbody tr td
+{
+	padding: 5px 0 5px 0;
+}
+
+.page form .dataTable tbody tr .derniere_ligne_news
+{
+	padding: 10px 0 5px 0;
+	font-weight: bold;
+	border-top: 1px solid rgb(199,196,223);
+}
+
+.page form .dataTable tbody tr #bouton_validation_news
+{
+	padding-left: 30px;
+}
+
+
+/* REFONTE MISE EN PAGE DE L'AFFICHAGE SECTION ADMIN - PAR SYLV 18/10/2006 */
+
+
+#actualite .modl_news .module
+{
+	float: left;
+	width: 370px;
+}
+
+#actualite .modr_news .module
+{
+	float: right;
+	width: 370px;
+}
+
+#actualite .types_news .module .title
+{
+  background-color: rgb(214, 219, 255);
+	border-bottom: 1px solid rgb(173, 183, 255);
+}
+
+* html #actualite .types_news .module .title
+{
+	background: url(../../images/modules/titles/module-title_214-219-255.png) repeat-x top;
+  background-color: rgb(214, 219, 255);
+	border-bottom: 1px solid rgb(173, 183, 255);
+}
+
+#actualite .types_news .module .title h2
+{
+  float: left;
+  margin: -0.7em 5px -0.7em 10px;
+  color: rgb(66, 63, 148);
+  text-transform: capitalize;
+	font-weight: 900;
+}													
+
+#actualite .types_news .module .title .extraDiv1 span
+{
+	height: auto;
+  width: auto;
+  background: none;
+}
+
+#actualite .panel
+{
+	margin: 5px 0px 15px 0px;
+	border-left: 2px solid rgb(132,129,184);
+}
+
+#actualite .panel .link_menu a
+{
+	color: rgb(78,73,153);
+}
+
+#actualite .panel .link_menu a:hover
+{
+	color: black;
+}
+
+/**** ****/
+
+#actualite .module .content .row
+{
+	padding: 10px 5px 5px 5px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+#actualite .module .content .row1
+{
+	border: 1px solid rgb(150,170,190);
+	background: rgb(240,243,247);
+}
+
+#actualite .module .content .row2
+{
+	border: 1px solid rgb(247,177,108);
+	background: rgb(255,245,235);
+}
+
+#actualite .module .content .titre1,
+#actualite .module .content .titre2
+{
+	font-size: 1.3em;
+	margin: 0px 0px 2px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#actualite .module .content div.titre1 .titre_menu
+{
+  color: rgb(72,112,164);
+	border-bottom: 2px solid rgb(190,204,231);
+	padding-right: 15px;
+	font-weight: normal;
+	position: relative;
+}
+
+#actualite .module .content div.titre2 .titre_menu
+{
+  color: rgb(233,106,29);
+	border-bottom: 2px solid rgb(245,180,77);
+	padding-right: 15px;
+	font-weight: normal;
+	position: relative;
+}
+
+#actualite .module .content div.titre1 .titre_menu span
+{
+	font-size: 1.4em;
+  color: rgb(190,204,231);
+}
+
+#actualite .module .content div.titre2 .titre_menu span
+{
+	font-size: 1.4em;
+  color: rgb(245,180,77);
+}
+
+#actualite .module .content .infos_creation_news
+{
+	color: rgb(69,140,235);
+	margin: 0px 0px 15px 5px;
+	font-style: italic
+}
+
+#actualite .module .content .text_block
+{
+  padding: 5px 5px 5px 5px;
+  text-align: justify;
+	position: relative;
+}
+
+#actualite .module .content .text_block .text_source
+{
+	margin-top: 5px;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+#actualite .module .content .text_block .text_source span
+{
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+
+/*** STYLE DU BLOC DE LA PHOTO ***/
+
+#actualite .module .content .item_picture
+{
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  background: no-repeat;
+  text-align: center;
+  margin: 0px 5px 5px 0px;
+  float: left;
+}
+
+* html #actualite .module .content .item_picture
+{
+	zoom: 1;
+	position: relative;
+}

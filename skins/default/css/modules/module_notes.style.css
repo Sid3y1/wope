@@ -1,0 +1,24 @@
+/***********************************************
+*                                              *
+*      FEUILLE DE STYLE DU MODULE CALEPIN      *
+*                                              *
+************************************************/
+
+
+html body .notes .title .extraDiv1 span
+{
+  background-image: url(../../images/modules/logos/note.png);
+}
+
+* html body .notes .title .extraDiv1 span
+{
+	background-image: expression((function(element){
+		element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/note.png', sizingMethod='scale')";
+		return 'none';
+		})(this));
+}
+
+.notes p
+{
+	cursor: text;
+}

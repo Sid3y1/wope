@@ -1,0 +1,60 @@
+/********************************************
+*                                           *
+*   FEUILLE DE STYLE DU MODULE PENSE BETE   *
+*                                           *
+*********************************************/
+
+
+.param_nouvelle_tache
+{
+	background: rgb(222,220,241);
+	border: 1px solid rgb(199,196,223);
+	margin-bottom: 10px;
+}
+
+.param_nouvelle_tache fieldset
+{
+	border: 0px solid rgb(199,196,223);
+	padding: 5px 5px 5px 5px;
+}
+
+.param_nouvelle_tache fieldset legend
+{
+	margin: 10px 0 10px 0;
+	color: rgb(105,10,140);
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+
+.filtrage_classe
+{
+	background: rgb(222,220,241);
+	border: 1px solid rgb(199,196,223);
+	margin-bottom: 10px;
+	padding: 5px 5px 5px 5px;
+}
+
+.tableau_recap_taches
+{
+	width: 99%;
+	background: rgb(222,220,241);
+	border: 1px solid rgb(156,155,187);
+	padding: 4px 3px 4px 3px;
+}
+
+.tableau_recap_taches .rien_taches
+{
+	margin: 4px 3px 4px 3px;
+	font-style: italic;
+}
+
+.tableau_recap_taches thead
+{
+	height: 25px;
+	background: rgb(241,240,248);
+	border: 1px solid rgb(230,230,240);
+	color: indigo;
+	font-style: italic;
+	font-weight: bolder;
+	font-size: 1.1em;
+}

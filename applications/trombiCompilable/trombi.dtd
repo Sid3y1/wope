@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT TROMBI (GROUPFIELD+)>
+
+<!ELEMENT GROUPFIELD (TEXT|CHOICE|PHOTO|DATE)+>
+<!ATTLIST GROUPFIELD
+	text		CDATA	#REQUIRED
+	>
+
+<!ELEMENT TEXT (REGEXPTEST?)>
+<!ATTLIST TEXT
+	id				ID						#REQUIRED
+	text			CDATA					#REQUIRED
+	extraText		CDATA ""
+	default			CDATA					#IMPLIED
+	maxSize			CDATA					"30"
+	searchable 		(true|false)			"true"
+	inFastSearch 	(true|false)			"false"
+	nbLigne			CDATA					"1"
+	>
+
+<!ELEMENT DATE EMPTY>
+<!ATTLIST DATE
+	id				ID						#REQUIRED
+	text			CDATA					#REQUIRED
+	extraText		CDATA ""
+	searchable 		(true|false)			"true"
+	inFastSearch 	(true|false)			"false"
+	selectWith		(text|calendar|selects)			"text"
+	>
+<!ELEMENT REGEXPTEST EMPTY>
+<!ATTLIST REGEXPTEST
+	test	CDATA	#REQUIRED
+	error	CDATA	#REQUIRED
+	>
+
+<!ELEMENT CHOICE (OPTION+|OPTIONDB)>
+<!ATTLIST CHOICE
+	id				ID				#REQUIRED
+	text			CDATA			#REQUIRED
+	multipleChoice	(true|false)	"true"
+	>
+
+<!ELEMENT OPTION EMPTY>
+<!ATTLIST OPTION
+	id	CDATA		#REQUIRED
+	value	CDATA	#REQUIRED
+	>
+	
+<!ELEMENT OPTIONDB EMPTY>
+<!ATTLIST OPTIONDB
+	query			CDATA		#REQUIRED
+	maxSizeOptionId	CDATA		#REQUIRED
+	>
+	
+<!ELEMENT PHOTO EMPTY>
+<!ATTLIST PHOTO
+	id			ID		#REQUIRED
+	text		CDATA	#REQUIRED
+	path		CDATA	"photo"
+	maxSize		CDATA	"2000000"
+	imageSize	CDATA	#IMPLIED
+	>

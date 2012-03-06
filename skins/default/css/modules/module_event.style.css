@@ -1,0 +1,55 @@
+.event .title .extraDiv1 span
+{
+  margin-top: 1px;
+  background-image: url(../../images/modules/logos/information.png);
+}
+
+* html .event .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/information.png', sizingMethod='scale')";
+  return 'none';
+  })(this));
+}
+							
+#index .colomn2 .pub .content .admin_link
+{
+	float: left;
+	margin: 10px 0px 0px 0px;
+}
+
+.event_block
+{
+	text-align: justify;
+	margin: 0px 0px 20px 0px;
+}
+
+.event_block .text
+{
+	text-indent: 15px;
+}
+
+*+html .event_block .text,
+*+html p
+{
+	position: relative;
+}
+
+* html .event_block .text,
+* html p
+{
+	position: relative;
+}
+.event_block .event_title
+{
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.event_block .photo
+{
+	display: block;
+	text-align: center;
+	margin: 3px 8px 0 0;
+	float: left;
+}

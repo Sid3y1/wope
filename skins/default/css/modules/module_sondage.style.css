@@ -1,0 +1,117 @@
+/***********************************************************
+*                                                          *
+*       FEUILLE DE STYLE DU MODULE SONDAGE DE GAUCHE       *
+*                                                          *
+************************************************************/
+
+#index .column0 .sondage .title .extraDiv1
+{
+	padding: 3px 0px 0px 0px;
+}
+
+html #index .column0 .sondage .title h2
+{
+	margin-left: 40px;
+}
+
+* html #index .column0 .sondage .title h2
+{
+	margin-left: 20px;
+}
+
+*+html #index .column0 .sondage .title h2
+{
+	margin-left: 5px;
+}
+
+#index .column0 .sondage .title .extraDiv1 span
+{
+	height: 22px;
+	width: 24px;
+	background: url(../../images/modules/logos/module-survey.png) no-repeat;
+}
+
+* html #index .column0 .sondage .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/module-survey.png', sizingMethod='scale')";
+  return 'none';
+  })(this));
+}				
+
+.sondage .content
+{
+	padding: 5px 5px 3px 7px;
+	overflow: hidden;
+}
+
+.sondage .content a
+{
+	position: relative;
+	margin: 5px 3px 3px 0px;
+}
+
+.titre_mod_sondage
+{
+	position: relative;
+	text-align: center;
+  color: rgb(98,98,132);
+	font-style: italic;
+}
+
+.nb_votes_mod_sondage
+{
+	position: relative;
+	color: rgb(130,130,166);
+	font-style: italic;
+	margin-left: 3px;
+	margin-bottom: 10px;
+}
+
+.resultats_mod_sondage
+{
+	position: relative;
+	overflow: hidden;
+	margin-right: 3px;
+	margin-left: 3px;
+	padding: 5px 0px 5px 10px;
+	margin-bottom: 10px;
+	list-style-type: none;
+	background: rgb(245,245,252);
+	border: 1px solid rgb(240,240,244);
+}
+
+.administration_module_sondage
+{
+	position: relative;
+	float: right;
+  color: rgb(98,98,132);
+	font-weight: bolder;
+	background: rgb(244,245,255);
+	border: 1px solid rgb(224,228,255);
+}
+
+.administration_module_sondage:hover
+{
+	position: relative;
+	background: rgb(224,228,255);
+	border: 1px solid rgb(200,207,255);
+}
+
+.link_button
+{
+	position: relative;
+	float: right;
+	margin: 15px 0px 15px 0px;
+}
+
+.link_button:hover
+{
+	position: relative;
+}
+
+#index .sondage .content .admin_link
+{
+	float: left;
+	margin: 5px 0px 4px 0px;
+}

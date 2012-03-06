@@ -1,0 +1,100 @@
+.links .title .extraDiv1 span
+{
+  margin-top: 1px;
+  background-image: url(../../images/modules/logos/world_go.png);
+}
+* html .links .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+      element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/world_go.png', sizingMethod='scale')";
+      return 'none';
+      })(this));
+}
+
+.links .block_module_title
+{
+	margin: 0px 0px 15px 0px;
+}
+
+.links .link_line
+{
+	padding: 1px 0px 1px 5px;
+	margin: 2px 0px 2px 15px;
+	width: 470px;
+}
+
+.links .link_line .block_link_title
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: 360px;
+}
+
+.links .link_line span
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 5px;
+	font-size: 0.8em;
+}
+
+.links .link_line .useful_link
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: rgb(73,80,122);
+}
+
+.links .link_line .useful_link:hover,
+a.see_all_links:hover
+{
+	color: rgb(19,29,94);
+}
+
+.links .link_line.a1
+{
+	background: rgb(233,235,245);
+}
+
+.links .link_line.b1
+{
+	background: rgb(216,219,236);
+}
+
+a.see_all_links
+{
+	margin: 5px 0px 15px 20px;
+	padding: 0px 0px 0px;
+	color: rgb(98,98,132);
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.admin_link
+{
+	float: left;
+	margin: 0px 0px 0px 0px;
+}
+
+.links .titre_menu
+{
+	position: relative;
+}
+
+/*** STYLE DES TOOLTIPS ***/
+
+.tooltips .tt_link_title
+{
+	font-weight: bold;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.tooltips .tt_link_description
+{
+	font-weight: normal;
+	font-size: 0.9em;
+	padding: 0px 0px 0px 5px;
+	margin: 0px 0px 0px 0px;
+}

@@ -1,0 +1,43 @@
+/***********************************************
+*                                              *
+*      FEUILLE DE STYLE DU MODULE WELCOME      *
+*                                              *
+************************************************/
+
+.welcome_block .photo
+{
+  float: left;
+  margin: 0px 5px 0px 0px;
+}
+
+.welcome_block .text
+{
+  text-align: justify;
+  padding: 4px 4px 4px 4px;
+  margin: 8px 0px 0px 1px;
+}
+
+*+html .welcome_block .text,
+*+html .welcome_block .welcome_title .titre_menu
+{
+  position: relative;
+}
+
+* html .welcome_block .text,
+* html .welcome_block .welcome_title .titre_menu
+{
+  position: relative;
+}
+
+.welcome_block .welcome_title .titre_menu
+{
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: normal;
+  padding-left: 0px;
+}
+
+.welcome .admin_link
+{
+  margin: 20px 0px 0px 0px;
+}

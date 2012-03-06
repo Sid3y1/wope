@@ -1,0 +1,34 @@
+<script type="text/javascript">
+            /*<![CDATA[*/
+            var path = '<?=$util -> makeUrl('include/skin/default/dock/') ?>';
+            var liste = '<ul id="menu_liste" onmouseover="menu_out = 0" onmouseout="setTimeout(\'reset_menu()\', 1); menu_out = 1; where = 0;">'; var i = 1;
+            liste += '<li><a href="<?=$util -> makeUrl('mail/') ?>"><img src="'+ path +'mail' + img_transparence + '" onmouseover="where = ' + i + ' ;"  width="80" height="80" id="menu' + i + '" alt="Mail" title="Mail" \/><\/a><\/li>'; i++;
+            liste += '<li><a href="<?=$util -> makeUrl('applications/forum/') ?>"><img src="'+ path +'forum' + img_transparence + '" onmouseover="where = ' + i + ' ;"  width="80" height="80" id="menu' + i + '" alt="Forum" title="Forum" \/><\/a><\/li>'; i++;
+            liste += '<li><a href="<?=$util -> makeUrl('applications/trombi/') ?>"><img src="'+ path +'trombi' + img_transparence + '" onmouseover="where = ' + i + ' ;"  width="80" height="80" id="menu' + i + '" alt="Trombinoscope" title="Trombinoscope" \/><\/a><\/li>'; i++;
+            liste += '<li><a href="<?=$util -> makeUrl('applications/covoiturage/') ?>"><img src="'+ path +'covoiturage' + img_transparence + '" onmouseover="where = ' + i + ' ;"  width="80" height="80" id="menu' + i + '" alt="Covoiturage" title="Covoiturage" \/><\/a><\/li>'; i++;
+            liste += '<li><a href="<?=$util -> makeUrl('applications/covoiturage/') ?>"><img src="'+ path +'uv' + img_transparence + '" onmouseover="where = ' + i + ' ;"  width="80" height="80" id="menu' + i + '" alt="Covoiturage" title="Covoiturage" \/><\/a><\/li>'; i++;
+            liste += '<li><a href="<?=$util -> makeUrl('applications/covoiturage/') ?>"><img src="'+ path +'pictures' + img_transparence + '" onmouseover="where = ' + i + ' ;"  width="80" height="80" id="menu' + i + '" alt="Covoiturage" title="Covoiturage" \/><\/a><\/li>'; i++;
+            liste += '<\/ul>';
+            document.write(liste); 
+            
+            var nb_li = i -1;
+            var id_menu_liste = document.getElementById('menu_liste');
+            
+            for(var j = 1; j <= nb_li; j++)
+            {
+              document.getElementById('menu' + j).style.margin = default_image_margin;
+            }
+            
+            //<!-- Tableau des images attribu�es aux menus dans le flux XHTML -->
+            var images_menus = new Array();
+            for(var j = 1; j <= nb_li; j++)
+            {
+              var elmt_src = document.getElementById('menu' + j).src;
+              images_menus[j] = elmt_src.substring(elmt_src.lastIndexOf('/', elmt_src.lenght) +1, elmt_src.length);
+            }
+            
+            //<!-- Centrage du menu(ul)[#menu_liste] dans l'ent�te � la lecture du flux xhtml -->
+            centrage_menu();
+            
+            /*]]>*/
+          </script>

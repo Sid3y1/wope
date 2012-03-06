@@ -1,0 +1,23 @@
+/* This file is just here to describe BBCode classes. It's not used. */
+
+.bb_quote
+{
+	margin: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+}
+
+.bb_quote .bb_quote_author
+{
+	font-weight: bold;
+}
+
+.bb_quote .bb_quote_text
+{
+	border: 1px solid black;
+	padding: 5px 5px 5px 5px;
+}
+
+span.bb_underline
+{
+	text-decoration: underline;
+}

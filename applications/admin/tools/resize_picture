@@ -1,0 +1,25 @@
+#!/bin/bash
+
+BIG_DIR='photos'
+SMALL_DIR='photo_joke_mini'
+
+/bin/rm -f $SMALL_DIR/*
+
+for PICTURE in `/bin/ls $BIG_DIR`
+do
+   echo $PICTURE
+   /usr/bin/convert -compress JPEG -thumbnail 50x50 ./$BIG_DIR/$PICTURE ./$SMALL_DIR/$PICTURE
+
+done
+
+BIG_DIR='photo_etu_big'
+SMALL_DIR='photo_etu_pdf'
+
+/bin/rm -f $SMALL_DIR/*
+
+for PICTURE in `/bin/ls $BIG_DIR`
+do
+   echo $PICTURE
+   /usr/bin/convert -compress JPEG -thumbnail 120x120 ./$BIG_DIR/$PICTURE ./$SMALL_DIR/$PICTURE
+
+done

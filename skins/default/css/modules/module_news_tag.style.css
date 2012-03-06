@@ -1,0 +1,210 @@
+/***************************************************
+*                                                  *
+*         FEUILLE DE STYLE DU MODULE NEWS          * 
+*                                                  *
+****************************************************/
+
+.news_tag
+{  
+  border-color: rgb(107, 147, 53);
+}
+
+.news_tag .title
+{
+  background-color: rgb(110, 149, 55);
+  border-color: rgb(107, 147, 53);
+}
+
+*+html #index .news_tag .title,
+* html #index .news_tag .title
+{
+  background: url(../../images/modules/titles/module-title_110-149-55.png) repeat-x top;
+}
+
+.news_tag li {
+  list-style-type: none;
+}
+
+.news_tag .title .extraDiv1 span
+{
+  background-image: url(../../images/modules/logos/module-news.png);
+}
+
+* html .news_tag .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+      element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/module-news.png', sizingMethod='scale')";
+      return 'none';
+      })(this));
+}
+
+
+/********************************
+*                               *
+*     AJOUTS CSS 18/09/2006     *
+*                               *
+*********************************/
+
+.news_tag .centrage
+{
+	margin: 5px 0 15px 0px;
+}
+
+.news_tag .panel_h
+{
+	color: rgb(128,171,103);
+	border-bottom: 2px solid rgb(128,171,103);
+}
+
+.news_tag .panel_h a
+{
+	font-size: 0.9em;
+	color: black;
+	font-weight: bold;
+}
+
+.news_tag .panel_h a:hover
+{
+	color: rgb(128,171,103);
+}
+
+.news_tag .content .menu_module_news
+{
+	margin: 10px 0 0 25px;
+}
+
+.news_tag .content .menu_module_news .new
+{
+	margin: 5px 0 5px 0;
+}
+
+.news_tag .content .menu_module_news li a em
+{
+	color: rgb(110,149,55);
+	font-style: italic;
+}
+
+.news_tag .content .admin_link
+{
+	float: left;
+	margin: 10px 0px 0px 0px;
+}
+
+
+
+
+/***********************************
+*                                  *
+*      AJOUT SYLV 19/10/2006       *
+*                                  *
+************************************/
+
+/* Uniformisation avec le module forum :: Blocs de base */
+
+.news_tag .l1
+{
+	background: rgb(220,237,212);
+}
+
+.news_tag .l2
+{
+	background: rgb(180,219,164);
+}
+
+.news_tag .content .date_publication
+{
+	font-size: 0.95em;
+	margin-right: 10px;
+	font-weight: normal;
+}
+
+.news_tag .content .liste_news
+{
+	width: 420px;
+	margin: 2px 0px 2px 35px;
+	padding: 1px 0px 1px 10px;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.news_tag .content .liste_news a:hover
+{
+	color: rgb(100,141,82);
+}
+
+
+/* Style des toolTips de News */
+
+.tooltips .details_tt
+{
+	padding-left: 4px;
+	list-style-type: none;
+	float: left;
+}
+
+.tooltips .source
+{
+	height: 0.8em;
+	font-size: 0.8em;
+	margin: 0px 0px 0px 5px;
+}
+
+.tooltips .source span
+{
+	font-size: 0.95em;
+	font-weight: bold;
+}
+
+.tooltips .sujet_news
+{
+	height: 20px;
+	font-size: 1.1em;
+	font-weight: bold
+	margin: 8px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+  color: rgb(72,112,164);
+	border-bottom: 2px solid rgb(190,204,231);
+}
+
+.tooltips .sujet_news span
+{
+	font-size: 1.2em;
+  color: rgb(170,183,225);
+}
+	
+.tooltips .type_news
+{
+	margin: 0px 0px 0px 0px;
+	height: 70px;
+	float: left;
+}
+
+.tooltips .type_news img
+{
+	margin: 10px 5px 10px 5px;
+}
+
+.tooltips .le_texte
+{
+	text-indent: 10px;
+	padding: 2px 2px 2px 2px;
+	font-size: 0.9em;
+	text-align: justify;
+}
+
+.tooltips .clear
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.tooltips .date_publication
+{
+	height: 0.8em;
+	font-size: 0.8em;
+	margin: 2px 0px 2px 5px;
+}
+
+
+
+

@@ -1,0 +1,86 @@
+/************************************************
+*                                               *
+*       FEUILLE DE STYLE DU MODULE SURVEY       *
+*                                               *
+*************************************************/
+
+
+/*** STYLE DU BLOC CONTENEUR DU MODULE ***/
+
+	/*** Logo ***/
+	
+#index .column0 .survey .title .extraDiv1 span
+{
+  margin-top: 1px;
+  background: url(../../images/modules/logos/chart_bar.png) no-repeat;
+}
+
+* html #index .column0 .survey .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+    element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/chart_bar.png', sizingMethod='scale')";
+    return 'none';
+    })(this));
+}										
+
+/***   STYLE DU CONTENU DU MODULE   ***/
+
+	/*** Titres des questions / réponses ***/
+
+.survey .survey_title_block
+{
+	width: 225px;
+	overflow: hidden;
+	margin: 20px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	color: rgb(32,55,133);
+	font-weight: bold;
+}
+
+.survey .survey_title_block em
+{
+	font-weight: normal;
+	color: black;
+}
+
+.survey .survey_answer_block
+{
+	width: 190px;
+	overflow: hidden;
+	margin: 2px 0px 0px 8px;
+	padding: 0px 0px 0px 0px;
+	font-size: 0.9em;
+}
+
+	/*** Blocs contenant les résultats ***/
+	
+.survey .results_block
+{
+	width: 190px;
+	height: 12px;
+	margin: 0px 0px 0px 8px;
+	padding: 0px 0px 0px 0px;
+	background: rgb(215,226,224);
+}
+
+.survey .results_block span
+{
+	position: absolute;
+}
+
+.survey .results
+{
+	height: 12px;
+	padding: 0px 0px 0px 0px;
+	line-height: 0px;
+	font-size: 0px;
+	background: rgb(145,231,139);
+	border-right: 1px solid #f6fff5;
+}
+
+	/*** Lien vers la partie Survey ***/
+
+.survey .sep
+{
+	height: 15px;
+}

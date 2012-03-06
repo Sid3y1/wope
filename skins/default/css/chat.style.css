@@ -1,0 +1,114 @@
+/*div.page {
+	width:800px;
+	right:auto;
+	left:auto;
+}
+
+
+div.listeUser {
+	
+}
+
+a:hover.listeUser {
+	cursor:pointer;
+}
+
+#titre {
+	background-color:#cccccc;
+	font-weight:bold;
+}
+*/
+div.chat_text {
+	position:fixed;
+	right:2px;
+	bottom:2px;
+	width:200px;
+	display: hidden;
+}
+
+a:hover.chat_header {
+	cursor:pointer;
+	color:white;
+}
+
+a.chat_header {
+	cursor:pointer;
+	color:black;
+}
+a.chat_header_close {
+	margin-left:5px;
+	margin-right:5px;
+	color:black;
+}
+a:hover.chat_header_close {
+	margin-left:5px;
+	margin-right:5px;
+	cursor:pointer;
+	color:white;
+}
+
+
+div.chat_header_normal {
+	background-color: #cccccc;
+	font-weight:bold;
+	margin:3px 0px 0px 0px;
+	text-align:right;
+}
+
+div.chat_header_new_message {
+	background-color: #00cccc;
+	font-weight:bold;
+	margin:3px 0px 0px 0px;
+	text-align:right;
+}
+
+div.chat_window {
+	border:dashed 1px #dddddd;
+	height:200px;
+	background-color:white;
+	overflow: auto;
+	visibility:visible;
+}
+
+div.hide {
+	visibility:hidden;
+	display:none;
+}
+
+div.chat_login {
+	font-weight:bold;
+}
+
+div.chat_window_text {
+	margin-left:10px;
+	font-family:monospace;
+	font-size:9pt;
+}
+
+.listUserAvailable {
+	color:black;
+}
+
+.listUserAway {
+	font-style:italic;
+	color:#AAAAAA;
+}
+
+.listUserXa {
+	font-style:italic;
+	color:#CCCCCC;
+}
+
+.listUserDnd {
+	font-style:italic;
+	color:red;
+}
+
+.listUserChat {
+	color:green;
+}
+
+.listUserNotAvailable {
+	text-decoration:line-through;
+	color:#CCCCCC;
+}

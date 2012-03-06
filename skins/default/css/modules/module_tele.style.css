@@ -1,0 +1,100 @@
+/**********************************************************
+*                                                         *
+*               FEUILLE DE STYLE DU PROG TV               *
+*                                                         *
+***********************************************************/
+
+
+.tele .title .extraDiv1 span
+{
+  background-image: url(../../images/modules/logos/television.png);
+}
+
+* html .tele .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+  element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/television.png', sizingMethod='scale')";
+  return 'none';
+  })(this));
+}
+							
+.tele .content
+{
+	padding: 5px 5px 5px 5px;
+}
+
+.tele .content .prog_tele
+{
+	padding: 0px 0px 5px 0px;
+	margin: 2px 0px 2px 0px;
+	width: 400px;
+	float: right;
+	border-bottom: 2px solid rgb(222,222,222);
+}
+
+.tele .content .one_channel
+{
+	width: 500px;
+	margin: 2px 0px 2px 0px;
+}
+
+.tele .content .prog_tele ul
+{
+	list-style-type: none;
+}
+
+.tele .content .prog_tele li a
+{
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.tele .content .prog_tele li a:hover
+{
+	color: rgb(55,25,140);
+}
+
+.tele .content .channels
+{
+	float: left;
+	margin: 10px 0px 10px 5px;
+	width:81px;
+	height:24px;
+  display: block;
+}
+
+.tele .content .prog7
+{
+	border-bottom: none;
+}
+
+.tele .content .channel1
+{
+	background: url(../../../../modules/module_tele/image/1.jpg) left no-repeat;
+}
+
+.tele .content .channel2
+{
+	background: url(../../../../modules/module_tele/image/2.jpg) left no-repeat;
+}
+
+.tele .content .channel3
+{
+	background: url(../../../../modules/module_tele/image/3.jpg) left no-repeat;
+}
+.tele .content .channel4
+{
+	background: url(../../../../modules/module_tele/image/4.jpg) left no-repeat;
+}
+.tele .content .channel5
+{
+	background: url(../../../../modules/module_tele/image/5.jpg) left no-repeat;
+}
+.tele .content .channel6
+{
+	background: url(../../../../modules/module_tele/image/6.jpg) left no-repeat;
+}
+.tele .content .channel7
+{
+	background: url(../../../../modules/module_tele/image/7.jpg) left no-repeat;
+}

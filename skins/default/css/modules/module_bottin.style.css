@@ -1,0 +1,90 @@
+/******************************************************************
+*                                                                 *
+*                FEUILLE DE STYLE DU MODULE BOTTIN                *
+*                                                                 *
+*******************************************************************/
+
+
+.bottin .content .tabs
+{
+  background: none;
+  border: none;
+}
+
+* html .bottin .content .tabs
+{
+  background-image: none;
+}
+
+.bottin .title .extraDiv1 span
+{
+  margin-top: 1px;
+  background-image: url(../../images/modules/logos/telephone.png);
+}
+
+* html .bottin .title .extraDiv1 span
+{
+  background-image: expression((function(element){
+		element.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + skinFolder + "/images/modules/logos/telephone.png', sizingMethod='scale')";
+		return 'none';
+		})(this));
+}
+
+.bottin .content .tabs li a
+{
+	font-weight: bold;
+	color: rgb(130,130,130);
+	display: inline;
+	border: 0px solid rgb(155,154,199);
+}
+
+.bottin .content .tabs a:hover
+{
+	background: rgb(230,230,230);
+}
+
+.bottin .content .tabs .selectedTab a
+{
+ 			font-weight: bolder;
+			background: rgb(160,160,160);
+			color: white;
+}
+
+.bottin .content .tabs .selectedTab
+{
+ 			font-weight: bolder;
+			background: rgb(160,160,160);
+			background-image: none;
+			color: white;
+}
+
+.bottin .content .tabsContent
+{
+		 border: solid 1px rgb(160,160,160);
+     background-color: none;
+		 padding: 0px 0px 0px 15px;
+		 overflow: hidden;
+}
+
+.bottin form
+{
+	margin-top: 8px;
+	margin-bottom: 4px;
+}
+	 
+.bottin .form-input label,
+.bottin .form-textarea label
+{
+	position: relative;
+  width: 35%;
+  float: left;
+  margin: 2px 0px 2px 0px;
+  padding: 2px;
+}  
+  
+.bottin .form-input input,
+.bottin .form-input select
+{
+ margin: 2px 0px;
+ padding: 2px;
+}
